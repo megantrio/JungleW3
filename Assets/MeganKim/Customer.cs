@@ -1,7 +1,7 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 
 public class Customer : MonoBehaviour
 {
@@ -11,9 +11,10 @@ public class Customer : MonoBehaviour
 
     public float spawnDuration;
     public int maxCustomer;
-    public GameObject[] CustomerPrefabs;
-    public Vector2 spawnpos;
+    public GameObject[] customerPrefab;
+    GameObject customer;
 
+    public Vector2 spawnPos;   
     int curruntCustomer = 0;
 
     void Start()
@@ -24,19 +25,21 @@ public class Customer : MonoBehaviour
     IEnumerator CustomerSpawn()
     {
         //GameFlowManager.currentTime == GameTime.AFTERNOON
-        while (maxCustomer >= curruntCustomer)
+        while (maxCustomer > curruntCustomer)
         {
             yield return new WaitForSeconds(spawnDuration);
-            CustomerSpawn ();
-            
+            CustomerSpawner();         
             curruntCustomer++;
+            Debug.Log("CurruntCustomer is : " +  curruntCustomer);
+            
         }
     }
 
-    public void CustomerSpawner(GameObject CustomerPrefabs, Vector2 spawnpos)
+    public void CustomerSpawner()
     {
-        GameObject customer = Instantiate(CustomerPrefabs);
-        customer.transform.position = spawnpos;   
-    }
+        int index = Random.Range(0, customerPrefab.Length);
+        Vector3 spawnPosition3D = new Vector3(spawnPos.x, spawnPos.y, transform.position.z);
+        customer = Instantiate(customerPrefab[index], spawnPosition3D, Quaternion.identity);
 
+    }
 }

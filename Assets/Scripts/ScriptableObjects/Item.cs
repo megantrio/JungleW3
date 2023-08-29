@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu]
-public class Item : MonoBehaviour
+public class Item : ScriptableObject
 {
     #region PublicVariables
     [Header("Item spec")]

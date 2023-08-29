@@ -15,12 +15,13 @@ public class Dialogue : MonoBehaviour
 
     public void SetSpekerName()
     {
-        speakerName.SetText($"speker");
+        speakerName.SetText(speker);
     }
 
     void Start()
     {
         TypingManager.instance.Typing(description, descriptionObj);
+        SetSpekerName();
     }
 
 

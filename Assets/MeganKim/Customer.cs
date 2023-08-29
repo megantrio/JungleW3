@@ -22,7 +22,7 @@ public class Customer : MonoBehaviour
         StartCoroutine(CustomerSpawn());
     }
 
-    IEnumerator CustomerSpawn()
+    public IEnumerator CustomerSpawn()
     {
         //GameFlowManager.currentTime == GameTime.AFTERNOON
         while (maxCustomer > curruntCustomer)

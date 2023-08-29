@@ -17,6 +17,11 @@ public class GameFlowManager : MonoBehaviour
     public int currentDay = 1;
     public int endDay = 7;
 
+    public GameObject newsPaper;
+    public Customer customer;
+    public GameObject afternoonUI;
+    public GameObject nightUI;
+
     
     #endregion
 
@@ -65,7 +70,9 @@ public class GameFlowManager : MonoBehaviour
         //우선 현재 시간을 갱신합니다.
         currentTime = GameTime.AFTER_NOON;
         Debug.Log("Day "+currentDay+"일차 낮 진행.");
-        yield return new WaitForSeconds(1f);
+        yield return StartCoroutine(CreateNewsPaper());
+        yield return StartCoroutine(CreateCustomer());
+
     }
 
     private IEnumerator NightFlow()
@@ -74,7 +81,35 @@ public class GameFlowManager : MonoBehaviour
         //우선 현재 시간을 갱신합니다.
         currentTime = GameTime.NIGHT;
         Debug.Log("Day " + currentDay + "일차 밤 진행.");
-        yield return new WaitForSeconds(1f);
+        yield return StartCoroutine(CreateNightUI());
+    }
+
+    //이 이하는 테스트입니다.
+    private IEnumerator CreateNewsPaper()
+    {
+        newsPaper.SetActive(true);
+        afternoonUI.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        afternoonUI.SetActive(false);
+    }
+
+    private IEnumerator CreateCustomer()
+    {
+        yield return StartCoroutine(customer.CustomerSpawn());
+    }
+
+    private IEnumerator CreateNightUI()
+    {
+        nightUI.SetActive(true);
+        while (true)
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                nightUI.SetActive(false);
+                yield break;
+            }
+            yield return null;
+        }
     }
 
     #endregion

@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameFlowManager : MonoBehaviour
 {
     #region PublicVariables
-    public enum GameState
+    public enum GameTime
     {
         AFTER_NOON,
         NIGHT,
@@ -21,7 +21,8 @@ public class GameFlowManager : MonoBehaviour
     #endregion
 
     #region PrivateVariables
-    private GameState currentState;
+    public static GameTime currentTime;   //반드시 Scene 시작 시 초기화할것!!!!!!!!
+    
     #endregion
 
     #region PublicMethod
@@ -31,7 +32,13 @@ public class GameFlowManager : MonoBehaviour
     private void Start()
     {
         //시작, 초기화
+        currentTime = GameTime.AFTER_NOON;
         StartCoroutine(MainFlow());
+
+        if (currentTime == GameTime.NIGHT)
+        {
+            //밤일 때만 작동할 코드 입력
+        }
     }
 
     private void Update()
@@ -56,7 +63,7 @@ public class GameFlowManager : MonoBehaviour
     {
         //낮에 진행할 코루틴을 이곳에서 실행합니다.
         //우선 현재 시간을 갱신합니다.
-        currentState = GameState.AFTER_NOON;
+        currentTime = GameTime.AFTER_NOON;
         Debug.Log("Day "+currentDay+"일차 낮 진행.");
         yield return new WaitForSeconds(1f);
     }
@@ -65,7 +72,7 @@ public class GameFlowManager : MonoBehaviour
     {
         //밤에 진행할 코루틴을 이곳에서 실행합니다.
         //우선 현재 시간을 갱신합니다.
-        currentState = GameState.NIGHT;
+        currentTime = GameTime.NIGHT;
         Debug.Log("Day " + currentDay + "일차 밤 진행.");
         yield return new WaitForSeconds(1f);
     }

@@ -15,11 +15,12 @@ public class Inventory : MonoBehaviour
     [Header("About Inventory UI")]
     [SerializeField] private Transform slotParent;
     [SerializeField] private InventorySlot[] slots;
+    [SerializeField] public ItemMixer itemMixer;
     #endregion
 
     #region PublicMethod
 
-    public void AddItem(Item _item)
+    public bool AddItem(Item _item)
     {
         if (items.Count < slots.Length)
         {
@@ -34,12 +35,15 @@ public class Inventory : MonoBehaviour
                 //아이템 숫자 올라가게 하기
             }
             RefreshInventoryUI();
+            return true;
         }
         else
         {
             Debug.LogError("아이템 슬롯이 가득 참");
+            return false;
         }
     }
+
     public void RemoveItem(Item _item)
     {
         int i = 0;
@@ -108,8 +112,17 @@ public class Inventory : MonoBehaviour
     private void OnValidate()
     {
         slots = GetComponentsInChildren<InventorySlot>();
+        for(int i=0;i<slots.Length;i++)
+        {
+            slots[i].inventory = this;
+            slots[i].itemMixer = itemMixer;
+        }
     }
 
+    public void Test_GetItem(Item _item)
+    {
+        AddItem(_item);
+    }
 
     #endregion
 }

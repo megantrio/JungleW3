@@ -3,15 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class InventorySlot : MonoBehaviour
+public class ItemMixerSlot : MonoBehaviour
 {
     #region PublicVariables
-    public Inventory inventory;
+    public int index = -1;
+    public ItemMixer itemMixer;
     [Header("Management of Slot UI in Inventory")]
     [SerializeField] private Image image;
-
-    [Header("About Mixer UI")]
-    public ItemMixer itemMixer;
     public Item item
     {
         get { return _item; }
@@ -30,36 +28,30 @@ public class InventorySlot : MonoBehaviour
             }
         }
     }
-
     #endregion
 
     #region PrivateVariables
     private Item _item;
+
     #endregion
 
     #region PublicMethod
-    public void OnLeftClick()
-    {
-        //믹서가 켜져있을 때 아이템 클릭 시 믹서 실행
-        if (itemMixer.gameObject.activeSelf)
-        {
-            //믹서가 켜져있다면, 해당 위치에 AddItem
-            if (item!= null)
-            {                
-                int index = itemMixer.AddItem(item);
-                if(index!= -1)
-                {
-                    inventory.RemoveItem(item);
-                }
-            }
-        }
-    }
     #endregion
 
     #region PrivateMethod
 
-    private void Awake()
+    public void OnClick()
     {
+        //믹서 슬롯을 클릭 시, 현재 슬롯 아이템 삭제요청
+        //인벤토리의 아이템을 +1
+        if (item!=null)
+        {
+            bool success = itemMixer.inventory.AddItem(item);
+            if(success)
+            {
+                itemMixer.RemoveItem(index);
+            }
+        }
     }
     #endregion
 }

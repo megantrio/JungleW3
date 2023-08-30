@@ -4,7 +4,17 @@
 		<WorkUnit Name="Default Work Unit" ID="{520D0BB0-9363-46D3-80AA-75EFF1D6431A}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundBank Name="Master" ID="{2B308B64-AA40-4FF5-91D7-70EB1203D658}">
-					<ObjectInclusionList/>
+					<ObjectInclusionList>
+						<ObjectRef Name="Dialogue" ID="{15DE6AE5-5EB7-400A-B813-91CCB6EB00D6}" WorkUnitID="{844C02B1-C021-49DC-82B0-44B7D8DCF579}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="News" ID="{8F3DF59A-A03B-4134-AD71-5398E7536552}" WorkUnitID="{844C02B1-C021-49DC-82B0-44B7D8DCF579}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="UI_Select" ID="{08D3B57C-EEAA-414D-9700-532F830F646E}" WorkUnitID="{844C02B1-C021-49DC-82B0-44B7D8DCF579}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PIPI" ID="{DD85EAA7-AD2C-4160-888F-56AC4D126D40}" WorkUnitID="{844C02B1-C021-49DC-82B0-44B7D8DCF579}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Music" ID="{C640771F-2C89-43B0-937B-4DC60B882EDF}" WorkUnitID="{844C02B1-C021-49DC-82B0-44B7D8DCF579}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="List" ID="{BFA72C5C-AF2D-489E-AE97-412F3D2BDE21}" WorkUnitID="{844C02B1-C021-49DC-82B0-44B7D8DCF579}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Pickup" ID="{B97E0797-144A-4CCA-BF9C-64744BF3B10C}" WorkUnitID="{844C02B1-C021-49DC-82B0-44B7D8DCF579}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="FS" ID="{EE91F973-C06E-4DCB-BC32-D9617D4BA999}" WorkUnitID="{844C02B1-C021-49DC-82B0-44B7D8DCF579}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="UI_Default" ID="{9E6754C3-69E7-4E2E-9518-0C4946258101}" WorkUnitID="{844C02B1-C021-49DC-82B0-44B7D8DCF579}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>

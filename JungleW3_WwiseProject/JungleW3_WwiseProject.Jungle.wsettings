@@ -3,6 +3,15 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{BB3DAF2E-E492-44E9-B222-BB9253F06251}">
 			<PropertyList>
+				<Property Name="Event Action List\{08D3B57C-EEAA-414D-9700-532F830F646E}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{15DE6AE5-5EB7-400A-B813-91CCB6EB00D6}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{8F3DF59A-A03B-4134-AD71-5398E7536552}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{9E6754C3-69E7-4E2E-9518-0C4946258101}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{B97E0797-144A-4CCA-BF9C-64744BF3B10C}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{BFA72C5C-AF2D-489E-AE97-412F3D2BDE21}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{C640771F-2C89-43B0-937B-4DC60B882EDF}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{DD85EAA7-AD2C-4160-888F-56AC4D126D40}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{EE91F973-C06E-4DCB-BC32-D9617D4BA999}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="EventView\FilterMode2" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
@@ -25,6 +34,7 @@
 				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="ZIswK0Cq9U+R13DrEgPWWA=="/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
 				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups_v2" Type="string" Value="ddZ0kZA9TkGJc7h+MNjVTgEAD1yQAAAAwKRP1f1/AAAIQ7sClAEAAAAAAACUAQAAwKRP1f1/AAAEkmq8/X8AADCjvQ+UAQAAAAAAAJQBAAAIAAAAAAAAAJjoD1yQAAAAAAB/vP1/AAAfAX+8/X8AAAAAf7z9fwAAwKRP1f1/AADApE/V/X8AAAhDuwKUAQAAAQAAABQ9Bmwe+ZxFlsGa6sjoPZYBAA9ckAAAAMCkT9X9fwAACEO7ApQBAAAAAAAAlAEAAMCkT9X9fwAABJJqvP1/AAAwo70PlAEAAAAAAACUAQAACAAAAAAAAACY6A9ckAAAAAAAf7z9fwAAHwF/vP1/AAAAAH+8/X8AAMCkT9X9fwAAwKRP1f1/AAAIQ7sClAEAAAEAAAA="/>
+				<Property Name="Interactive Music\x64_{2073DFC8-0220-4AEC-BA3B-208905CB4235} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPw3lNZTX4CFAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
 				<Property Name="MeterView\MeterMode1Viewpoint0" Type="int32" Value="1"/>

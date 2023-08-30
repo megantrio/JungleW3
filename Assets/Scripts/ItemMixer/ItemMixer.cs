@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using TMPro;
 
 public class ItemMixer : MonoBehaviour
 {
@@ -11,18 +12,88 @@ public class ItemMixer : MonoBehaviour
     #endregion
 
     #region PrivateVariables
-    [Header("About ItemMixer UI")]
-    [SerializeField] private Transform slotParent;
-    [SerializeField] public ItemMixerSlot[] slots;
-    public Item resultOfMix;
+    [Header("믹스 후 아이템 획득 UI")]
+    public GameObject mixerUI;
+    public TMP_Text mixerTextUI;
+    private List<Dictionary<string, object>> mixData;
 
-    private InventorySlot[] inventorySlots;
-
-    private List<Dictionary<string, object>> data;
+    [Header("파일로 저장된 스크립터블오브젝트")]
+    //저장되어있는 ScriptableObject
+    public Item[] mixedItemAssets;
+    public Item kkwangItemAsset;
     #endregion
 
     #region PublicMethod
 
+
+    public void OnItemCheck(Item _item1, Item _item2)
+    {
+
+    }
+
+    public Item MixItem(Item _item1, Item _item2)
+    {
+        //테이블의 첫 열
+        string t1 = "table1";
+        string t2 = "table2";
+        string t3 = "table3";
+        if (mixData == null)
+        {
+            CSVReader.Read("Database/MixData");
+        }
+        string result = "";
+        foreach (var i in mixData)
+        {
+            if (i[t1].Equals(_item1.itemName) && i[t2].Equals(_item2.itemName)
+                || i[t1].Equals(_item2.itemName) && i[t2].Equals(_item1.itemName))
+            {
+                result = i[t3].ToString();
+            }
+        }
+        if (result.Equals(""))
+        {
+            return kkwangItemAsset;
+        }
+        for (int i = 0; i < mixedItemAssets.Length; i++)
+        {
+            if (mixedItemAssets[i].itemName.Equals(result))
+            {
+                return mixedItemAssets[i];
+            }
+        }
+        Debug.LogError("조합식은 존재하지만, 해당하는 아이템이 존재하지 않습니다.");
+        return null;
+    }
+
+    #endregion
+
+    #region PrivateMethod
+    private void OnValidate()
+    {
+        slots = GetComponentsInChildren<ItemMixerSlot>();
+        inventorySlots = new InventorySlot[slots.Length];
+        for (int i = 0; i < slots.Length; i++)
+        {
+            slots[i].index = i;
+            slots[i].itemMixer = this;
+        }
+    }
+
+    private void Awake()
+    {
+        //조합데이터 로드
+        mixData = CSVReader.Read("Database/MixData");
+    }
+
+
+    #endregion
+
+    #region NotUse
+
+    private InventorySlot[] inventorySlots;
+    private Transform slotParent;
+    private ItemMixerSlot[] slots;
+    private Item resultOfMix;
     public int AddItem(Item _item)
     {
         //믹서가 켜져있을 때 인벤토리의 아이템을 클릭하면 실행됨
@@ -30,7 +101,7 @@ public class ItemMixer : MonoBehaviour
         //1. 슬롯에 빈자리가 있나 확인
         //2. 슬롯에 빈자리가 있다면 슬롯에 추가, 인벤에서 -1
         int i = 0;
-        for(;i<slots.Length; i++)
+        for (; i < slots.Length; i++)
         {
             //슬롯에 빈자리가 있나 확인
             if (slots[i].item == null)
@@ -67,80 +138,5 @@ public class ItemMixer : MonoBehaviour
         }
 
     }
-
-    public void MixItem()
-    {
-        Debug.Log("믹스!!!!!");
-        int i = 0;
-        for (; i < slots.Length; i++)
-        {
-            if (slots[i].item == null)
-            {
-                break;
-            }
-        }
-        if(i== slots.Length)
-        {
-            Debug.Log("획득 + " + MixItem(slots[0].item.itemName, slots[1].item.itemName));
-            //모든 슬롯에 아이템이 있으므로, 믹스 시작
-            Debug.Log("믹스 시작");
-            //현재 등록된 모든 아이템을 삭제함
-            for(int j=0;j< slots.Length; j++)
-            {
-                RemoveItem(j);
-            }
-            //아이템 획득 구현
-        }
-        else
-        {
-            //모든 슬롯에 아이템이 있진 않음, 믹스 실패
-            Debug.Log("믹스 실패... 모든 슬롯에 아이템이 있나 확인해주세요.");
-        }
-    }
-
-    public void LoadMixDataFromCSV()
-    {
-        
-    }
-
-    public string MixItem(string a, string b)
-    {
-        string t1 = "table1";
-        string t2 = "table2";
-        string t3 = "table3";
-        if(data == null)
-        {
-            CSVReader.Read("Database/MixData");
-        }
-        foreach(var i in data)
-        {
-            if (i[t1].Equals(a) && i[t2].Equals(b)
-                || i[t1].Equals(b) && i[t2].Equals(a))
-            {
-                return i[t3].ToString();
-            }
-        }
-        return "";
-    }
-    #endregion
-
-    #region PrivateMethod
-    private void OnValidate()
-    {
-        slots = GetComponentsInChildren<ItemMixerSlot>();
-        inventorySlots = new InventorySlot[slots.Length];
-        for(int i=0;i<slots.Length;i++)
-        {
-            slots[i].index = i;
-            slots[i].itemMixer = this;
-        }
-    }
-
-    private void Awake()
-    {
-        data = CSVReader.Read("Database/MixData");
-    }
-
-
     #endregion
 }

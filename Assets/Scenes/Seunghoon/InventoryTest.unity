@@ -892,5 +892,17 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6991424497772809787, guid: aa8c920fcd0cb9e459149644f9bc431f, type: 3}
+      propertyPath: kkwangItemData
+      value: 
+      objectReference: {fileID: 11400000, guid: 8c662d2146a6fd94ead9ec2208b8eaf7, type: 2}
+    - target: {fileID: 6991424497772809787, guid: aa8c920fcd0cb9e459149644f9bc431f, type: 3}
+      propertyPath: mixedItemData.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6991424497772809787, guid: aa8c920fcd0cb9e459149644f9bc431f, type: 3}
+      propertyPath: mixedItemData.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: c65305ed950195e44b5640bd12459374, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa8c920fcd0cb9e459149644f9bc431f, type: 3}

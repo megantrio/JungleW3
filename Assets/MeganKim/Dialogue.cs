@@ -19,9 +19,10 @@ public class Dialogue : MonoBehaviour
     {
         for (int i = 0; i < description.Length; i++)
         {
+            Debug.Log(TypingManager.instance);
             yield return TypingManager.instance.Typing(speaker, description[i]);
         }
-        Debug.Log("i");
+        TypingManager.instance.CloseTypeUI();
         gameObject.SetActive(false);
     }
 

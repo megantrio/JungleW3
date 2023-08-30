@@ -30,6 +30,7 @@ public class TypingManager : MonoBehaviour
 
     private void Awake()
     {
+        Debug.Log("гого");
         if (instance == null)
         {
             instance = this;
@@ -127,6 +128,11 @@ public class TypingManager : MonoBehaviour
             if (dialogUI.activeSelf)
                 isDialogClicked = true;
         }
+    }
+
+    public void CloseTypeUI()
+    {
+        dialogUI.SetActive(false);
     }
 
 }

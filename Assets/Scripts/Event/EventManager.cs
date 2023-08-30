@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class EventManager : MonoBehaviour
 {
+    //최상위 Event는 켜져있고, 그 아래는 꺼져있어야한다.
+
+
     #region PublicVariables
     public bool isEventEnded = false;
 
@@ -21,26 +24,29 @@ public class EventManager : MonoBehaviour
     #endregion
 
     #region PublicMethod
+    private void Awake()
+    {
+    }
 
     private void OnEnable()
     {
-        //초기화
         StartCoroutine(StartEvents());
     }
 
     private IEnumerator StartEvents()
     {
-        if (eventStack.Count>0&&eventStack.Peek() != gameObject)
+        if (transform.parent!=null&&eventStack.Peek() != gameObject)
         {
+            //부모가 나를 실행한 것이 아니라면 없애버린다.
             gameObject.SetActive(false);
             yield break;
         }
+        Debug.Log(gameObject.name + "시작!");
         isEventEnded = false;
         for(int i=0;i<events.Count;i++)
         {
             eventStack.Push(events[i]);
             events[i].SetActive(true);
-            //이벤트가 끝날때까지 기다립니다.
             while (events[i].activeSelf)
             {
                 yield return null;
@@ -50,6 +56,7 @@ public class EventManager : MonoBehaviour
         //이벤트가 모두 끝났다면
         isEventEnded = true;
         gameObject.SetActive(false);
+        Debug.Log(gameObject.name + "종료!");
     }
 
     #endregion

@@ -6125,6 +6125,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2391376573028805609, guid: fc190a4b298286748bb06367d189e64a, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 11400000, guid: f5923b2b08e0ce3479b81e5fe7aded25, type: 2}
     - target: {fileID: 5787744203971696653, guid: fc190a4b298286748bb06367d189e64a, type: 3}
       propertyPath: m_Name
       value: BranchScriptNPC
@@ -6207,7 +6211,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6718284751411659886, guid: fc190a4b298286748bb06367d189e64a, type: 3}
       propertyPath: scriptList.Array.data[1].speaker.Array.data[0]
-      value: "\uB9C8\uBC95\uC18C\uB140 \uC9C0\uD321\uC774"
+      value: "\uB9C8\uD2B8 \uCCAB\uC9F8 \uB538"
       objectReference: {fileID: 0}
     - target: {fileID: 6718284751411659886, guid: fc190a4b298286748bb06367d189e64a, type: 3}
       propertyPath: scriptList.Array.data[1].speaker.Array.data[1]
@@ -6219,11 +6223,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6718284751411659886, guid: fc190a4b298286748bb06367d189e64a, type: 3}
       propertyPath: scriptList.Array.data[1].speaker.Array.data[3]
-      value: "\uB9C8\uBC95\uC18C\uB140 \uC9C0\uD321\uC774"
+      value: "\uB9C8\uD2B8 \uCCAB\uC9F8 \uB538"
       objectReference: {fileID: 0}
     - target: {fileID: 6718284751411659886, guid: fc190a4b298286748bb06367d189e64a, type: 3}
       propertyPath: scriptList.Array.data[1].speaker.Array.data[4]
-      value: "\uB9C8\uBC95\uC18C\uB140 \uC9C0\uD321\uC774"
+      value: "\uB9C8\uD2B8 \uCCAB\uC9F8 \uB538"
       objectReference: {fileID: 0}
     - target: {fileID: 6718284751411659886, guid: fc190a4b298286748bb06367d189e64a, type: 3}
       propertyPath: scriptList.Array.data[1].speaker.Array.data[5]
@@ -6231,19 +6235,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6718284751411659886, guid: fc190a4b298286748bb06367d189e64a, type: 3}
       propertyPath: scriptList.Array.data[1].speaker.Array.data[6]
-      value: "\uB9C8\uBC95\uC18C\uB140 \uC9C0\uD321\uC774"
+      value: "\uB9C8\uD2B8 \uCCAB\uC9F8 \uB538"
       objectReference: {fileID: 0}
     - target: {fileID: 6718284751411659886, guid: fc190a4b298286748bb06367d189e64a, type: 3}
       propertyPath: scriptList.Array.data[1].speaker.Array.data[7]
-      value: "\uB9C8\uBC95\uC18C\uB140 \uC9C0\uD321\uC774"
+      value: "\uB9C8\uD2B8 \uCCAB\uC9F8 \uB538"
       objectReference: {fileID: 0}
     - target: {fileID: 6718284751411659886, guid: fc190a4b298286748bb06367d189e64a, type: 3}
       propertyPath: scriptList.Array.data[1].speaker.Array.data[8]
-      value: "\uB9C8\uBC95\uC18C\uB140 \uC9C0\uD321\uC774"
+      value: "\uB9C8\uD2B8 \uCCAB\uC9F8 \uB538"
       objectReference: {fileID: 0}
     - target: {fileID: 6718284751411659886, guid: fc190a4b298286748bb06367d189e64a, type: 3}
       propertyPath: scriptList.Array.data[1].speaker.Array.data[9]
-      value: "\uB9C8\uBC95\uC18C\uB140 \uC9C0\uD321\uC774"
+      value: "\uB9C8\uD2B8 \uCCAB\uC9F8 \uB538"
       objectReference: {fileID: 0}
     - target: {fileID: 6718284751411659886, guid: fc190a4b298286748bb06367d189e64a, type: 3}
       propertyPath: scriptList.Array.data[1].description.Array.size

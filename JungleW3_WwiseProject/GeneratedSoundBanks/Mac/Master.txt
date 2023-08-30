@@ -1,0 +1,32 @@
+Event	ID	Name			Wwise Object Path	Notes
+	220247005	List			\Default Work Unit\List	
+	898907948	News			\Default Work Unit\News	
+	906627473	UI_Default			\Default Work Unit\UI_Default	
+	1802970376	FS			\Default Work Unit\FS	
+	1843860813	PIPI			\Default Work Unit\PIPI	
+	2774129122	UI_Select			\Default Work Unit\UI_Select	
+	3930136735	Dialogue			\Default Work Unit\Dialogue	
+	3978245845	Pickup			\Default Work Unit\Pickup	
+	3991942870	Music			\Default Work Unit\Music	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1088209313	Floor			\Default Work Unit\Floor	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Floor			
+	998496889	First	Floor			
+	1543687740	UnderGround	Floor			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	7912611	OST_SomeStore	C:\JungleW3\JungleW3_WwiseProject\.cache\Mac\SFX\OST_SomeStore_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\OST_SomeStore\OST_SomeStore		21450336
+	51354858	Fs2	C:\JungleW3\JungleW3_WwiseProject\.cache\Mac\SFX\Fs2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\FS\Fs2		91232
+	78432480	PIPI	C:\JungleW3\JungleW3_WwiseProject\.cache\Mac\SFX\Cat1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PIPI		176260
+	282376809	UI_Select	C:\JungleW3\JungleW3_WwiseProject\.cache\Mac\SFX\UI_Select_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI_Select		66556
+	320412028	News	C:\JungleW3\JungleW3_WwiseProject\.cache\Mac\SFX\ESM_Explainer_Video_One_Shot_Paper_Foley_Shake_Multiple_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\News		60484
+	563972961	Dialogue	C:\JungleW3\JungleW3_WwiseProject\.cache\Mac\SFX\ESM_Text_Box_Typing_short_App_Button_Sci_Fi_Glitch_Morph_Mechanism_Texture_Futuristic_69EEF2E8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue		19688
+	630528704	Fs3	C:\JungleW3\JungleW3_WwiseProject\.cache\Mac\SFX\Fs3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\FS\Fs3		71084
+	782747681	Pickup	C:\JungleW3\JungleW3_WwiseProject\.cache\Mac\SFX\ESM_Sophisticated_Tech_Button_Click_2_Hybrid_Mobile_Collect_Special_Power_Up_Buff_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pickup		133296
+	873422980	Fs1	C:\JungleW3\JungleW3_WwiseProject\.cache\Mac\SFX\Fs1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\FS\Fs1		75136
+	959012926	List	C:\JungleW3\JungleW3_WwiseProject\.cache\Mac\SFX\ESM_Horror_Game_UI_Organic_Paper_Page_Turn_Single_Flip_7_User_Interface_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\List		73996
+	1053346978	UI_Default	C:\JungleW3\JungleW3_WwiseProject\.cache\Mac\SFX\UI_Default_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI_Default		42992
+

@@ -20,6 +20,7 @@ public class Dialogue : MonoBehaviour
         for (int i = 0; i < description.Length; i++)
         {
             yield return TypingManager.instance.Typing(speaker, description[i]);
+            AkSoundEngine.PostEvent("Dialogue", gameObject);
         }
         TypingManager.instance.CloseTypeUI();
         gameObject.SetActive(false);

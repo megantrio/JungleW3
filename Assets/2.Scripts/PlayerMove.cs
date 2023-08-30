@@ -6,7 +6,7 @@ public class PlayerMove : MonoBehaviour
 {
     private Vector2 moveInput;
     private Rigidbody2D rb;
-    public float moveSpeed = 30f;
+    public float moveSpeed = 1f;
 
 
     private void Start()
@@ -16,12 +16,13 @@ public class PlayerMove : MonoBehaviour
 
     private void Update()
     {
-        
+        rb.MovePosition(rb.position + moveInput * moveSpeed * Time.fixedDeltaTime);
+
     }
 
     void FixedUpdate()
     {
-        rb.MovePosition(rb.position + moveInput * moveSpeed * Time.fixedDeltaTime);
+        
     }
 
     public void OnMove(InputAction.CallbackContext context)

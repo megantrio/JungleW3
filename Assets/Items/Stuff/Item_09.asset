@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isMixItem: 0
   applyDay: 0
-  itemName: "\uCCAD\uBC14\uC9C0"
-  itemImage: {fileID: -193298284, guid: 0faac8620d80b3c48b702b33ae480ae6, type: 3}
+  itemName: "\uBE44\uB2D0 \uC6B0\uC758"
+  itemImage: {fileID: 21300000, guid: 6ff0c3a881236134f80a036f56cda921, type: 3}

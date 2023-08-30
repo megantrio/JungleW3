@@ -15,4 +15,4 @@ MonoBehaviour:
   isMixItem: 0
   applyDay: 0
   itemName: "\uACE8\uD310\uC9C0 \uCE7C"
-  itemImage: {fileID: 1913741823, guid: 0faac8620d80b3c48b702b33ae480ae6, type: 3}
+  itemImage: {fileID: 21300000, guid: d797c63d678aa4642b298a546307ae42, type: 3}

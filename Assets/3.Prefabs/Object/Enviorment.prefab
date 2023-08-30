@@ -50,7 +50,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1975990039386965132, guid: 599fcf44a12fd4a43a47060bb98df7f9, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1975990039386965134, guid: 599fcf44a12fd4a43a47060bb98df7f9, type: 3}
       propertyPath: m_RootOrder
@@ -129,7 +129,7 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
---- !u!114 &2160827060092968366
+--- !u!114 &1992525998
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -138,11 +138,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 473138251693084221}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 742dd8914c38050488349c570b078cfc, type: 3}
+  m_Script: {fileID: 11500000, guid: 194487b1be435e6448c8d94f92de1990, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   map1f: {fileID: 5508898006190677094}
-  mapBf: {fileID: 0}
+  mapBf: {fileID: 473138251139566728}
 --- !u!1001 &2160827060151799890
 PrefabInstance:
   m_ObjectHideFlags: 0

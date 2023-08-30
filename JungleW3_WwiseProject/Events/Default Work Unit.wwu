@@ -1,6 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{844C02B1-C021-49DC-82B0-44B7D8DCF579}" SchemaVersion="110">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{844C02B1-C021-49DC-82B0-44B7D8DCF579}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{844C02B1-C021-49DC-82B0-44B7D8DCF579}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="FS" ID="{EE91F973-C06E-4DCB-BC32-D9617D4BA999}">
+					<ChildrenList>
+						<Action Name="" ID="{F75BB5FF-1137-4FF4-8B92-CCD18DB56F27}" ShortID="924005328">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FS" ID="{E2C1A1A1-ACC7-4F0F-9838-CCCDF4CBA6D5}" WorkUnitID="{7DD625F7-73A1-4E69-9D1C-83D638E205E7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Dialogue" ID="{15DE6AE5-5EB7-400A-B813-91CCB6EB00D6}">
+					<ChildrenList>
+						<Action Name="" ID="{4D264EB7-72DC-492B-B601-DD6C8F9F4000}" ShortID="932150579">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Dialogue" ID="{9A187EBF-E428-4C81-8B31-76F99CDCFDA6}" WorkUnitID="{7DD625F7-73A1-4E69-9D1C-83D638E205E7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="List" ID="{BFA72C5C-AF2D-489E-AE97-412F3D2BDE21}">
+					<ChildrenList>
+						<Action Name="" ID="{E8EFDC93-7824-42B2-BA0E-BA2B41164D01}" ShortID="63227657">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="List" ID="{AFC393F7-E929-498D-8142-D9252AD97B45}" WorkUnitID="{7DD625F7-73A1-4E69-9D1C-83D638E205E7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="News" ID="{8F3DF59A-A03B-4134-AD71-5398E7536552}">
+					<ChildrenList>
+						<Action Name="" ID="{AC5FDAB6-407E-4660-9D6B-4442ABE6720B}" ShortID="373556356">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="News" ID="{2F7CCD0F-78FD-4FE3-BD15-368A384EF560}" WorkUnitID="{7DD625F7-73A1-4E69-9D1C-83D638E205E7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Pickup" ID="{B97E0797-144A-4CCA-BF9C-64744BF3B10C}">
+					<ChildrenList>
+						<Action Name="" ID="{7A301C92-CAF4-47C7-A70C-C89055212C89}" ShortID="988752848">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Pickup" ID="{BF5308B2-C5F2-43EC-B328-8408BD47435B}" WorkUnitID="{7DD625F7-73A1-4E69-9D1C-83D638E205E7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PIPI" ID="{DD85EAA7-AD2C-4160-888F-56AC4D126D40}">
+					<ChildrenList>
+						<Action Name="" ID="{B26DC02A-E9F5-4DA7-A0F6-5F51256DDB6E}" ShortID="153647071">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PIPI" ID="{B6075F6A-31A6-4911-A23B-EA1E29675536}" WorkUnitID="{7DD625F7-73A1-4E69-9D1C-83D638E205E7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="UI_Default" ID="{9E6754C3-69E7-4E2E-9518-0C4946258101}">
+					<ChildrenList>
+						<Action Name="" ID="{4C2DD8B6-1952-48E4-802F-E3B068103DDA}" ShortID="428073076">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Default" ID="{5A7F2EAC-EB8C-4584-969D-1A4C2F145518}" WorkUnitID="{7DD625F7-73A1-4E69-9D1C-83D638E205E7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="UI_Select" ID="{08D3B57C-EEAA-414D-9700-532F830F646E}">
+					<ChildrenList>
+						<Action Name="" ID="{18563C3A-9EC2-414A-9019-1B2CF628D789}" ShortID="503881988">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Select" ID="{BDC064C3-14E9-4E65-B76C-897DBF3BD861}" WorkUnitID="{7DD625F7-73A1-4E69-9D1C-83D638E205E7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Music" ID="{C640771F-2C89-43B0-937B-4DC60B882EDF}">
+					<ChildrenList>
+						<Action Name="" ID="{0ED90D43-7BD1-4F86-A54B-F220BE08EEE1}" ShortID="640300276">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music" ID="{696BD67A-6A36-45D3-813D-6D8D546E0D1F}" WorkUnitID="{2BB48310-FD30-4F80-814D-CEC042CA08E9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

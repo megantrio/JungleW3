@@ -8,22 +8,19 @@ public class DownStair : MonoBehaviour
     public GameObject map1f;
     public GameObject mapBf;
 
-    private bool isUnderground = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.CompareTag("Player"))
         {
-            map1f.SetActive(false);
-            bool isUnderground = true;
-            mapBf.SetActive(true);
+            Invoke("MapDown", 0.2f);
         }
-        if(isUnderground == true && collision.gameObject.CompareTag("Player") )
-        {
-            mapBf.SetActive(false) ;
-            bool isUnderground = false;
-            map1f.SetActive(true) ;
-        }
+    }
+
+    public void MapDown()
+    {
+        map1f.SetActive(false);
+        mapBf.SetActive(true);
     }
 
 }

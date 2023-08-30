@@ -1,0 +1,67 @@
+{
+    "name": "TestInput",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "0f71762c-1873-4c43-8705-c8489fb008e6",
+            "actions": [
+                {
+                    "name": "DialogSkip",
+                    "type": "Button",
+                    "id": "e8fe9ac4-b955-4bbd-beec-7fe8b29d1a32",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "6872322d-f18f-4e2d-b0dc-b79d80284aa2",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DialogSkip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6c4ea92e-8a58-4320-97b5-ea11c8c45577",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DialogSkip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "52cc58b8-deee-40e9-8075-634e1674a8e7",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DialogSkip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "065cf1a4-92dc-4dc6-879b-801aab65f087",
+                    "path": "<Keyboard>/numpadEnter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DialogSkip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

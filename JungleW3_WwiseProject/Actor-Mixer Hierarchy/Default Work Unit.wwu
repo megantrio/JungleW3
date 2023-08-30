@@ -259,6 +259,10 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="ESM_Text_Box_Typing_short_App_Button_Sci_Fi_Glitch_Morph_Mechanism_Texture_Futuristic" ID="{F24152F8-0481-4734-8D87-FA3F244AA0E4}">
+							<PropertyList>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.110693789985826"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>ESM_Text_Box_Typing_short_App_Button_Sci_Fi_Glitch_Morph_Mechanism_Texture_Futuristic.wav</AudioFile>
 							<MediaIDList>

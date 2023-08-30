@@ -23,7 +23,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	78432480	PIPI	C:\JungleW3\JungleW3_WwiseProject\.cache\Windows\SFX\Cat1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PIPI		176260
 	282376809	UI_Select	C:\JungleW3\JungleW3_WwiseProject\.cache\Windows\SFX\UI_Select_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI_Select		66556
 	320412028	News	C:\JungleW3\JungleW3_WwiseProject\.cache\Windows\SFX\ESM_Explainer_Video_One_Shot_Paper_Foley_Shake_Multiple_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\News		60484
-	563972961	Dialogue	C:\JungleW3\JungleW3_WwiseProject\.cache\Windows\SFX\ESM_Text_Box_Typing_short_App_Button_Sci_Fi_Glitch_Morph_Mechanism_Texture_Futuristic_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue		289104
+	563972961	Dialogue	C:\JungleW3\JungleW3_WwiseProject\.cache\Windows\SFX\ESM_Text_Box_Typing_short_App_Button_Sci_Fi_Glitch_Morph_Mechanism_Texture_Futuristic_69EEF2E8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue		19688
 	630528704	Fs3	C:\JungleW3\JungleW3_WwiseProject\.cache\Windows\SFX\Fs3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\FS\Fs3		71084
 	782747681	Pickup	C:\JungleW3\JungleW3_WwiseProject\.cache\Windows\SFX\ESM_Sophisticated_Tech_Button_Click_2_Hybrid_Mobile_Collect_Special_Power_Up_Buff_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pickup		133296
 	873422980	Fs1	C:\JungleW3\JungleW3_WwiseProject\.cache\Windows\SFX\Fs1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\FS\Fs1		75136

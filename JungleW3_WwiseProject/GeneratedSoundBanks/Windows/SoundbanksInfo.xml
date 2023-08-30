@@ -31,7 +31,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{2C796009-E4A5-3FD9-C965-85AF340707CF}">
+		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{8E6D4507-EC04-2492-CD38-DC9A5380F522}">
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
 			<Media>
@@ -57,7 +57,7 @@
 				</File>
 				<File Id="563972961" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ESM_Text_Box_Typing_short_App_Button_Sci_Fi_Glitch_Morph_Mechanism_Texture_Futuristic.wav</ShortName>
-					<CachePath>SFX/ESM_Text_Box_Typing_short_App_Button_Sci_Fi_Glitch_Morph_Mechanism_Texture_Futuristic_10C4C929.wem</CachePath>
+					<CachePath>SFX/ESM_Text_Box_Typing_short_App_Button_Sci_Fi_Glitch_Morph_Mechanism_Texture_Futuristic_69EEF2E8.wem</CachePath>
 				</File>
 				<File Id="630528704" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Fs3.wav</ShortName>
@@ -81,7 +81,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="3930136735" Name="Dialogue" DurationType="OneShot" DurationMin="1.6380045" DurationMax="1.6380045">
+				<Event Id="3930136735" Name="Dialogue" DurationType="OneShot" DurationMin="0.11069379" DurationMax="0.11069379">
 					<MediaRefs>
 						<MediaRef Id="563972961"/>
 					</MediaRefs>
@@ -151,5 +151,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{6F002D67-A8CF-C349-299B-66874BFE39DC}</FileHash>
+	<FileHash>{02CA45B8-27F6-517E-81B4-DD4B8820D95B}</FileHash>
 </SoundBanksInfo>

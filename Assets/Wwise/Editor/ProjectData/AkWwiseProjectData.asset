@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: b00b0d526393d34680aa75eff1d6431a
     GuidInternal: 
-    m_lastTime: -8585081923816537963
+    m_lastTime: -8585081885601586445
     List:
     - name: Master
       guid: 648b302b40aaf54f91d770eb1203d658
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: b1024c8421c0dc4982b044b7d8dcf579
     GuidInternal: 
-    m_lastTime: -8585081924026600099
+    m_lastTime: -8585081885606151265
     List:
     - name: Dialogue
       guid: e56ade15b75e0a40b81391ccb6eb00d6
@@ -275,7 +275,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: ad7235d505164f43ad9075b4c5f7bb66
     GuidInternal: 
-    m_lastTime: -8585081932416792127
+    m_lastTime: -8585081885601576445
     List:
     - name: Floor
       guid: efa6966479e6a34ca66c3b47dddb68cb
@@ -371,9 +371,9 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585081933552218424
     List: []
-  ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000001300000014000000
+  ExpandedFileSystemItemIds: 020000000300000005000000060000000c0000000e0000001300000014000000
+  ExpandedWaapiItemIds: 020000000300000005000000060000000c0000000e0000001300000014000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 0
+  currentDataSource: 1
   CurrentPluginConfig: 

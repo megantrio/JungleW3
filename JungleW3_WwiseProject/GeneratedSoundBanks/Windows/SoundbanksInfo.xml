@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{986487A9-2683-E47A-8688-3D0FE6FDB954}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{768A4FB4-1BEF-BB64-DE15-9D073BB27B83}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -21,11 +21,135 @@
 			<Busses>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
+			<StateGroups>
+				<StateGroup Id="1088209313" Name="Floor">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="998496889" Name="First"/>
+						<State Id="1543687740" Name="UnderGround"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{73D2F82E-3C9A-353F-4F7A-B26E8573544B}">
+		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{2C796009-E4A5-3FD9-C965-85AF340707CF}">
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
+			<Media>
+				<File Id="7912611" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>OST_SomeStore.wav</ShortName>
+					<CachePath>SFX/OST_SomeStore_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="51354858" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Fs2.wav</ShortName>
+					<CachePath>SFX/Fs2_10C4C929.wem</CachePath>
+				</File>
+				<File Id="78432480" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Cat1.wav</ShortName>
+					<CachePath>SFX/Cat1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="282376809" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_Select.wav</ShortName>
+					<CachePath>SFX/UI_Select_10C4C929.wem</CachePath>
+				</File>
+				<File Id="320412028" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ESM_Explainer_Video_One_Shot_Paper_Foley_Shake_Multiple_03.wav</ShortName>
+					<CachePath>SFX/ESM_Explainer_Video_One_Shot_Paper_Foley_Shake_Multiple_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="563972961" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ESM_Text_Box_Typing_short_App_Button_Sci_Fi_Glitch_Morph_Mechanism_Texture_Futuristic.wav</ShortName>
+					<CachePath>SFX/ESM_Text_Box_Typing_short_App_Button_Sci_Fi_Glitch_Morph_Mechanism_Texture_Futuristic_10C4C929.wem</CachePath>
+				</File>
+				<File Id="630528704" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Fs3.wav</ShortName>
+					<CachePath>SFX/Fs3_10C4C929.wem</CachePath>
+				</File>
+				<File Id="782747681" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ESM_Sophisticated_Tech_Button_Click_2_Hybrid_Mobile_Collect_Special_Power_Up_Buff.wav</ShortName>
+					<CachePath>SFX/ESM_Sophisticated_Tech_Button_Click_2_Hybrid_Mobile_Collect_Special_Power_Up_Buff_10C4C929.wem</CachePath>
+				</File>
+				<File Id="873422980" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Fs1.wav</ShortName>
+					<CachePath>SFX/Fs1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="959012926" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ESM_Horror_Game_UI_Organic_Paper_Page_Turn_Single_Flip_7_User_Interface.wav</ShortName>
+					<CachePath>SFX/ESM_Horror_Game_UI_Organic_Paper_Page_Turn_Single_Flip_7_User_Interface_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1053346978" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_Default.wav</ShortName>
+					<CachePath>SFX/UI_Default_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3930136735" Name="Dialogue" DurationType="OneShot" DurationMin="1.6380045" DurationMax="1.6380045">
+					<MediaRefs>
+						<MediaRef Id="563972961"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1802970376" Name="FS" DurationType="OneShot" DurationMin="0.36972916" DurationMax="0.47466666">
+					<MediaRefs>
+						<MediaRef Id="51354858"/>
+						<MediaRef Id="630528704"/>
+						<MediaRef Id="873422980"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="220247005" Name="List" DurationType="OneShot" DurationMin="0.38489583" DurationMax="0.38489583">
+					<MediaRefs>
+						<MediaRef Id="959012926"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3991942870" Name="Music" DurationType="Infinite">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="1088209313" Id="998496889"/>
+							<MediaRefs>
+								<MediaRef Id="7912611"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="1088209313" Id="748895195"/>
+							<MediaRefs>
+								<MediaRef Id="7912611"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="898907948" Name="News" DurationType="OneShot" DurationMin="0.6290417" DurationMax="0.6290417">
+					<MediaRefs>
+						<MediaRef Id="320412028"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3978245845" Name="Pickup" DurationType="OneShot" DurationMin="0.75510204" DurationMax="0.75510204">
+					<MediaRefs>
+						<MediaRef Id="782747681"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1843860813" Name="PIPI" DurationType="OneShot" DurationMin="0.91753125" DurationMax="0.91753125">
+					<MediaRefs>
+						<MediaRef Id="78432480"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="906627473" Name="UI_Default" DurationType="OneShot" DurationMin="0.22341667" DurationMax="0.22341667">
+					<MediaRefs>
+						<MediaRef Id="1053346978"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2774129122" Name="UI_Select" DurationType="OneShot" DurationMin="0.34615624" DurationMax="0.34615624">
+					<MediaRefs>
+						<MediaRef Id="282376809"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+			<StateGroups>
+				<StateGroup Id="1088209313" Name="Floor">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="998496889" Name="First"/>
+						<State Id="1543687740" Name="UnderGround"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{C46F7156-7109-5763-26EB-41F1ED05465A}</FileHash>
+	<FileHash>{6F002D67-A8CF-C349-299B-66874BFE39DC}</FileHash>
 </SoundBanksInfo>

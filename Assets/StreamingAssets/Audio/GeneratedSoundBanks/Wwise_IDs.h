@@ -11,6 +11,35 @@
 
 namespace AK
 {
+    namespace EVENTS
+    {
+        static const AkUniqueID DIALOGUE = 3930136735U;
+        static const AkUniqueID FS = 1802970376U;
+        static const AkUniqueID LIST = 220247005U;
+        static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID NEWS = 898907948U;
+        static const AkUniqueID PICKUP = 3978245845U;
+        static const AkUniqueID PIPI = 1843860813U;
+        static const AkUniqueID UI_DEFAULT = 906627473U;
+        static const AkUniqueID UI_SELECT = 2774129122U;
+    } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace FLOOR
+        {
+            static const AkUniqueID GROUP = 1088209313U;
+
+            namespace STATE
+            {
+                static const AkUniqueID FIRST = 998496889U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID UNDERGROUND = 1543687740U;
+            } // namespace STATE
+        } // namespace FLOOR
+
+    } // namespace STATES
+
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;

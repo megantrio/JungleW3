@@ -1,33 +1,32 @@
-using System.Collections;
-using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerMove : MonoBehaviour
 {
-    #region PublicVariables
-    #endregion
+    private Vector2 moveInput;
+    private Rigidbody2D rb;
+    public float moveSpeed = 30f;
 
-    #region PrivateVariables
-    #endregion
 
-    #region PublicMethod
-    public void OnMovement(InputAction.CallbackContext callback)
+    private void Start()
     {
-        if (!gameObject.activeSelf)
-        {
-            return;
-        }
-        Vector2 move = (callback.ReadValue<Vector2>());
-        Rigidbody2D rb = GetComponent<Rigidbody2D>();
-        rb.velocity = move;
-        if (callback.canceled)
-        {
-            rb.velocity = new Vector2();
-        }
+        rb = GetComponent<Rigidbody2D>();
     }
-    #endregion
 
-    #region PrivateMethod
-    #endregion
+    private void Update()
+    {
+        
+    }
+
+    void FixedUpdate()
+    {
+        rb.MovePosition(rb.position + moveInput * moveSpeed * Time.fixedDeltaTime);
+    }
+
+    public void OnMove(InputAction.CallbackContext context)
+    {
+        moveInput = context.ReadValue<Vector2>();
+    }
+
 }

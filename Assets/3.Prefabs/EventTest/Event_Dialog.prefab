@@ -44,10 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f75cf82ac24dc544beb86668aec4d94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speaker: "\uBC31\uC2B9\uD6C8"
-  description:
-  - TestScript1
-  - TestScript2
-  - TestScript3
-  - TestScript4
-  - TestScript5
+  speaker: 
+  description: []

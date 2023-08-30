@@ -14,7 +14,7 @@ public class TypingManager : MonoBehaviour
     float characterTime;
     string[] dialogsSave;
 
-    [Header("캔버스 상의 UI")]
+    [Header("Dialogue UI")]
     public GameObject dialogUI;
     public TextMeshProUGUI speakerNameUI;
     public TextMeshProUGUI dialogTextUI;
@@ -30,7 +30,6 @@ public class TypingManager : MonoBehaviour
 
     private void Awake()
     {
-        Debug.Log("하하");
         if (instance == null)
         {
             instance = this;

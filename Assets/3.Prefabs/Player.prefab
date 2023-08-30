@@ -259,6 +259,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 9022484917098353834}
+        m_TargetAssemblyTypeName: PlayerItemGet, Assembly-CSharp
+        m_MethodName: GetItem
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 44797124-db16-4341-9dc1-14658c6496f7
     m_ActionName: Player/New action
   m_NeverAutoSwitchControlSchemes: 1
@@ -291,7 +303,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   items: []
-  playerEquipItems: []
+  playerEquipItems:
+  - {fileID: 828340264904615074}
+  - {fileID: 5759645657076119752}
   itemGetUI: {fileID: 0}
   itemGetUIImage: {fileID: 0}
   itemGetUIText: {fileID: 0}
@@ -308,8 +322,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4584464958352815006, guid: 247205b31dcfbf54696845fc91fad5db, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4584464958352815006, guid: 247205b31dcfbf54696845fc91fad5db, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4584464958352815006, guid: 247205b31dcfbf54696845fc91fad5db, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.041
+      value: 0.77
       objectReference: {fileID: 0}
     - target: {fileID: 4584464958352815006, guid: 247205b31dcfbf54696845fc91fad5db, type: 3}
       propertyPath: m_LocalPosition.y
@@ -358,6 +380,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4584464958352815006, guid: 247205b31dcfbf54696845fc91fad5db, type: 3}
   m_PrefabInstance: {fileID: 3810486747349030719}
   m_PrefabAsset: {fileID: 0}
+--- !u!212 &828340264904615074 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 4584464958352815005, guid: 247205b31dcfbf54696845fc91fad5db, type: 3}
+  m_PrefabInstance: {fileID: 3810486747349030719}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8102280992325946197
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -370,12 +397,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4584464958352815006, guid: 247205b31dcfbf54696845fc91fad5db, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4584464958352815006, guid: 247205b31dcfbf54696845fc91fad5db, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4584464958352815006, guid: 247205b31dcfbf54696845fc91fad5db, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.041
+      value: 0.77
       objectReference: {fileID: 0}
     - target: {fileID: 4584464958352815006, guid: 247205b31dcfbf54696845fc91fad5db, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.07
+      value: 0.85
       objectReference: {fileID: 0}
     - target: {fileID: 4584464958352815006, guid: 247205b31dcfbf54696845fc91fad5db, type: 3}
       propertyPath: m_LocalPosition.z
@@ -413,8 +448,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerItem (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4584464958352815007, guid: 247205b31dcfbf54696845fc91fad5db, type: 3}
+      propertyPath: m_TagString
+      value: Item
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 247205b31dcfbf54696845fc91fad5db, type: 3}
+--- !u!212 &5759645657076119752 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 4584464958352815005, guid: 247205b31dcfbf54696845fc91fad5db, type: 3}
+  m_PrefabInstance: {fileID: 8102280992325946197}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5759645657076119755 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4584464958352815006, guid: 247205b31dcfbf54696845fc91fad5db, type: 3}

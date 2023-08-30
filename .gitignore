@@ -70,3 +70,10 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Wwise
+Jungle_2_WwiseProj/.cache/
+Jungle_2_Sound_WwiseProj/*.prof
+Jungle_2_Sound_WwiseProj/*_WwiseProject.*.validationcache
+Jungle_2_Sound_WwiseProj/*_WwiseProject.*.wsettings
+Jungle_2_Sound_WwiseProj/**/*.akd

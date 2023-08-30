@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1fa6d994f78e938419f4cdb20495d3f4
+guid: 81f85afe39c65fb4b9894b162f5e7c43
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -129,7 +129,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cat05_dash_strip9_0
+      name: cat05_crouch_strip8_0
       rect:
         serializedVersion: 2
         x: 0
@@ -143,14 +143,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fc7dc44ad9985f4193533c00c164bd4
-      internalID: -696379765
+      spriteID: 26d3d3a134e5e044193669378f180a63
+      internalID: 807509788
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat05_dash_strip9_1
+      name: cat05_crouch_strip8_1
       rect:
         serializedVersion: 2
         x: 40
@@ -164,14 +164,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69ef0b5b2c050534a8f8cbc1a7416554
-      internalID: 168758676
+      spriteID: cebef9b2659675e4eada7dc4a27e87c3
+      internalID: 405750966
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat05_dash_strip9_2
+      name: cat05_crouch_strip8_2
       rect:
         serializedVersion: 2
         x: 80
@@ -185,14 +185,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39636de3d05417e458cdda2881e11894
-      internalID: 1006058067
+      spriteID: 0e483d96d0feb70428e72d9165d53213
+      internalID: -1666564135
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat05_dash_strip9_3
+      name: cat05_crouch_strip8_3
       rect:
         serializedVersion: 2
         x: 120
@@ -206,14 +206,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1ad5cb95f5217946818c1d90c548bf1
-      internalID: 1142463890
+      spriteID: 90051342b53c285429dd52f5ebb682b1
+      internalID: 652080330
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat05_dash_strip9_4
+      name: cat05_crouch_strip8_4
       rect:
         serializedVersion: 2
         x: 160
@@ -227,14 +227,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b72e32d67f3facf478a26e13a28b9043
-      internalID: -1145703223
+      spriteID: afa483b1d8d909c4b8f85082294cfaef
+      internalID: 438169674
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat05_dash_strip9_5
+      name: cat05_crouch_strip8_5
       rect:
         serializedVersion: 2
         x: 200
@@ -248,14 +248,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 281b58b32e5dbe9448c6b6779eb612a8
-      internalID: -1836924667
+      spriteID: 24888aaf726e51045b9c3b88954c2d96
+      internalID: 1706943269
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat05_dash_strip9_6
+      name: cat05_crouch_strip8_6
       rect:
         serializedVersion: 2
         x: 240
@@ -269,14 +269,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48525131daa3bb448a75b10cc42061c3
-      internalID: 921597253
+      spriteID: 808a581d6446ea34bb4d5bef04a91293
+      internalID: -444748599
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat05_dash_strip9_7
+      name: cat05_crouch_strip8_7
       rect:
         serializedVersion: 2
         x: 280
@@ -290,29 +290,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6fd33f2dfe80d641b6638c73d761a32
-      internalID: -207059947
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cat05_dash_strip9_8
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 0
-        width: 40
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7412a86f32f150443ba2cd26a9b660ee
-      internalID: -333894027
+      spriteID: cac30a9d661093c4d8f19ee6a422cbb0
+      internalID: 92361433
       vertices: []
       indices: 
       edges: []
@@ -328,15 +307,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      cat05_dash_strip9_1: 168758676
-      cat05_dash_strip9_3: 1142463890
-      cat05_dash_strip9_4: -1145703223
-      cat05_dash_strip9_2: 1006058067
-      cat05_dash_strip9_7: -207059947
-      cat05_dash_strip9_6: 921597253
-      cat05_dash_strip9_0: -696379765
-      cat05_dash_strip9_8: -333894027
-      cat05_dash_strip9_5: -1836924667
+      cat05_crouch_strip8_0: 807509788
+      cat05_crouch_strip8_1: 405750966
+      cat05_crouch_strip8_2: -1666564135
+      cat05_crouch_strip8_3: 652080330
+      cat05_crouch_strip8_4: 438169674
+      cat05_crouch_strip8_5: 1706943269
+      cat05_crouch_strip8_6: -444748599
+      cat05_crouch_strip8_7: 92361433
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 71afe5227ad17e047961414bb05b5ef6
+guid: 964569e4d80c80e4d92786b2e2ada572
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -129,7 +129,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cat05_ledgegrab_strip5_0
+      name: cat05_wallclimb_strip8_0
       rect:
         serializedVersion: 2
         x: 0
@@ -143,14 +143,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ceec2435b8c4ff4abc3f71f3f60bf66
-      internalID: 1402269513
+      spriteID: e24f3e2a50982334888458b9df5647c2
+      internalID: 596790862
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat05_ledgegrab_strip5_1
+      name: cat05_wallclimb_strip8_1
       rect:
         serializedVersion: 2
         x: 40
@@ -164,14 +164,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b73b5059a8037db4b8bbccc8ecf4cb72
-      internalID: -851671108
+      spriteID: 73f7a68c84916b244847cdaa389b0e99
+      internalID: 519585476
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat05_ledgegrab_strip5_2
+      name: cat05_wallclimb_strip8_2
       rect:
         serializedVersion: 2
         x: 80
@@ -185,14 +185,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7811823e82e65064f8ade639be0dd336
-      internalID: -36731373
+      spriteID: c1ffb1cd9e0e79f4ebb9c7e8f89703a7
+      internalID: 1615697916
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat05_ledgegrab_strip5_3
+      name: cat05_wallclimb_strip8_3
       rect:
         serializedVersion: 2
         x: 120
@@ -206,14 +206,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44c69c65465d44949b24ae0557400909
-      internalID: -1173233504
+      spriteID: 4d1b0ce12a4ceb04eb943fd0c5f8087b
+      internalID: -223324660
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat05_ledgegrab_strip5_4
+      name: cat05_wallclimb_strip8_4
       rect:
         serializedVersion: 2
         x: 160
@@ -227,8 +227,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8cefbb5dc1cbe104eb535bf18afd550e
-      internalID: -1451886854
+      spriteID: e2bb4f9c78f9e21408b7b1ccd5bd20dd
+      internalID: -1091819996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat05_wallclimb_strip8_5
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a66efbb0b315b7540a14def9bb70a346
+      internalID: -1348360102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat05_wallclimb_strip8_6
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a860b854e8a2aa44b68c44e26e137c2
+      internalID: 1844544181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat05_wallclimb_strip8_7
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f91ebcc4106a88341aad03cfbe609b47
+      internalID: -1079666396
       vertices: []
       indices: 
       edges: []
@@ -244,11 +307,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      cat05_ledgegrab_strip5_1: -851671108
-      cat05_ledgegrab_strip5_2: -36731373
-      cat05_ledgegrab_strip5_0: 1402269513
-      cat05_ledgegrab_strip5_4: -1451886854
-      cat05_ledgegrab_strip5_3: -1173233504
+      cat05_wallclimb_strip8_0: 596790862
+      cat05_wallclimb_strip8_1: 519585476
+      cat05_wallclimb_strip8_2: 1615697916
+      cat05_wallclimb_strip8_3: -223324660
+      cat05_wallclimb_strip8_4: -1091819996
+      cat05_wallclimb_strip8_5: -1348360102
+      cat05_wallclimb_strip8_6: 1844544181
+      cat05_wallclimb_strip8_7: -1079666396
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

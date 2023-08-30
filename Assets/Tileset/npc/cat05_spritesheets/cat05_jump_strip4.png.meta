@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8232a1502fac20241a2a552c3b6b8195
+guid: 6df85f26fd67eac44954fe22e1b10e4a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -129,7 +129,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cat05_hurt_strip4_0
+      name: cat05_jump_strip4_0
       rect:
         serializedVersion: 2
         x: 0
@@ -143,14 +143,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e43a493b1663fa4f8612568172965ed
-      internalID: -1536280279
+      spriteID: 8c65f34a2bc67d6468ec5fab20f0c805
+      internalID: -2132400826
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat05_hurt_strip4_1
+      name: cat05_jump_strip4_1
       rect:
         serializedVersion: 2
         x: 40
@@ -164,14 +164,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d85103d181771d4385d7cbf2ab1798c
-      internalID: -1020988287
+      spriteID: 5f19fd96f7b89a5439f9eb62b1ec02ae
+      internalID: 1920783866
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat05_hurt_strip4_2
+      name: cat05_jump_strip4_2
       rect:
         serializedVersion: 2
         x: 80
@@ -185,14 +185,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 412c3c47e601c0f4094e144fd5901b6d
-      internalID: -956925673
+      spriteID: 1f658703dcc49454697d68887950ae09
+      internalID: 395599993
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat05_hurt_strip4_3
+      name: cat05_jump_strip4_3
       rect:
         serializedVersion: 2
         x: 120
@@ -206,8 +206,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ecc0acc81f38bef40900f41bce7a46c8
-      internalID: 825673763
+      spriteID: 1c2c032e42a9a3b49995fbcd759593eb
+      internalID: 1848813707
       vertices: []
       indices: 
       edges: []
@@ -223,10 +223,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      cat05_hurt_strip4_3: 825673763
-      cat05_hurt_strip4_0: -1536280279
-      cat05_hurt_strip4_2: -956925673
-      cat05_hurt_strip4_1: -1020988287
+      cat05_jump_strip4_0: -2132400826
+      cat05_jump_strip4_1: 1920783866
+      cat05_jump_strip4_2: 395599993
+      cat05_jump_strip4_3: 1848813707
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

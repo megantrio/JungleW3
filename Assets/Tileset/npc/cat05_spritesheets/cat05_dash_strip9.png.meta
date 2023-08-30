@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 161228b2b09290d46b26e7d1bab19bc5
+guid: 1fa6d994f78e938419f4cdb20495d3f4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -129,7 +129,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cat05_idle_blink_strip8_0
+      name: cat05_dash_strip9_0
       rect:
         serializedVersion: 2
         x: 0
@@ -143,14 +143,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44db05a5b381df34c965d455da29c98f
-      internalID: -517599042
+      spriteID: 4fc7dc44ad9985f4193533c00c164bd4
+      internalID: -696379765
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat05_idle_blink_strip8_1
+      name: cat05_dash_strip9_1
       rect:
         serializedVersion: 2
         x: 40
@@ -164,14 +164,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1eca2942b5b06b942988fec579c5285f
-      internalID: -156855509
+      spriteID: 69ef0b5b2c050534a8f8cbc1a7416554
+      internalID: 168758676
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat05_idle_blink_strip8_2
+      name: cat05_dash_strip9_2
       rect:
         serializedVersion: 2
         x: 80
@@ -185,14 +185,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7360328cd59f254abc2758faab444f5
-      internalID: -268628202
+      spriteID: 39636de3d05417e458cdda2881e11894
+      internalID: 1006058067
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat05_idle_blink_strip8_3
+      name: cat05_dash_strip9_3
       rect:
         serializedVersion: 2
         x: 120
@@ -206,14 +206,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c719f188a57b9e47ac85a36103db5d9
-      internalID: -723785643
+      spriteID: d1ad5cb95f5217946818c1d90c548bf1
+      internalID: 1142463890
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat05_idle_blink_strip8_4
+      name: cat05_dash_strip9_4
       rect:
         serializedVersion: 2
         x: 160
@@ -227,14 +227,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b6f4b07f4a73bc4193cd123d0ce421c
-      internalID: 1554950790
+      spriteID: b72e32d67f3facf478a26e13a28b9043
+      internalID: -1145703223
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat05_idle_blink_strip8_5
+      name: cat05_dash_strip9_5
       rect:
         serializedVersion: 2
         x: 200
@@ -248,14 +248,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c85cca5ac2f81948970cf6595e887bf
-      internalID: 719194403
+      spriteID: 281b58b32e5dbe9448c6b6779eb612a8
+      internalID: -1836924667
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat05_idle_blink_strip8_6
+      name: cat05_dash_strip9_6
       rect:
         serializedVersion: 2
         x: 240
@@ -269,14 +269,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5cef7f5b39b431478ed4689c395521c
-      internalID: 411729035
+      spriteID: 48525131daa3bb448a75b10cc42061c3
+      internalID: 921597253
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat05_idle_blink_strip8_7
+      name: cat05_dash_strip9_7
       rect:
         serializedVersion: 2
         x: 280
@@ -290,8 +290,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c65b83e1f79c6c4799030b4eb056957
-      internalID: 733309125
+      spriteID: e6fd33f2dfe80d641b6638c73d761a32
+      internalID: -207059947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat05_dash_strip9_8
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7412a86f32f150443ba2cd26a9b660ee
+      internalID: -333894027
       vertices: []
       indices: 
       edges: []
@@ -307,14 +328,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      cat05_idle_blink_strip8_5: 719194403
-      cat05_idle_blink_strip8_6: 411729035
-      cat05_idle_blink_strip8_7: 733309125
-      cat05_idle_blink_strip8_0: -517599042
-      cat05_idle_blink_strip8_1: -156855509
-      cat05_idle_blink_strip8_3: -723785643
-      cat05_idle_blink_strip8_2: -268628202
-      cat05_idle_blink_strip8_4: 1554950790
+      cat05_dash_strip9_0: -696379765
+      cat05_dash_strip9_1: 168758676
+      cat05_dash_strip9_2: 1006058067
+      cat05_dash_strip9_3: 1142463890
+      cat05_dash_strip9_4: -1145703223
+      cat05_dash_strip9_5: -1836924667
+      cat05_dash_strip9_6: 921597253
+      cat05_dash_strip9_7: -207059947
+      cat05_dash_strip9_8: -333894027
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c6ba64969f3d0f34eb8293d298a5f04c
+guid: f07cbed9f4a1a1a489c3e0e6956c3807
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -129,7 +129,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cat05_idle_strip8_0
+      name: cat05_fall_strip3_0
       rect:
         serializedVersion: 2
         x: 0
@@ -143,14 +143,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65b20b86b28aa0d4e9d3920f67deb08e
-      internalID: -447564843
+      spriteID: ee9164a592f2c824e848d5e48c389403
+      internalID: -1037690031
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat05_idle_strip8_1
+      name: cat05_fall_strip3_1
       rect:
         serializedVersion: 2
         x: 40
@@ -164,14 +164,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6132c6216cf552047b7f228bdb29f31e
-      internalID: -830461122
+      spriteID: 7d89018bf175b8249a0f0028387a61ce
+      internalID: 1607067626
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat05_idle_strip8_2
+      name: cat05_fall_strip3_2
       rect:
         serializedVersion: 2
         x: 80
@@ -185,113 +185,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1f613a1e7319b445bc3ff2df3273f9a
-      internalID: -1245206164
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cat05_idle_strip8_3
-      rect:
-        serializedVersion: 2
-        x: 120
-        y: 0
-        width: 40
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: edf4a8390ddbb014e9f3733dbf58e53c
-      internalID: -994111237
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cat05_idle_strip8_4
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 40
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4e7eae55f46fcdd469423095dce2ce32
-      internalID: -1401043912
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cat05_idle_strip8_5
-      rect:
-        serializedVersion: 2
-        x: 200
-        y: 0
-        width: 40
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9a192dc6ad24d504d99fa74e37fecd24
-      internalID: 1468157813
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cat05_idle_strip8_6
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 0
-        width: 40
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d3c5fe10bab39244394aefb93f7a1345
-      internalID: 1492359990
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cat05_idle_strip8_7
-      rect:
-        serializedVersion: 2
-        x: 280
-        y: 0
-        width: 40
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 057044a1b260a1e41ada94085e697c82
-      internalID: 364363683
+      spriteID: 02b4eba3afbe6f2468ac9116c72e6fa1
+      internalID: 99020152
       vertices: []
       indices: 
       edges: []
@@ -307,14 +202,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      cat05_idle_strip8_0: -447564843
-      cat05_idle_strip8_7: 364363683
-      cat05_idle_strip8_3: -994111237
-      cat05_idle_strip8_6: 1492359990
-      cat05_idle_strip8_5: 1468157813
-      cat05_idle_strip8_1: -830461122
-      cat05_idle_strip8_2: -1245206164
-      cat05_idle_strip8_4: -1401043912
+      cat05_fall_strip3_0: -1037690031
+      cat05_fall_strip3_1: 1607067626
+      cat05_fall_strip3_2: 99020152
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

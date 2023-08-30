@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 436dfd904aab5834faa72d2a4781dacf
+guid: 44c73d9fe91ca5641acf4d137fe6cee3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -129,7 +129,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cat05_die_strip8_0
+      name: cat05_run_strip4_0
       rect:
         serializedVersion: 2
         x: 0
@@ -143,14 +143,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aba7097a504148a4491a1c70160b2f61
-      internalID: 634313586
+      spriteID: 4edd8157c28e3cc4494347e8012d0c0d
+      internalID: 543170892
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat05_die_strip8_1
+      name: cat05_run_strip4_1
       rect:
         serializedVersion: 2
         x: 40
@@ -164,14 +164,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2cc5a777f6421b04e817fd3081d22df4
-      internalID: 595419051
+      spriteID: 96facb8ff6bf37d439bad813f8a18aa4
+      internalID: -1216561310
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat05_die_strip8_2
+      name: cat05_run_strip4_2
       rect:
         serializedVersion: 2
         x: 80
@@ -185,14 +185,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d4dc511bf357ed47adbb8ec76a4bcf0
-      internalID: 1460795434
+      spriteID: 2d8435d46613c83409b15b0d527b4d0d
+      internalID: -1627970439
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat05_die_strip8_3
+      name: cat05_run_strip4_3
       rect:
         serializedVersion: 2
         x: 120
@@ -206,92 +206,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a883cf9ac9556d4c94a1af3595cc739
-      internalID: 530530070
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cat05_die_strip8_4
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 40
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b04efaba8a4d8fe458caa5504944087e
-      internalID: 521338610
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cat05_die_strip8_5
-      rect:
-        serializedVersion: 2
-        x: 200
-        y: 0
-        width: 40
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bef713d1b23e7b045b738b73bc80a099
-      internalID: 1869286790
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cat05_die_strip8_6
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 0
-        width: 40
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 255ab97d47efbe944b3660be43279982
-      internalID: -1558747394
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cat05_die_strip8_7
-      rect:
-        serializedVersion: 2
-        x: 280
-        y: 0
-        width: 40
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cd49c5f18874ac94c8ac387b8be447b2
-      internalID: -658666944
+      spriteID: eaa6cf89e1781374f907f22f2efbc11a
+      internalID: -1457197527
       vertices: []
       indices: 
       edges: []
@@ -307,14 +223,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      cat05_die_strip8_3: 530530070
-      cat05_die_strip8_6: -1558747394
-      cat05_die_strip8_2: 1460795434
-      cat05_die_strip8_4: 521338610
-      cat05_die_strip8_0: 634313586
-      cat05_die_strip8_1: 595419051
-      cat05_die_strip8_5: 1869286790
-      cat05_die_strip8_7: -658666944
+      cat05_run_strip4_0: 543170892
+      cat05_run_strip4_1: -1216561310
+      cat05_run_strip4_2: -1627970439
+      cat05_run_strip4_3: -1457197527
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

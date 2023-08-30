@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6df85f26fd67eac44954fe22e1b10e4a
+guid: 7a91b591fb7525f4a97cf7e89ef7478e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -129,7 +129,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cat05_jump_strip4_0
+      name: cat05_sit_strip8_0
       rect:
         serializedVersion: 2
         x: 0
@@ -143,14 +143,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c65f34a2bc67d6468ec5fab20f0c805
-      internalID: -2132400826
+      spriteID: 724fe1f22371a1d498a55e0f7d614479
+      internalID: 2087339867
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat05_jump_strip4_1
+      name: cat05_sit_strip8_1
       rect:
         serializedVersion: 2
         x: 40
@@ -164,14 +164,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f19fd96f7b89a5439f9eb62b1ec02ae
-      internalID: 1920783866
+      spriteID: 050c6ae0c9c5bef48932cc17071469a7
+      internalID: -199630908
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat05_jump_strip4_2
+      name: cat05_sit_strip8_2
       rect:
         serializedVersion: 2
         x: 80
@@ -185,14 +185,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f658703dcc49454697d68887950ae09
-      internalID: 395599993
+      spriteID: 47e307e2dca61a649ac8364d85491c67
+      internalID: 763984724
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cat05_jump_strip4_3
+      name: cat05_sit_strip8_3
       rect:
         serializedVersion: 2
         x: 120
@@ -206,8 +206,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c2c032e42a9a3b49995fbcd759593eb
-      internalID: 1848813707
+      spriteID: 8d9a480eef88a8844acdf8b27638a4f2
+      internalID: -907592315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat05_sit_strip8_4
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f6e29ff8767e3442843248f443219f9
+      internalID: -2008423965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat05_sit_strip8_5
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afcbae70db790ae4fa3bf0451df28a6e
+      internalID: -1061251539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat05_sit_strip8_6
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c077b87049ee88408cbeb1617985f3b
+      internalID: 1281710629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat05_sit_strip8_7
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad02c64cfe3f73445bbcba57423c7582
+      internalID: 976711896
       vertices: []
       indices: 
       edges: []
@@ -223,10 +307,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      cat05_jump_strip4_1: 1920783866
-      cat05_jump_strip4_2: 395599993
-      cat05_jump_strip4_0: -2132400826
-      cat05_jump_strip4_3: 1848813707
+      cat05_sit_strip8_0: 2087339867
+      cat05_sit_strip8_1: -199630908
+      cat05_sit_strip8_2: 763984724
+      cat05_sit_strip8_3: -907592315
+      cat05_sit_strip8_4: -2008423965
+      cat05_sit_strip8_5: -1061251539
+      cat05_sit_strip8_6: 1281710629
+      cat05_sit_strip8_7: 976711896
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

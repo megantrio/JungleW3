@@ -79,6 +79,17 @@
                     "isPartOfComposite": false
                 },
                 {
+                    "name": "",
+                    "id": "51225c78-e3d6-4a68-b314-892f9fb3d4a0",
+                    "path": "<XInputController>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DialogSkip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
                     "name": "2D Vector",
                     "id": "cd1d40e6-cbe6-42b9-8c39-19b185014fe2",
                     "path": "2DVector",
@@ -190,8 +201,30 @@
                 },
                 {
                     "name": "",
+                    "id": "6eff7074-72da-47d7-a441-219abc18a0b8",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "f71854f2-a9c9-40be-bcbc-8768e084e8ba",
                     "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PlayerTrigger",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fa95dacd-377b-4150-9fac-3c9cad4696f3",
+                    "path": "<XInputController>/buttonSouth",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -202,5 +235,11 @@
             ]
         }
     ],
-    "controlSchemes": []
+    "controlSchemes": [
+        {
+            "name": "GameInput",
+            "bindingGroup": "GameInput",
+            "devices": []
+        }
+    ]
 }

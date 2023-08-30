@@ -43,15 +43,7 @@ public class InventorySlot : MonoBehaviour
         //믹서가 켜져있을 때 아이템 클릭 시 믹서 실행
         if (itemMixer.gameObject.activeSelf)
         {
-            //믹서가 켜져있다면, 해당 위치에 AddItem
-            if (item!= null)
-            {                
-                int index = itemMixer.AddItem(item);
-                if(index!= -1)
-                {
-                    inventory.RemoveItem(item);
-                }
-            }
+            
         }
     }
     #endregion

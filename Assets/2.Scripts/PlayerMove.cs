@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerMove : MonoBehaviour
 {
     #region PublicVariables
+    public float speed = 3.0f;
     #endregion
 
     #region PrivateVariables
@@ -18,7 +19,7 @@ public class PlayerMove : MonoBehaviour
         {
             return;
         }
-        Vector2 move = (callback.ReadValue<Vector2>());
+        Vector2 move = (callback.ReadValue<Vector2>()).normalized * speed;
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
         rb.velocity = move;
         if (callback.canceled)

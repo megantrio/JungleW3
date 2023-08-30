@@ -21,5 +21,10 @@ public class FieldItem : MonoBehaviour, IObjectItem
     #endregion
 
     #region PrivateMethod
+    void OnValidate()
+    {
+        GetComponent<SpriteRenderer>().sprite = _item.itemImage;
+         
+    }
     #endregion
 }

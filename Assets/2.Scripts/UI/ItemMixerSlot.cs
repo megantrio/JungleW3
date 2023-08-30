@@ -44,14 +44,7 @@ public class ItemMixerSlot : MonoBehaviour
     {
         //믹서 슬롯을 클릭 시, 현재 슬롯 아이템 삭제요청
         //인벤토리의 아이템을 +1
-        if (item!=null)
-        {
-            bool success = itemMixer.inventory.AddItem(item);
-            if(success)
-            {
-                itemMixer.RemoveItem(index);
-            }
-        }
+        
     }
     #endregion
 }

@@ -11,6 +11,11 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene(SceneIndex);
     }
 
+    public void ReStartButton()
+    {
+        SceneManager.LoadScene(0);
+    }
+
     public void ExitGame()
     {
 #if UNITY_EDITOR

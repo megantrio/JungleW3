@@ -14,7 +14,7 @@ public class TypingManager : MonoBehaviour
     float characterTime;
     string[] dialogsSave;
 
-    [Header("Äµ¹ö½º UI")]
+    [Header("Dialogue UI")]
     public GameObject dialogUI;
     public TextMeshProUGUI speakerNameUI;
     public TextMeshProUGUI dialogTextUI;
@@ -30,7 +30,6 @@ public class TypingManager : MonoBehaviour
 
     private void Awake()
     {
-        Debug.Log("ÇÏÇÏ");
         if (instance == null)
         {
             instance = this;

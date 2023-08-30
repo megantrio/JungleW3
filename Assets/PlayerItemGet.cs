@@ -1,14 +1,22 @@
 using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerItemGet : MonoBehaviour
 {
     #region PublicVariables
     public List<Item> items = new List<Item>();
     public SpriteRenderer[] playerEquipItems;
-    #endregion
+
+    public GameObject itemGetUI;
+    public Image itemGetUIImage;
+    public TMP_Text itemGetUIText;
+        
+        
+        #endregion
 
     #region PrivateVariables
     #endregion
@@ -45,6 +53,19 @@ public class PlayerItemGet : MonoBehaviour
                 }
 
                 //æ∆¿Ã≈€ »πµÊ ∑Œ¡˜ ¿€º∫
+                //1. UI ∂ÁøÏ±‚
+                itemGetUIText.text = _i.itemName;
+                itemGetUIImage.sprite = _i.itemImage;
+                itemGetUI.SetActive(true);
+                //2. prefs ¿˙¿Â
+                if (PlayerPrefs.HasKey(_i.itemName))
+                {
+                    PlayerPrefs.SetInt(_i.itemName, PlayerPrefs.GetInt(_i.itemName)+1);
+                }
+                else
+                {
+                    PlayerPrefs.SetInt(_i.itemName, 1);
+                }
             }
             else
             {

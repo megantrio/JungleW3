@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerInteract : MonoBehaviour
 {
     #region PublicVariables
-    public InteractEvent triggered;
+    public UIFocusMaker triggered;
    
     #endregion
 
@@ -27,7 +27,7 @@ public class PlayerInteract : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Interactor"))
         {
-            triggered = collision.gameObject.GetComponent<InteractEvent>();
+            triggered = collision.gameObject.GetComponent<UIFocusMaker>();
         }   
     }
 

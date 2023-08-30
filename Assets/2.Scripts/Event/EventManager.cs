@@ -37,6 +37,7 @@ public class EventManager : MonoBehaviour
     {
         if (transform.parent!=null&&eventStack.Peek() != gameObject)
         {
+            Debug.Log("asdf");
             //부모가 나를 실행한 것이 아니라면 없애버린다.
             gameObject.SetActive(false);
             yield break;

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class PlayerItemGet : MonoBehaviour
@@ -27,17 +28,6 @@ public class PlayerItemGet : MonoBehaviour
     #region PrivateMethod
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Item"))
-        {
-            Item _i = collision.gameObject.GetComponent<FieldItem>().GetItem();
-            if (items.Count < playerEquipItems.Length)
-            {
-                playerEquipItems[items.Count].gameObject.SetActive(true);
-                playerEquipItems[items.Count].sprite = _i.itemImage;
-                items.Add(_i);
-                Destroy(collision.gameObject);
-            }
-        }
 
         if (collision.CompareTag("Mixer"))
         {
@@ -73,5 +63,56 @@ public class PlayerItemGet : MonoBehaviour
             }
         }
     }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Item"))
+        {
+            lastCollidedItem = collision.gameObject;
+        }
+        if (collision.CompareTag("Interactor"))
+        {
+            lastCollidedObject = collision.gameObject;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Item"))
+        {
+            lastCollidedItem = null;
+        }
+        if (collision.CompareTag("Interactor"))
+        {
+            lastCollidedObject = null;
+        }
+    }
+
+    private GameObject lastCollidedItem;
+    private GameObject lastCollidedObject;
+
+    public GameObject newsUI;
+    public void GetItem(InputAction.CallbackContext callback)
+    {
+        if (callback.started)
+        {
+            if (lastCollidedItem != null)
+            {
+                Item _i = lastCollidedItem.GetComponent<FieldItem>().GetItem();
+                if (items.Count < playerEquipItems.Length)
+                {
+                    playerEquipItems[items.Count].gameObject.SetActive(true);
+                    playerEquipItems[items.Count].sprite = _i.itemImage;
+                    items.Add(_i);
+                }
+            }
+            if (lastCollidedObject != null)
+            {
+                //뉴스 표출
+                newsUI.SetActive(true);
+            }
+        }
+    }
+
+    
     #endregion
 }

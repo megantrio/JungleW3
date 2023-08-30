@@ -19,11 +19,11 @@ public class EventList : GameEvent
     {
         if (list.Length > 1)
         {
-            nextEvent = list[1];
+            //nextEvent = list[1];
         }
         for (int i=0;i<list.Length-1; i++)
         {
-            list[i].nextEvent = list[i + 1];
+            //list[i].nextEvent = list[i + 1];
         }
     }
     private void Start()
@@ -34,9 +34,14 @@ public class EventList : GameEvent
     {
         if (list.Length > 1)
         {
-            nextEvent = list[1];
+            //nextEvent = list[1];
         }
         list = GetComponentsInChildren<GameEvent>(); 
+    }
+
+    public override void StartEvent()
+    {
+        throw new System.NotImplementedException();
     }
     #endregion
 }

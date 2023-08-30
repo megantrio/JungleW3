@@ -15,15 +15,18 @@ public class PlayerItemGet : MonoBehaviour
     public GameObject itemGetUI;
     public Image itemGetUIImage;
     public TMP_Text itemGetUIText;
-        
-        
-        #endregion
+
+
+    #endregion
 
     #region PrivateVariables
     #endregion
 
     #region PublicMethod
     #endregion
+
+    public GameObject successEffect;
+    public GameObject failEffect;
 
     #region PrivateMethod
     private void OnTriggerEnter2D(Collider2D collision)

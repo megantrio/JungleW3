@@ -26,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6279387629198141971}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.8812037, y: -3.5387328, z: -0.024603322}
   m_LocalScale: {x: 2.2759314, y: 2.2759314, z: 2.2759314}
   m_ConstrainProportionsScale: 0
@@ -128,3 +128,5 @@ MonoBehaviour:
   mixerTextUI: {fileID: 0}
   mixedItemAssetList: {fileID: 11400000, guid: 77b110046fc6b6e4e973a9c862c5eddb, type: 2}
   kkwangItemAsset: {fileID: 11400000, guid: 6a5ed734f2a649f4098a5a30775e5286, type: 2}
+  success: {fileID: 8743715845547693518, guid: 28e6d950bbc349542a256634a1d90535, type: 3}
+  failure: {fileID: 2001425140213726180, guid: 0ab6874b88b543d45bb667f5b916bad1, type: 3}

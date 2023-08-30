@@ -14,7 +14,7 @@ public class TypingManager : MonoBehaviour
     float characterTime;
     string[] dialogsSave;
 
-    [Header("Äµ¹ö½º »óÀÇ UI")]
+    [Header("Äµ¹ö½º UI")]
     public GameObject dialogUI;
     public TextMeshProUGUI speakerNameUI;
     public TextMeshProUGUI dialogTextUI;

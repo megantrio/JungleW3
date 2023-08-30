@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 737fbbfe685092041a33ecd28766d8cb, type: 3}
+  m_Name: MixedItem_07
+  m_EditorClassIdentifier: 
+  isMixItem: 1
+  applyDay: 0
+  itemName: "\uC694\uC220 \uBC14\uB78C\uC744 \uC77C\uC73C\uD0A4\uB294 \uBD80\uCC44"
+  itemImage: {fileID: 1869609765, guid: f15757985b4a81b46805aadcc74aa2cc, type: 3}

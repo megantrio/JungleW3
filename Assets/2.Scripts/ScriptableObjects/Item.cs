@@ -7,6 +7,8 @@ public class Item : ScriptableObject
 {
     #region PublicVariables
     [Header("Item spec")]
+    public bool isMixItem;
+    public int applyDay;
     public string itemName;
     public Sprite itemImage;
     #endregion

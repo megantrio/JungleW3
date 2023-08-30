@@ -57,7 +57,7 @@ public class ItemMixer : MonoBehaviour
         {
             if (mixedItemAssetList.items[i].itemName.Equals(result))
             {
-                
+                Debug.Log(result);
                 return mixedItemAssetList.items[i];
             }
         }

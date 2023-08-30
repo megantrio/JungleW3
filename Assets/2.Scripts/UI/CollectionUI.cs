@@ -18,7 +18,7 @@ public class CollectionUI : MonoBehaviour
 
     #region PrivateMethod
 
-    private void Awake()
+    private void Start()
     {
         PlayerPrefs.DeleteAll();
     }

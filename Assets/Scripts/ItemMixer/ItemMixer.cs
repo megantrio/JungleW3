@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ItemMixer : MonoBehaviour
@@ -16,6 +17,8 @@ public class ItemMixer : MonoBehaviour
     public Item resultOfMix;
 
     private InventorySlot[] inventorySlots;
+
+    private List<Dictionary<string, object>> data;
     #endregion
 
     #region PublicMethod
@@ -78,6 +81,7 @@ public class ItemMixer : MonoBehaviour
         }
         if(i== slots.Length)
         {
+            Debug.Log("획득 + " + MixItem(slots[0].item.itemName, slots[1].item.itemName));
             //모든 슬롯에 아이템이 있으므로, 믹스 시작
             Debug.Log("믹스 시작");
             //현재 등록된 모든 아이템을 삭제함
@@ -85,13 +89,38 @@ public class ItemMixer : MonoBehaviour
             {
                 RemoveItem(j);
             }
-            inventory.AddItem(resultOfMix);
+            //아이템 획득 구현
         }
         else
         {
             //모든 슬롯에 아이템이 있진 않음, 믹스 실패
             Debug.Log("믹스 실패... 모든 슬롯에 아이템이 있나 확인해주세요.");
         }
+    }
+
+    public void LoadMixDataFromCSV()
+    {
+        
+    }
+
+    public string MixItem(string a, string b)
+    {
+        string t1 = "table1";
+        string t2 = "table2";
+        string t3 = "table3";
+        if(data == null)
+        {
+            CSVReader.Read("Database/MixData");
+        }
+        foreach(var i in data)
+        {
+            if (i[t1].Equals(a) && i[t2].Equals(b)
+                || i[t1].Equals(b) && i[t2].Equals(a))
+            {
+                return i[t3].ToString();
+            }
+        }
+        return "";
     }
     #endregion
 
@@ -105,6 +134,11 @@ public class ItemMixer : MonoBehaviour
             slots[i].index = i;
             slots[i].itemMixer = this;
         }
+    }
+
+    private void Awake()
+    {
+        data = CSVReader.Read("Database/MixData");
     }
 
 

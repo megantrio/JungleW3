@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TreeEditor;
 using UnityEngine;
 
-public class TimeEvent : MonoBehaviour
+public class CameraMover : MonoBehaviour
 {
     #region PublicVariables
     #endregion

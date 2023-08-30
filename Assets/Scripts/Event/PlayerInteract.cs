@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TalkUIOpen : MonoBehaviour
+public class PlayerInteract : MonoBehaviour
 {
     #region PublicVariables
-    public GameObject triggered;
+    public InteractEvent triggered;
    
     #endregion
 
@@ -17,7 +17,7 @@ public class TalkUIOpen : MonoBehaviour
     {
         if (triggered != null)
         {
-            triggered.transform.GetChild(0).gameObject.SetActive(true);
+            triggered.connected.SetActive(true);
         }
     }
     #endregion
@@ -27,7 +27,7 @@ public class TalkUIOpen : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Interactor"))
         {
-            triggered = collision.gameObject;
+            triggered = collision.gameObject.GetComponent<InteractEvent>();
         }   
     }
 

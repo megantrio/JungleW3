@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 public class TypingManager : MonoBehaviour
 {
@@ -12,9 +13,15 @@ public class TypingManager : MonoBehaviour
     public float timeForCharacter_Fast;
     float characterTime;
     string[] dialogsSave;
-    TextMeshProUGUI tmpSave;
+
+    [Header("캔버스 상의 UI")]
+    public GameObject dialogUI;
+    public TextMeshProUGUI speakerNameUI;
+    public TextMeshProUGUI dialogTextUI;
 
     public static bool isDialogEnd;
+    private bool isDialogClicked = false;
+
 
     bool isTypingEnd = false;
     int dialogNumber = 0;
@@ -23,6 +30,7 @@ public class TypingManager : MonoBehaviour
 
     private void Awake()
     {
+        Debug.Log("하하");
         if (instance == null)
         {
             instance = this;
@@ -31,27 +39,26 @@ public class TypingManager : MonoBehaviour
         characterTime = timeForCharacter;
     }
 
-    public void Typing(string[] description, TextMeshProUGUI descriptionObj)
+    public Coroutine Typing(string speakerName, string description)
     {
         isDialogEnd = false;
-        dialogsSave = description;
-        tmpSave = descriptionObj;
-        if (dialogNumber < description.Length)
+        
+        //UI 꺼져있다면 킵니다.
+        if (!dialogUI.activeSelf)
         {
-
-            char[] chars = description[dialogNumber].ToCharArray(); //받아온 다이얼로그 변환
-            StartCoroutine(Typer(chars, descriptionObj));
-        }
-        else
-        {
-            tmpSave.text = "";
-            isDialogEnd = true;
-            dialogsSave = null;
-            dialogNumber = 0;
-            tmpSave = null;
+            dialogUI.SetActive(true);
         }
 
+        //정보 주입
+        speakerNameUI.text = speakerName;
+        dialogTextUI.text = "";
+        isDialogClicked = false;
+        characterTime = timeForCharacter;
+        char[] chars = description.ToCharArray(); //받아온 다이얼로그 변환
+        return StartCoroutine(Typer(chars, dialogTextUI));
     }
+
+    
     IEnumerator Typer(char[] chars, TextMeshProUGUI descriptionObj)
     {
         int curruntChar = 0;
@@ -72,14 +79,21 @@ public class TypingManager : MonoBehaviour
                 curruntChar++;
                 timer = characterTime; //타이머 초기화
             }
+            if (isDialogClicked)
+            {
+                characterTime = timeForCharacter_Fast;
+                isDialogClicked = false;
+            }
         }
-        if(curruntChar >= charLength)
+        if (curruntChar >= charLength)
         {
-            isTypingEnd = true; 
-            dialogNumber++;
+            isTypingEnd = true;
+
+            while (!isDialogClicked)
+            { yield return null; }
+            isDialogClicked = false;
             yield break;
         }
-
     }
 
     public void TextSkip()
@@ -88,8 +102,8 @@ public class TypingManager : MonoBehaviour
         {
             if (isTypingEnd)
             {
-                tmpSave.text = "";
-                Typing(dialogsSave, tmpSave);
+                dialogTextUI.text = "";
+                //Typing(dialogsSave);
 
             }
             else
@@ -105,6 +119,20 @@ public class TypingManager : MonoBehaviour
         {
             characterTime = timeForCharacter;
         }
+    }
+
+    public void OnDialogClick(InputAction.CallbackContext callback)
+    {
+        if (callback.started)
+        {
+            if (dialogUI.activeSelf)
+                isDialogClicked = true;
+        }
+    }
+
+    public void CloseTypeUI()
+    {
+        dialogUI.SetActive(false);
     }
 
 }

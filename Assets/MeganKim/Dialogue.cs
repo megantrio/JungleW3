@@ -7,22 +7,22 @@ using System.Linq;
 
 public class Dialogue : MonoBehaviour
 {
-    public TextMeshProUGUI speakerName;
-    public TextMeshProUGUI descriptionObj;
-    public string speker;
+    public string speaker;
     public string[] description;
 
-
-    public void SetSpekerName()
+    void OnEnable()
     {
-        speakerName.SetText(speker);
+        StartCoroutine(StartType());
     }
 
-    void Start()
+    IEnumerator StartType()
     {
-        TypingManager.instance.Typing(description, descriptionObj);
-        SetSpekerName();
+        for (int i = 0; i < description.Length; i++)
+        {
+            yield return TypingManager.instance.Typing(speaker, description[i]);
+        }
+        TypingManager.instance.CloseTypeUI();
+        gameObject.SetActive(false);
     }
-
 
 }

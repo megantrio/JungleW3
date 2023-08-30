@@ -31,6 +31,7 @@ public class Customer : MonoBehaviour
             CustomerSpawner();         
             curruntCustomer++;
             Debug.Log("CurruntCustomer is : " +  curruntCustomer);
+
             
         }
     }

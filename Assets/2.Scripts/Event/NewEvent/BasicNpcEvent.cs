@@ -13,7 +13,9 @@ public class BasicNpcEvent : GameEvent
     public class DiscriptionBranch
     {
         public string[] description;
+        public string[] speaker;
     }
+    public bool useSpeakers = false;
     public DiscriptionBranch[] scriptList;
     private Vector3 start = new Vector3(-1.4f, -4.5f);
     private Vector3 end = new Vector3(0.2f, -1.15f);
@@ -38,6 +40,8 @@ public class BasicNpcEvent : GameEvent
 
         for (int i = 0; i < scriptList[branch].description.Length; i++)
         {
+            if (useSpeakers) 
+                speakerName = scriptList[branch].speaker[i];
             yield return TypingManager.instance.Typing(speakerName, scriptList[branch].description[i]);
         }
         TypingManager.instance.CloseTypeUI();

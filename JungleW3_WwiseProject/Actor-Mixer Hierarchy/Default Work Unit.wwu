@@ -261,7 +261,7 @@
 						<AudioFileSource Name="ESM_Text_Box_Typing_short_App_Button_Sci_Fi_Glitch_Morph_Mechanism_Texture_Futuristic" ID="{F24152F8-0481-4734-8D87-FA3F244AA0E4}">
 							<PropertyList>
 								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-								<Property Name="TrimEnd" Type="Real64" Value="0.110693789985826"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.236694138843318"/>
 							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>ESM_Text_Box_Typing_short_App_Button_Sci_Fi_Glitch_Morph_Mechanism_Texture_Futuristic.wav</AudioFile>
@@ -272,6 +272,77 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="ESM_Text_Box_Typing_short_App_Button_Sci_Fi_Glitch_Morph_Mechanism_Texture_Futuristic" ID="{F24152F8-0481-4734-8D87-FA3F244AA0E4}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Result" ID="{67326849-31D2-4357-B058-87A6D43C2DA0}" ShortID="333715122">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{265BF38B-4E39-4F29-A4C1-F66F87B643A0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C1C6A1A-F196-4648-947E-6C16ADEA12ED}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="ESM_Star_Burst_1_Sound_FX_Arcade_Casino_Kids_Mobile_App" ID="{8B0F2E9F-B2AA-439D-9BCF-127898C28C20}">
+							<Language>SFX</Language>
+							<AudioFile>ESM_Star_Burst_1_Sound_FX_Arcade_Casino_Kids_Mobile_App.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="459675833"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="ESM_Star_Burst_1_Sound_FX_Arcade_Casino_Kids_Mobile_App" ID="{8B0F2E9F-B2AA-439D-9BCF-127898C28C20}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Fail" ID="{BA59D954-E482-4009-8DD9-5804A0B03D86}" ShortID="698917281">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{265BF38B-4E39-4F29-A4C1-F66F87B643A0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C1C6A1A-F196-4648-947E-6C16ADEA12ED}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="ESM_Fantasy_Game_Footstep_Grass_Medium_D" ID="{B3AEA156-1A63-4D78-A7F3-C0959FFE7F51}">
+							<Language>SFX</Language>
+							<AudioFile>ESM_Fantasy_Game_Footstep_Grass_Medium_D.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="682999586"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="ESM_Fantasy_Game_Footstep_Grass_Medium_D" ID="{B3AEA156-1A63-4D78-A7F3-C0959FFE7F51}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Mix" ID="{0EFB93A3-7411-4DB3-AFBA-B7ECC519A71F}" ShortID="262892956">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{265BF38B-4E39-4F29-A4C1-F66F87B643A0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C1C6A1A-F196-4648-947E-6C16ADEA12ED}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="ESM_Fantasy_Game_Crafting_Potion_Bubble_Bubbling_Pop_Water_Fish_Tank" ID="{5852EB0D-EFDF-4594-89C4-87CDE94BB54E}">
+							<PropertyList>
+								<Property Name="FadeOutDuration" Type="Real64" Value="1.87540272190936"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimEnd" Type="Real64" Value="1.87540272190936"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>ESM_Fantasy_Game_Crafting_Potion_Bubble_Bubbling_Pop_Water_Fish_Tank.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="40267298"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="ESM_Fantasy_Game_Crafting_Potion_Bubble_Bubbling_Pop_Water_Fish_Tank" ID="{5852EB0D-EFDF-4594-89C4-87CDE94BB54E}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

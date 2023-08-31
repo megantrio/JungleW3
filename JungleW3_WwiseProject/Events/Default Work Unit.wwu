@@ -102,6 +102,39 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Result" ID="{A8BFA33A-4649-42F9-AE2B-8E167B213F29}">
+					<ChildrenList>
+						<Action Name="" ID="{4456810F-1F95-4E8E-9C79-3D81E3FB7C60}" ShortID="519040952">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Result" ID="{67326849-31D2-4357-B058-87A6D43C2DA0}" WorkUnitID="{7DD625F7-73A1-4E69-9D1C-83D638E205E7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Fail" ID="{59E42563-D656-4F0F-8C0F-6322F88912BB}">
+					<ChildrenList>
+						<Action Name="" ID="{891BE1F9-559B-4CDB-AB8F-4ADE337B8FB3}" ShortID="505640031">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Fail" ID="{BA59D954-E482-4009-8DD9-5804A0B03D86}" WorkUnitID="{7DD625F7-73A1-4E69-9D1C-83D638E205E7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Mix" ID="{F04702A8-CFF1-443A-B6F8-C8D86434AA54}">
+					<ChildrenList>
+						<Action Name="" ID="{F7E2F05D-B046-46C5-A1C2-2E6AAAC7B72A}" ShortID="761260002">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Mix" ID="{0EFB93A3-7411-4DB3-AFBA-B7ECC519A71F}" WorkUnitID="{7DD625F7-73A1-4E69-9D1C-83D638E205E7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

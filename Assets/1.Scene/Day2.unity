@@ -1972,11 +1972,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5072040243278638939, guid: 49c40b346e731af46a0d124257fb8da3, type: 3}
   m_PrefabInstance: {fileID: 1662111379}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &565297162 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 642068301735282922, guid: 4288e8a50744bd2459f0bb349b658894, type: 3}
-  m_PrefabInstance: {fileID: 916812029}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &577184736
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3507,6 +3502,14 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4455124877851580165, guid: 4288e8a50744bd2459f0bb349b658894, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455124877851580171, guid: 4288e8a50744bd2459f0bb349b658894, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 471d637d3cae52840bb03c72ef3a4d3b, type: 3}
     - target: {fileID: 5820724676756396244, guid: 4288e8a50744bd2459f0bb349b658894, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -4743,7 +4746,7 @@ PrefabInstance:
     - target: {fileID: 9022484917098353834, guid: 1001b6f229598364992821d26c8eabe2, type: 3}
       propertyPath: newsUI
       value: 
-      objectReference: {fileID: 565297162}
+      objectReference: {fileID: 0}
     - target: {fileID: 9022484917098353834, guid: 1001b6f229598364992821d26c8eabe2, type: 3}
       propertyPath: itemGetUI
       value: 

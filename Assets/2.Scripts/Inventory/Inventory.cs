@@ -75,7 +75,6 @@ public class Inventory : MonoBehaviour
     #region PrivateMethod
     private void Awake()
     {
-        PlayerPrefs.DeleteAll();
         RefreshInventoryUI();
     }
 

@@ -135,6 +135,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Mang" ID="{975A4EB4-77B5-41F9-B34E-B682B2BA7BCE}">
+					<ChildrenList>
+						<Action Name="" ID="{E5832566-6860-4026-8A02-A1A5D9E06058}" ShortID="152816682">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Mang" ID="{B778E080-F183-4292-8A5D-9412CD92BFB5}" WorkUnitID="{7DD625F7-73A1-4E69-9D1C-83D638E205E7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

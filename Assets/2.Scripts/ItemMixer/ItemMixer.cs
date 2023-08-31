@@ -72,13 +72,14 @@ public class ItemMixer : MonoBehaviour
         if (result.Equals(""))
         {
             StartCoroutine(ParticleMaker(failure));
-            AkSoundEngine.PostEvent("Result", gameObject);
+            AkSoundEngine.PostEvent("Mang", gameObject);
             return kkwangItemAsset;
         }
         for (int i = 0; i < mixedItemAssetList.items.Length; i++)
         {
             if (mixedItemAssetList.items[i].itemName.Equals(result))
             {
+                AkSoundEngine.PostEvent("Result", gameObject);
                 StartCoroutine(ParticleMaker(success));
                 return mixedItemAssetList.items[i];
             }

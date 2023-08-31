@@ -17,6 +17,7 @@ namespace AK
         static const AkUniqueID FAIL = 2596272617U;
         static const AkUniqueID FS = 1802970376U;
         static const AkUniqueID LIST = 220247005U;
+        static const AkUniqueID MANG = 3145131302U;
         static const AkUniqueID MIX = 1182670517U;
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID NEWS = 898907948U;

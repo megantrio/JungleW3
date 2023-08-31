@@ -8,6 +8,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1843860813	PIPI			\Default Work Unit\PIPI	
 	2596272617	Fail			\Default Work Unit\Fail	
 	2774129122	UI_Select			\Default Work Unit\UI_Select	
+	3145131302	Mang			\Default Work Unit\Mang	
 	3930136735	Dialogue			\Default Work Unit\Dialogue	
 	3978245845	Pickup			\Default Work Unit\Pickup	
 	3991942870	Music			\Default Work Unit\Music	
@@ -22,13 +23,14 @@ State	ID	Name	State Group			Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	7912611	OST_SomeStore	C:\JungleW3\JungleW3_WwiseProject\.cache\Mac\SFX\OST_SomeStore_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\OST_SomeStore\OST_SomeStore		21450336
-	40267298	Mix	C:\JungleW3\JungleW3_WwiseProject\.cache\Mac\SFX\ESM_Fantasy_Game_Crafting_Potion_Bubble_Bubbling_Pop_Water_Fish_Tank_BFC620F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mix		360236
+	40267298	Mix	C:\JungleW3\JungleW3_WwiseProject\.cache\Mac\SFX\ESM_Fantasy_Game_Crafting_Potion_Bubble_Bubbling_Pop_Water_Fish_Tank_B17B32AF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mix		360236
 	51354858	Fs2	C:\JungleW3\JungleW3_WwiseProject\.cache\Mac\SFX\Fs2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\FS\Fs2		91232
 	78432480	PIPI	C:\JungleW3\JungleW3_WwiseProject\.cache\Mac\SFX\Cat1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PIPI		176260
 	282376809	UI_Select	C:\JungleW3\JungleW3_WwiseProject\.cache\Mac\SFX\UI_Select_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI_Select		66556
 	320412028	News	C:\JungleW3\JungleW3_WwiseProject\.cache\Mac\SFX\ESM_Explainer_Video_One_Shot_Paper_Foley_Shake_Multiple_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\News		60484
 	459675833	Result	C:\JungleW3\JungleW3_WwiseProject\.cache\Mac\SFX\ESM_Star_Burst_1_Sound_FX_Arcade_Casino_Kids_Mobile_App_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Result		143832
-	563972961	Dialogue	C:\JungleW3\JungleW3_WwiseProject\.cache\Mac\SFX\ESM_Text_Box_Typing_short_App_Button_Sci_Fi_Glitch_Morph_Mechanism_Texture_Futuristic_DA5E83B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue		41912
+	492784815	Mang	C:\JungleW3\JungleW3_WwiseProject\.cache\Mac\SFX\ESM_Fantasy_Game_Skill_Target_Weakness_Weapon_Medieval_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mang		608320
+	563972961	Dialogue	C:\JungleW3\JungleW3_WwiseProject\.cache\Mac\SFX\ESM_Text_Box_Typing_short_App_Button_Sci_Fi_Glitch_Morph_Mechanism_Texture_Futuristic_DD7297DB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue		41912
 	630528704	Fs3	C:\JungleW3\JungleW3_WwiseProject\.cache\Mac\SFX\Fs3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\FS\Fs3		71084
 	682999586	Fail	C:\JungleW3\JungleW3_WwiseProject\.cache\Mac\SFX\ESM_Fantasy_Game_Footstep_Grass_Medium_D_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fail		105280
 	782747681	Pickup	C:\JungleW3\JungleW3_WwiseProject\.cache\Mac\SFX\ESM_Sophisticated_Tech_Button_Click_2_Hybrid_Mobile_Collect_Special_Power_Up_Buff_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pickup		133296

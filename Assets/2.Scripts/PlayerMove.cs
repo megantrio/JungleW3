@@ -15,10 +15,12 @@ public class PlayerMove : MonoBehaviour
     private Camera mainCamera;
     private Vector3 playerPosition;
     private Animator animator;
+    private SpriteRenderer spriteRenderer;
 
     private void Awake()
     {
         animator = GetComponent<Animator>();    
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     private void Start()
@@ -41,8 +43,27 @@ public class PlayerMove : MonoBehaviour
 
     public void OnMove(InputAction.CallbackContext context)
     {
-        animator.SetBool("isRun", true);
+        if (MorningEventManager.instance.state != MorningEventManager.GameState.NIGHT)
+        {
+            return;
+        }
+        if (context.started)
+        {
+            animator.SetBool("isRun", true);
+        }
         moveInput = context.ReadValue<Vector2>();
+        if (moveInput.x < 0)
+        {
+            spriteRenderer.flipX = true;
+        }
+        if(moveInput.x > 0)
+        {
+            spriteRenderer.flipX = false;
+        }
+        if (context.canceled)
+        {
+            animator.SetBool("isRun", false);
+        }
     }
 
 }

@@ -4666,7 +4666,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 828340264904615073, guid: 1001b6f229598364992821d26c8eabe2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.4
+      value: 0.675
       objectReference: {fileID: 0}
     - target: {fileID: 828340264904615074, guid: 1001b6f229598364992821d26c8eabe2, type: 3}
       propertyPath: m_Sprite
@@ -4738,7 +4738,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5759645657076119755, guid: 1001b6f229598364992821d26c8eabe2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.31
+      value: 0.675
       objectReference: {fileID: 0}
     - target: {fileID: 9022484917098353834, guid: 1001b6f229598364992821d26c8eabe2, type: 3}
       propertyPath: newsUI

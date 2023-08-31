@@ -39,14 +39,18 @@ public class PlayerItemGet : MonoBehaviour
             {
                 //아이템 하나로 갈 경우 아이템 초기화
                 items.Clear();
+                
                 for (int i = 0; i < playerEquipItems.Length; i++)
                 {
                     playerEquipItems[i].gameObject.SetActive(false);
                 }
 
+                AkSoundEngine.PostEvent("Fail", gameObject);
+
             }
             if (items.Count == 2)
             {
+                AkSoundEngine.PostEvent("Mix", gameObject);
                 Item _i = mixer.MixItem(items[0], items[1]);
                 Debug.Log("아이템 획득!! :"+_i.itemName);
                 items.Clear();
@@ -60,10 +64,11 @@ public class PlayerItemGet : MonoBehaviour
                 itemGetUIText.text = _i.itemName;
                 itemGetUIImage.sprite = _i.itemImage;
                 itemGetUI.SetActive(true);
+                
                 //2. prefs 저장
                 if (PlayerPrefs.HasKey(_i.itemName))
                 {
-                    PlayerPrefs.SetInt(_i.itemName, PlayerPrefs.GetInt(_i.itemName)+1);
+                    PlayerPrefs.SetInt(_i.itemName, PlayerPrefs.GetInt(_i.itemName)+1);                   
                 }
                 else
                 {
@@ -116,6 +121,8 @@ public class PlayerItemGet : MonoBehaviour
                     playerEquipItems[items.Count].gameObject.SetActive(true);
                     playerEquipItems[items.Count].sprite = _i.itemImage;
                     items.Add(_i);
+
+                    AkSoundEngine.PostEvent("Pickup", gameObject);
                 }
             }
             if (lastCollidedObject != null)

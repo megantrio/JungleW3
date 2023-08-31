@@ -59,7 +59,8 @@ public class PlayerItemGet : MonoBehaviour
                 {
                     PlayerPrefs.SetInt(_i.itemName, 1);
                 }
-                Debug.Log(PlayerPrefs.GetInt(_i.itemName));
+                Debug.Log(PlayerPrefs.GetInt
+                    (_i.itemName));
             }
             else
             {

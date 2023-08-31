@@ -12,6 +12,27 @@ EditorBuildSettings:
     path: Assets/1.Scene/Tutorial.unity
     guid: e05ddca13f02c7c45b75afa4aa5c1ede
   - enabled: 1
+    path: Assets/1.Scene/Day1.unity
+    guid: c93ec03b4790f56488d667f4cee43fe9
+  - enabled: 1
+    path: Assets/1.Scene/Day2.unity
+    guid: 95cbf59b317b1f94ba1d201ad9b48249
+  - enabled: 1
+    path: Assets/1.Scene/Day3.unity
+    guid: 94d19fe9ce7c88e4b8e9855622562f64
+  - enabled: 1
+    path: Assets/1.Scene/Day4.unity
+    guid: ab02bcfbd86097d418ebdde686cd230f
+  - enabled: 1
+    path: Assets/1.Scene/Day5.unity
+    guid: abdd80afde274c945bc40c8ca72e96dd
+  - enabled: 1
+    path: Assets/1.Scene/Day6.unity
+    guid: 29e2bff9458ac1048b975a31c01d1fa2
+  - enabled: 1
+    path: Assets/1.Scene/Day7.unity
+    guid: 96f89cff7a8866649a108be79b2a6050
+  - enabled: 1
     path: Assets/1.Scene/Ending.unity
     guid: 096dfdf1f206404459ad99b431b23f02
   m_configObjects:

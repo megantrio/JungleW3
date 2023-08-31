@@ -31,7 +31,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{8C8943D2-624F-0B73-E4E6-405F19016533}">
+		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{C998BEF6-3427-B8F3-1451-84E55699CE73}">
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
 			<Media>
@@ -41,7 +41,7 @@
 				</File>
 				<File Id="40267298" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ESM_Fantasy_Game_Crafting_Potion_Bubble_Bubbling_Pop_Water_Fish_Tank.wav</ShortName>
-					<CachePath>SFX/ESM_Fantasy_Game_Crafting_Potion_Bubble_Bubbling_Pop_Water_Fish_Tank_BFC620F3.wem</CachePath>
+					<CachePath>SFX/ESM_Fantasy_Game_Crafting_Potion_Bubble_Bubbling_Pop_Water_Fish_Tank_B17B32AF.wem</CachePath>
 				</File>
 				<File Id="51354858" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Fs2.wav</ShortName>
@@ -63,9 +63,13 @@
 					<ShortName>ESM_Star_Burst_1_Sound_FX_Arcade_Casino_Kids_Mobile_App.wav</ShortName>
 					<CachePath>SFX/ESM_Star_Burst_1_Sound_FX_Arcade_Casino_Kids_Mobile_App_10C4C929.wem</CachePath>
 				</File>
+				<File Id="492784815" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ESM_Fantasy_Game_Skill_Target_Weakness_Weapon_Medieval.wav</ShortName>
+					<CachePath>SFX/ESM_Fantasy_Game_Skill_Target_Weakness_Weapon_Medieval_10C4C929.wem</CachePath>
+				</File>
 				<File Id="563972961" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ESM_Text_Box_Typing_short_App_Button_Sci_Fi_Glitch_Morph_Mechanism_Texture_Futuristic.wav</ShortName>
-					<CachePath>SFX/ESM_Text_Box_Typing_short_App_Button_Sci_Fi_Glitch_Morph_Mechanism_Texture_Futuristic_DA5E83B2.wem</CachePath>
+					<CachePath>SFX/ESM_Text_Box_Typing_short_App_Button_Sci_Fi_Glitch_Morph_Mechanism_Texture_Futuristic_DD7297DB.wem</CachePath>
 				</File>
 				<File Id="630528704" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Fs3.wav</ShortName>
@@ -113,6 +117,11 @@
 				<Event Id="220247005" Name="List" DurationType="OneShot" DurationMin="0.38489583" DurationMax="0.38489583">
 					<MediaRefs>
 						<MediaRef Id="959012926"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3145131302" Name="Mang" DurationType="OneShot" DurationMin="3.1675105" DurationMax="3.1675105">
+					<MediaRefs>
+						<MediaRef Id="492784815"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1182670517" Name="Mix" DurationType="OneShot" DurationMin="1.8754027" DurationMax="1.8754027">
@@ -178,5 +187,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{6CDD2031-34E6-0581-4345-2FAA44F26387}</FileHash>
+	<FileHash>{26B8B7B7-3B2F-38C6-C738-7F52AA0D50B1}</FileHash>
 </SoundBanksInfo>

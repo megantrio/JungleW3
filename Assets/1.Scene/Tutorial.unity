@@ -1989,7 +1989,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2610726192909587971, guid: 8be467b482fa8504a9ad16e7934f1d51, type: 3}
   m_PrefabInstance: {fileID: 733465806404881987}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &587160760
+--- !u!114 &587160764
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2018,7 +2018,7 @@ MonoBehaviour:
   eventIdInternal: 0
   valueGuidInternal: 
   m_callbackDataInternal: {fileID: 0}
---- !u!114 &587160761
+--- !u!114 &587160765
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4084,7 +4084,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1022103081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7723,6 +7723,10 @@ PrefabInstance:
     - target: {fileID: 2610726192909587971, guid: 8be467b482fa8504a9ad16e7934f1d51, type: 3}
       propertyPath: m_Name
       value: Event_Dialog
+      objectReference: {fileID: 0}
+    - target: {fileID: 2610726192909587971, guid: 8be467b482fa8504a9ad16e7934f1d51, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2610726192909587972, guid: 8be467b482fa8504a9ad16e7934f1d51, type: 3}
       propertyPath: m_RootOrder

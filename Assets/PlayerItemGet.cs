@@ -137,6 +137,7 @@ public class PlayerItemGet : MonoBehaviour
                 {
                     listUI.SetActive(true);
                 }
+                AkSoundEngine.PostEvent("News", gameObject);
             }
         }
     }

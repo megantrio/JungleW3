@@ -3522,6 +3522,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2221255690888613648, guid: 4288e8a50744bd2459f0bb349b658894, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 144
+      objectReference: {fileID: 0}
     - target: {fileID: 2221255690964812188, guid: 4288e8a50744bd2459f0bb349b658894, type: 3}
       propertyPath: m_fontAsset
       value: 

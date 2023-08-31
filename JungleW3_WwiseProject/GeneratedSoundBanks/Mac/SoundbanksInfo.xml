@@ -31,14 +31,10 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{C998BEF6-3427-B8F3-1451-84E55699CE73}">
+		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{0CAD173A-8939-DA6D-13C0-48B9BE723634}">
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
 			<Media>
-				<File Id="7912611" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>OST_SomeStore.wav</ShortName>
-					<CachePath>SFX/OST_SomeStore_D79FB2B7.wem</CachePath>
-				</File>
 				<File Id="40267298" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ESM_Fantasy_Game_Crafting_Potion_Bubble_Bubbling_Pop_Water_Fish_Tank.wav</ShortName>
 					<CachePath>SFX/ESM_Fantasy_Game_Crafting_Potion_Bubble_Bubbling_Pop_Water_Fish_Tank_B17B32AF.wem</CachePath>
@@ -129,22 +125,7 @@
 						<MediaRef Id="40267298"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3991942870" Name="Music" DurationType="Infinite">
-					<SwitchContainers>
-						<SwitchContainer>
-							<SwitchValue GroupType="State" GroupId="1088209313" Id="998496889"/>
-							<MediaRefs>
-								<MediaRef Id="7912611"/>
-							</MediaRefs>
-						</SwitchContainer>
-						<SwitchContainer>
-							<SwitchValue GroupType="State" GroupId="1088209313" Id="748895195"/>
-							<MediaRefs>
-								<MediaRef Id="7912611"/>
-							</MediaRefs>
-						</SwitchContainer>
-					</SwitchContainers>
-				</Event>
+				<Event Id="3991942870" Name="Music" DurationType="Infinite"/>
 				<Event Id="898907948" Name="News" DurationType="OneShot" DurationMin="0.6290417" DurationMax="0.6290417">
 					<MediaRefs>
 						<MediaRef Id="320412028"/>
@@ -187,5 +168,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{E4770267-C6A0-E5B2-4B70-1D82CCAACC13}</FileHash>
+	<FileHash>{A5B1B9E5-84CD-4ED3-A422-C29366AE3A8E}</FileHash>
 </SoundBanksInfo>

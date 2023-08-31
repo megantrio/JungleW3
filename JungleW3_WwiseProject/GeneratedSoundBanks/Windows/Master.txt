@@ -22,7 +22,6 @@ State	ID	Name	State Group			Notes
 	1543687740	UnderGround	Floor			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	7912611	OST_SomeStore	C:\JungleW3\JungleW3_WwiseProject\.cache\Windows\SFX\OST_SomeStore_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\OST_SomeStore\OST_SomeStore		21450336
 	40267298	Mix	C:\JungleW3\JungleW3_WwiseProject\.cache\Windows\SFX\ESM_Fantasy_Game_Crafting_Potion_Bubble_Bubbling_Pop_Water_Fish_Tank_B17B32AF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Mix		360236
 	51354858	Fs2	C:\JungleW3\JungleW3_WwiseProject\.cache\Windows\SFX\Fs2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\FS\Fs2		91232
 	78432480	PIPI	C:\JungleW3\JungleW3_WwiseProject\.cache\Windows\SFX\Cat1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PIPI		176260

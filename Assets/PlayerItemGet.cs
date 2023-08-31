@@ -109,6 +109,7 @@ public class PlayerItemGet : MonoBehaviour
     private GameObject lastCollidedObject;
 
     public GameObject newsUI;
+    public GameObject listUI;
     public void GetItem(InputAction.CallbackContext callback)
     {
         if (callback.started)
@@ -128,7 +129,14 @@ public class PlayerItemGet : MonoBehaviour
             if (lastCollidedObject != null)
             {
                 //뉴스 표출
-                newsUI.SetActive(true);
+                if(newsUI != null)
+                {
+                    newsUI.SetActive(true);
+                }
+                if(listUI != null)
+                {
+                    listUI.SetActive(true);
+                }
             }
         }
     }

@@ -16,11 +16,13 @@ public class PlayerMove : MonoBehaviour
     private Vector3 playerPosition;
     private Animator animator;
     private SpriteRenderer spriteRenderer;
+    private PlayerItemGet pig;
 
     private void Awake()
     {
         animator = GetComponent<Animator>();    
         spriteRenderer = GetComponent<SpriteRenderer>();
+        pig = GetComponent<PlayerItemGet>();
     }
 
     private void Start()
@@ -50,8 +52,20 @@ public class PlayerMove : MonoBehaviour
         if (context.started)
         {
             animator.SetBool("isRun", true);
+            
         }
         moveInput = context.ReadValue<Vector2>();
+        if (pig)
+        {
+            Debug.Log("pig");
+            if (pig.newsUI)
+            {
+                Debug.Log("news");
+                pig.newsUI.SetActive(false);
+            }
+            if(pig.listUI)
+                pig.listUI.SetActive(false);
+        }
         if (moveInput.x < 0)
         {
             spriteRenderer.flipX = true;

@@ -13,14 +13,14 @@ public class Dialogue : MonoBehaviour
     void OnEnable()
     {
         StartCoroutine(StartType());
+        //AkSoundEngine.PostEvent("Dialogue", gameObject);
     }
 
     IEnumerator StartType()
     {
         for (int i = 0; i < description.Length; i++)
         {
-            yield return TypingManager.instance.Typing(speaker, description[i]);
-            AkSoundEngine.PostEvent("Dialogue", gameObject);
+            yield return TypingManager.instance.Typing(speaker, description[i]);           
         }
         TypingManager.instance.CloseTypeUI();
         gameObject.SetActive(false);

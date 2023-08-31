@@ -53,7 +53,7 @@ public class TypingManager : MonoBehaviour
         isDialogClicked = false;
         characterTime = timeForCharacter;
         char[] chars = description.ToCharArray(); //받아온 다이얼로그 변환
-        return StartCoroutine(Typer(chars, dialogTextUI));
+        return StartCoroutine(Typer(chars, dialogTextUI));       
     }
 
     
@@ -125,6 +125,7 @@ public class TypingManager : MonoBehaviour
         {
             if (dialogUI.activeSelf)
                 isDialogClicked = true;
+            AkSoundEngine.PostEvent("Dialogue", gameObject);
         }
     }
 

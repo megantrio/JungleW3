@@ -35,6 +35,16 @@ public class PlayerItemGet : MonoBehaviour
         if (collision.CompareTag("Mixer"))
         {
             ItemMixer mixer = collision.gameObject.GetComponent<ItemMixer>();
+            if (items.Count == 1)
+            {
+                //아이템 하나로 갈 경우 아이템 초기화
+                items.Clear();
+                for (int i = 0; i < playerEquipItems.Length; i++)
+                {
+                    playerEquipItems[i].gameObject.SetActive(false);
+                }
+
+            }
             if (items.Count == 2)
             {
                 Item _i = mixer.MixItem(items[0], items[1]);
@@ -59,8 +69,6 @@ public class PlayerItemGet : MonoBehaviour
                 {
                     PlayerPrefs.SetInt(_i.itemName, 1);
                 }
-                Debug.Log(PlayerPrefs.GetInt
-                    (_i.itemName));
             }
             else
             {

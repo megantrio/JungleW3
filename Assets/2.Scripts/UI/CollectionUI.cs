@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CollectionUI : MonoBehaviour
@@ -8,6 +9,7 @@ public class CollectionUI : MonoBehaviour
     public ItemAssetList mixedItemAssetList;  //스크립터블오브젝트
     public GameObject[] mixOnUIs;
     public GameObject[] mixOffUIs;
+
     #endregion
 
     #region PrivateVariables
@@ -34,6 +36,7 @@ public class CollectionUI : MonoBehaviour
             {
                 mixOnUIs[i].SetActive(true);
                 mixOffUIs[i].SetActive(false);
+
             }
             else
             {
@@ -42,5 +45,15 @@ public class CollectionUI : MonoBehaviour
             }
         }
     }
+
+ 
+    
+    public void EffectOff()
+    {
+
+        Debug.Log("이펙트 중지");
+    }
+
+
     #endregion
 }

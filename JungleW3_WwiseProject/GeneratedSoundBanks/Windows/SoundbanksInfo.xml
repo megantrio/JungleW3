@@ -31,13 +31,17 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{8E6D4507-EC04-2492-CD38-DC9A5380F522}">
+		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{8C8943D2-624F-0B73-E4E6-405F19016533}">
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
 			<Media>
 				<File Id="7912611" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>OST_SomeStore.wav</ShortName>
 					<CachePath>SFX/OST_SomeStore_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="40267298" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ESM_Fantasy_Game_Crafting_Potion_Bubble_Bubbling_Pop_Water_Fish_Tank.wav</ShortName>
+					<CachePath>SFX/ESM_Fantasy_Game_Crafting_Potion_Bubble_Bubbling_Pop_Water_Fish_Tank_BFC620F3.wem</CachePath>
 				</File>
 				<File Id="51354858" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Fs2.wav</ShortName>
@@ -55,13 +59,21 @@
 					<ShortName>ESM_Explainer_Video_One_Shot_Paper_Foley_Shake_Multiple_03.wav</ShortName>
 					<CachePath>SFX/ESM_Explainer_Video_One_Shot_Paper_Foley_Shake_Multiple_03_10C4C929.wem</CachePath>
 				</File>
+				<File Id="459675833" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ESM_Star_Burst_1_Sound_FX_Arcade_Casino_Kids_Mobile_App.wav</ShortName>
+					<CachePath>SFX/ESM_Star_Burst_1_Sound_FX_Arcade_Casino_Kids_Mobile_App_10C4C929.wem</CachePath>
+				</File>
 				<File Id="563972961" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ESM_Text_Box_Typing_short_App_Button_Sci_Fi_Glitch_Morph_Mechanism_Texture_Futuristic.wav</ShortName>
-					<CachePath>SFX/ESM_Text_Box_Typing_short_App_Button_Sci_Fi_Glitch_Morph_Mechanism_Texture_Futuristic_69EEF2E8.wem</CachePath>
+					<CachePath>SFX/ESM_Text_Box_Typing_short_App_Button_Sci_Fi_Glitch_Morph_Mechanism_Texture_Futuristic_DA5E83B2.wem</CachePath>
 				</File>
 				<File Id="630528704" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Fs3.wav</ShortName>
 					<CachePath>SFX/Fs3_10C4C929.wem</CachePath>
+				</File>
+				<File Id="682999586" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ESM_Fantasy_Game_Footstep_Grass_Medium_D.wav</ShortName>
+					<CachePath>SFX/ESM_Fantasy_Game_Footstep_Grass_Medium_D_10C4C929.wem</CachePath>
 				</File>
 				<File Id="782747681" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ESM_Sophisticated_Tech_Button_Click_2_Hybrid_Mobile_Collect_Special_Power_Up_Buff.wav</ShortName>
@@ -81,9 +93,14 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="3930136735" Name="Dialogue" DurationType="OneShot" DurationMin="0.11069379" DurationMax="0.11069379">
+				<Event Id="3930136735" Name="Dialogue" DurationType="OneShot" DurationMin="0.23669414" DurationMax="0.23669414">
 					<MediaRefs>
 						<MediaRef Id="563972961"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2596272617" Name="Fail" DurationType="OneShot" DurationMin="0.5475" DurationMax="0.5475">
+					<MediaRefs>
+						<MediaRef Id="682999586"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1802970376" Name="FS" DurationType="OneShot" DurationMin="0.36972916" DurationMax="0.47466666">
@@ -96,6 +113,11 @@
 				<Event Id="220247005" Name="List" DurationType="OneShot" DurationMin="0.38489583" DurationMax="0.38489583">
 					<MediaRefs>
 						<MediaRef Id="959012926"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1182670517" Name="Mix" DurationType="OneShot" DurationMin="1.8754027" DurationMax="1.8754027">
+					<MediaRefs>
+						<MediaRef Id="40267298"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="3991942870" Name="Music" DurationType="Infinite">
@@ -129,6 +151,11 @@
 						<MediaRef Id="78432480"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="936499202" Name="Result" DurationType="OneShot" DurationMin="0.81446713" DurationMax="0.81446713">
+					<MediaRefs>
+						<MediaRef Id="459675833"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="906627473" Name="UI_Default" DurationType="OneShot" DurationMin="0.22341667" DurationMax="0.22341667">
 					<MediaRefs>
 						<MediaRef Id="1053346978"/>
@@ -151,5 +178,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{02CA45B8-27F6-517E-81B4-DD4B8820D95B}</FileHash>
+	<FileHash>{6CDD2031-34E6-0581-4345-2FAA44F26387}</FileHash>
 </SoundBanksInfo>

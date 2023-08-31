@@ -30,10 +30,9 @@ public class TypingManager : MonoBehaviour
 
     private void Awake()
     {
-        if (instance == null)
-        {
+
             instance = this;
-        }
+        
         timer = timeForCharacter;
         characterTime = timeForCharacter;
     }

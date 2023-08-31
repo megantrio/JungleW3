@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using TMPro;
 
 public class MorningEventManager : MonoBehaviour
 {
-    
+
     public enum GameState
     {
         MORNING,
@@ -24,21 +27,30 @@ public class MorningEventManager : MonoBehaviour
 
     public List<GameEvent> morningEvents;
 
+    // Timer
+    [SerializeField] private GameObject timerObj;
+    [SerializeField] private Image lateTime;
+    public TextMeshProUGUI timerTxt;
+    private float fdt;
+    private float nowTime;
+
+
+
     private void Awake()
     {
-        if(instance == null)
-        {
-            instance = this;
-            isEventEnded = true;
-            currentEvent = 0;
-            state = GameState.MORNING;
-        }
+
+        instance = this;
+        isEventEnded = true;
+        currentEvent = 0;
+        state = GameState.MORNING;
+
     }
 
     public void Update()
     {
         if (state == GameState.MORNING)
         {
+            timerObj.SetActive(false);
             if (isEventEnded)
             {
                 if (morningEvents.Count > currentEvent)
@@ -54,12 +66,35 @@ public class MorningEventManager : MonoBehaviour
                         v.SetActive(false);
                     }
                     state = GameState.NIGHT;
-                    foreach(var v in nightObject)
+                    foreach (var v in nightObject)
                     {
                         v.SetActive(true);
                     }
                 }
             }
         }
+
+        else if (state == GameState.NIGHT)
+        {
+            if(isEventEnded)
+            {
+                timerObj.SetActive(true);
+                fdt += Time.deltaTime;
+                nowTime = (60f - (Mathf.Floor(fdt * 100f) / 100f));
+                timerTxt.text = nowTime.ToString();
+                lateTime.fillAmount = 1f - (fdt / 60f);
+
+                if(fdt >= 60f)
+                {
+                    CallSceneChange();
+                }
+            }            
+        }
+
+    }
+
+    public void CallSceneChange()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

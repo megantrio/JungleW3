@@ -18,7 +18,7 @@ public class PlayerMove : MonoBehaviour
 
     private void Awake()
     {
-        animator = GetComponent<Animator>();    
+        animator = GetComponent<Animator>();
     }
 
     private void Start()
@@ -38,11 +38,11 @@ public class PlayerMove : MonoBehaviour
 
     }
 
-
     public void OnMove(InputAction.CallbackContext context)
     {
         animator.SetBool("isRun", true);
         moveInput = context.ReadValue<Vector2>();
     }
+   
 
 }

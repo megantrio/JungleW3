@@ -61,15 +61,23 @@ public class MorningEventManager : MonoBehaviour
                 }
                 else
                 {
-                    foreach (var v in morningObjects)
+                    if (SceneManager.GetActiveScene().name.Equals("Day7"))
                     {
-                        v.SetActive(false);
+                        CallSceneChange();
                     }
-                    state = GameState.NIGHT;
-                    foreach (var v in nightObject)
+                    else
                     {
-                        v.SetActive(true);
+                        foreach (var v in morningObjects)
+                        {
+                            v.SetActive(false);
+                        }
+                        state = GameState.NIGHT;
+                        foreach (var v in nightObject)
+                        {
+                            v.SetActive(true);
+                        }
                     }
+                    //7일차라면 씬 초기화
                 }
             }
         }

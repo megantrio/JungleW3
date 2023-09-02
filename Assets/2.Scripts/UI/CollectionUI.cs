@@ -22,7 +22,7 @@ public class CollectionUI : MonoBehaviour
 
     private void Start()
     {
-        PlayerPrefs.DeleteAll();
+        //PlayerPrefs.DeleteAll();
     }
 
     private void OnEnable()

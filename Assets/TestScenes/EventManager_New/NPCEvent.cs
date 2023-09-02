@@ -13,14 +13,16 @@ public class DiscriptionBranch
 
 public class NPCEvent : EventObject
 {
-    public float speed = 5f;
-    public string speakerName;
-    public int branch = 0;
+    //대사 관련
+    public DiscriptionBranch discription;
 
-    public bool useSpeakers = false;
-    public DiscriptionBranch[] scriptList;
+    //이동 관련
     private Vector3 start = new Vector3(-1.4f, -4.5f);
     private Vector3 end = new Vector3(0.2f, -1.15f);
+    public float speed = 5f;
+
+    //분기 관련 데이터
+    public string condition = "";
 
 
     public void Start()
@@ -31,7 +33,7 @@ public class NPCEvent : EventObject
     IEnumerator MainEvent()
     {
         //이동
-        transform.position = end;
+        transform.position = start;
         while (true)
         {
             transform.position = Vector3.MoveTowards(transform.position, end, speed*Time.deltaTime);
@@ -43,13 +45,14 @@ public class NPCEvent : EventObject
         }
         //대화 이벤트 발생
 
-        for (int i = 0; i < scriptList[branch].description.Length; i++)
+        for (int i = 0; i < discription.description.Length; i++)
         {
-            if (useSpeakers) 
-                speakerName = scriptList[branch].speaker[i];
-            yield return TypingManager.instance.Typing(speakerName, scriptList[branch].description[i]);
+            yield return TypingManager.instance.Typing(discription.speaker[i], discription.description[i]);
         }
-        TypingManager.instance.CloseTypeUI();
+        if(TypingManager.instance != null)
+        {
+            TypingManager.instance.CloseTypeUI();
+        }
         //다시 돌아감
         while (true)
         {

@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 379138405}
   - component: {fileID: 379138407}
   m_Layer: 0
-  m_Name: EventManager_New
+  m_Name: DayManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -169,6 +169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   day: 0
   currentState: 0
+  npcPrefab: {fileID: 1588166595718113984, guid: 9fd2fdb8c50e53c4eb82f38d23cb8a9e, type: 3}
 --- !u!1 &471374078
 GameObject:
   m_ObjectHideFlags: 0

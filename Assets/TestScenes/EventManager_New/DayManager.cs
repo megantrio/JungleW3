@@ -14,21 +14,65 @@ public class DayManager : MonoBehaviour
     }
     public DayState currentState = DayState.MORNING;
 
-
+    //이벤트를 관리합니다.
     private bool isEventEnded = false;
-    private EventObject _currentEvent;
+    private EventObject currentEvent
+    {
+        get { return eventQueue.Peek(); }   
+    }
 
-    public Queue<EventObject> eventQueue = new Queue<EventObject>();
+    //낮에 사용할 NPC의 프리팹
+    public NPCEvent npcPrefab;
+    
+    //현재 진행중인 이벤트 큐
+    private Queue<EventObject> eventQueue = new Queue<EventObject>();
+    //아침 이벤트들: NPCData.csv에서 불러옵니다.
+    private List<EventObject>[] morningEvents = new List<EventObject>[10];
+
+    private List<Dictionary<string, object>> _rawNPCData;
 
     private void Awake()
     {
-        if (instance==null)
+        if (instance == null)
         {
             instance = this;
         }
         else
         {
             Debug.LogError("DayManager가 2개 이상입니다.");
+        }
+
+        //NPCData Load
+        _rawNPCData = CSVReader.Read("Database/NPCData");
+        for(int i = 0; i < morningEvents.Length; i++)
+        {
+            morningEvents[i] = new List<EventObject>();
+        }
+        foreach (var npcData in _rawNPCData)
+        {
+            object temp;
+            npcData.TryGetValue("MoveType", out temp);
+            if (temp.ToString().Equals("0"))
+            {
+                NPCEvent cur = Instantiate(npcPrefab, transform.position, Quaternion.identity);
+
+                //Day
+                npcData.TryGetValue("Day", out temp);
+                int day = int.Parse(temp.ToString());
+                morningEvents[day].Add(cur);
+                //Sprite
+                npcData.TryGetValue("Sprite", out temp);
+                cur.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>(temp.ToString());
+                //Script
+
+                //Condition
+                npcData.TryGetValue("Condition", out temp);
+                cur.condition = temp.ToString();
+
+                //생성했으니 비활성화함
+                cur.gameObject.SetActive(false);
+            }
+            
         }
     }
 
@@ -38,19 +82,19 @@ public class DayManager : MonoBehaviour
     }
 
     private void Update()
-    {        
-        if(isEventEnded)
+    {
+        if (isEventEnded)
         {
             isEventEnded = false;
-            //이벤트가 끝났으니 이벤트를 하나 뺀다.
-            _currentEvent.gameObject.SetActive(false);
-            eventQueue.Dequeue();
-
-            //이벤트가 남아있다면 
-            if(eventQueue.Count > 0)
+            //이벤트가 공석인 경우 처리
+            if (eventQueue.Count > 0)
             {
-                _currentEvent = eventQueue.Peek();
-                _currentEvent.gameObject.SetActive(true);
+                eventQueue.Peek().gameObject.SetActive(false);
+                eventQueue.Dequeue();
+            }
+            if (eventQueue.Count > 0)
+            {
+                eventQueue.Peek().gameObject.SetActive(true);
             }
             else
             {
@@ -64,20 +108,20 @@ public class DayManager : MonoBehaviour
 
     public void UpdateTime()
     {
-        if(currentState == DayState.MORNING && day == 7)
+        if (currentState == DayState.MORNING && day == 7)
         {
             //7일차 아침이 끝났으므로 게임 종료
             Debug.Log("게임 종료");
             gameObject.SetActive(false);
             return;
         }
-        if(currentState == DayState.MORNING)
+        if (currentState == DayState.MORNING)
         {
             currentState = DayState.NIGHT;
             Debug.Log("밤 시간 시작");
             InitNight();
         }
-        else if(currentState == DayState.NIGHT)
+        else if (currentState == DayState.NIGHT)
         {
             currentState = DayState.MORNING;
             day += 1;
@@ -90,19 +134,22 @@ public class DayManager : MonoBehaviour
     public void InitNight()
     {
         //밤 이벤트 큐에 값 넣어주기
+        isEventEnded = true;
     }
 
     public void InitMorning()
     {
-        return;
-        //낮이 되면 NPC 데이터를 불러오고, 이벤트 리스트에 추가합니다.
-        List<Dictionary<string, object>> dic = CSVReader.Read("Database/NPCData");
-        foreach(var kvp in dic)
+        for(int i = 0; i < morningEvents[day].Count;i++)
         {
-            foreach(var j in kvp)
-            {
-                Debug.Log(j.Key + ", " +  j.Value);
-            }
+            eventQueue.Enqueue(morningEvents[day][i]);
+        }
+        if (eventQueue.Count > 0)
+        {
+            eventQueue.Peek().gameObject.SetActive(true);
+        }
+        else
+        {
+            isEventEnded = true;
         }
     }
 
@@ -112,7 +159,7 @@ public class DayManager : MonoBehaviour
     {
         //어떤 이벤트가 종료되었을때 호출되며, 해당 이벤트의 다음 이벤트를 실행합니다.
         //다음 프레임의 Update에서 실행됩니다.
-        if (_currentEvent == endedEvent)
+        if (eventQueue.Peek() == endedEvent)
         {
             isEventEnded = true;
         }

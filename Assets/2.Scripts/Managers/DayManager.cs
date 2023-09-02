@@ -41,6 +41,7 @@ public class DayManager : MonoBehaviour
             Debug.LogError("DayManager가 2개 이상입니다.");
         }
         DataManager.LoadAndCreateNPCData(morningEvents, npcPrefab, transform.position);
+        //DataManager.SetNPCCondition("Check", true);
     }
 
     private void Start()

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5787744203971696648}
   - component: {fileID: 1588166595718113984}
   m_Layer: 0
-  m_Name: BranchScriptNPC
+  m_Name: BasicNPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

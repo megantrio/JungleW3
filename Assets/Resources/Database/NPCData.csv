@@ -1,0 +1,4 @@
+﻿Day,Index,Sprite,ScriptFile,ScriptNum,Condition,MoveType
+1,1,Skull,Test_1,1,Check,0
+1,2,Fisher,Test_2,1,,0
+2,1,Skull,Test_1,2,,0

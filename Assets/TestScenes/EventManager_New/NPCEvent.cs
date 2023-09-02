@@ -15,8 +15,6 @@ public class NPCEvent : EventObject
     private Vector3 end = new Vector3(0.2f, -1.15f);
     public float speed = 5f;
 
-    //분기 관련 데이터
-    public string condition = "";
 
 
     public void Start()

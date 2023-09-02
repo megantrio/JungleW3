@@ -1,4 +1,4 @@
 ﻿Day,Index,Sprite,ScriptFile,ScriptNum,Condition,MoveType
-1,1,Test1,Test,Default,Check,0
-1,2,Test2,Test,Offer,,0
+1,1,Test1,Test,Default,,0
+1,2,Test2,Test,Offer,Check,0
 2,1,Test1,Test,Fail,,0

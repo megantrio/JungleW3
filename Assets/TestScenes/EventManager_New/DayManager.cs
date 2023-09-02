@@ -18,12 +18,13 @@ public class DayManager : MonoBehaviour
     private bool isEventEnded = false;
     private EventObject currentEvent
     {
-        get { return eventQueue.Peek(); }   
+        get { return eventQueue.Peek(); }
     }
 
     //낮에 사용할 NPC의 프리팹
     public NPCEvent npcPrefab;
-    
+    public GameObject descriptionUIPrefab;
+
     //현재 진행중인 이벤트 큐
     private Queue<EventObject> eventQueue = new Queue<EventObject>();
     //아침 이벤트들: NPCData.csv에서 불러옵니다.
@@ -44,7 +45,7 @@ public class DayManager : MonoBehaviour
 
         //NPCData Load
         _rawNPCData = CSVReader.Read("Database/NPCData");
-        for(int i = 0; i < morningEvents.Length; i++)
+        for (int i = 0; i < morningEvents.Length; i++)
         {
             morningEvents[i] = new List<EventObject>();
         }
@@ -64,7 +65,25 @@ public class DayManager : MonoBehaviour
                 npcData.TryGetValue("Sprite", out temp);
                 cur.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>(temp.ToString());
                 //Script
+                npcData.TryGetValue("ScriptFile", out temp);
+                string path = "Database/Descriptions/"+temp.ToString();
+                npcData.TryGetValue("ScriptNum", out temp);
+                string scriptType = temp.ToString();
+                Debug.Log("어그거: " + path);
+                List<Dictionary<string, object>> descriptionRawData = CSVReader.Read(path);
+                foreach(var row in descriptionRawData)
+                {
+                    object t;
+                    row.TryGetValue("ID", out t);
+                    if (scriptType.Equals(t.ToString()))
+                    {
+                        row.TryGetValue("Description", out t);
+                        cur.description.Add(t.ToString());
 
+                        row.TryGetValue("Speaker", out t);
+                        cur.speaker.Add(t.ToString());
+                    }
+                }
                 //Condition
                 npcData.TryGetValue("Condition", out temp);
                 cur.condition = temp.ToString();
@@ -72,7 +91,7 @@ public class DayManager : MonoBehaviour
                 //생성했으니 비활성화함
                 cur.gameObject.SetActive(false);
             }
-            
+
         }
     }
 
@@ -139,7 +158,7 @@ public class DayManager : MonoBehaviour
 
     public void InitMorning()
     {
-        for(int i = 0; i < morningEvents[day].Count;i++)
+        for (int i = 0; i < morningEvents[day].Count; i++)
         {
             eventQueue.Enqueue(morningEvents[day][i]);
         }

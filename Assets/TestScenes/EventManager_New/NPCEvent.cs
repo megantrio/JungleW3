@@ -4,17 +4,11 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 
-[System.Serializable]
-public class DiscriptionBranch
-{
-    public string[] description;
-    public string[] speaker;
-}
-
 public class NPCEvent : EventObject
 {
     //대사 관련
-    public DiscriptionBranch discription;
+    public List<string> speaker = new List<string>();
+    public List<string> description = new List<string>();
 
     //이동 관련
     private Vector3 start = new Vector3(-1.4f, -4.5f);
@@ -45,9 +39,9 @@ public class NPCEvent : EventObject
         }
         //대화 이벤트 발생
 
-        for (int i = 0; i < discription.description.Length; i++)
+        for (int i = 0; i < description.Count; i++)
         {
-            yield return TypingManager.instance.Typing(discription.speaker[i], discription.description[i]);
+            yield return TypingManager.instance.Typing(speaker[i], description[i]);
         }
         if(TypingManager.instance != null)
         {

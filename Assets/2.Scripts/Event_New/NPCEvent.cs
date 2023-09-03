@@ -17,7 +17,7 @@ public class NPCEvent : EventObject
 
 
 
-    public void Start()
+    public override void StartEvent()
     {
         StartCoroutine(MainEvent());
     }

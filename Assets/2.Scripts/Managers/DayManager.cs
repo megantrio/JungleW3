@@ -108,6 +108,7 @@ public class DayManager : MonoBehaviour
             {
                 //다음 이벤트가 남아있다면 켠다
                 eventQueue.Peek().gameObject.SetActive(true);
+                eventQueue.Peek().StartEvent();
             }
             else
             {
@@ -146,6 +147,16 @@ public class DayManager : MonoBehaviour
 
     public void InitNight()
     {
+        //낮 오브젝트 False, 밤 오브젝트 True
+        foreach(var i in morningObjects)
+        {
+            i.gameObject.SetActive(false);
+        }
+        foreach(var i in nightObjects)
+        {
+            i.gameObject.SetActive(true);
+        }
+
         //밤 이벤트 큐에 값 넣어주기
         for (int i = 0; i < events[day].nightEvents.Length; i++)
         {
@@ -155,6 +166,7 @@ public class DayManager : MonoBehaviour
         if (eventQueue.Count > 0)
         {
             eventQueue.Peek().gameObject.SetActive(true);
+            eventQueue.Peek().StartEvent();
         }
         else
         {
@@ -164,6 +176,15 @@ public class DayManager : MonoBehaviour
 
     public void InitMorning()
     {
+        //낮 오브젝트 False, 밤 오브젝트 True
+        foreach (var i in morningObjects)
+        {
+            i.gameObject.SetActive(true);
+        }
+        foreach (var i in nightObjects)
+        {
+            i.gameObject.SetActive(false);
+        }
         //1. 각 일자별 아침 시작 시 이벤트
         //2. 각 일자별 아침 NPC 이벤트
         //3. 각 일자별 아침 종료 시 이벤트
@@ -190,6 +211,7 @@ public class DayManager : MonoBehaviour
         if (eventQueue.Count > 0)
         {
             eventQueue.Peek().gameObject.SetActive(true);
+            eventQueue.Peek().StartEvent();
         }
         else
         {

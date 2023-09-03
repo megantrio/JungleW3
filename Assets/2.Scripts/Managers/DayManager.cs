@@ -22,13 +22,23 @@ public class DayManager : MonoBehaviour
     }
 
     //낮에 사용할 NPC의 프리팹
+    [Header("낮에 사용할 NPC의 프리팹입니다.")]
     public NPCEvent npcPrefab;
-    public GameObject descriptionUIPrefab;
 
     //현재 진행중인 이벤트 큐
     private Queue<EventObject> eventQueue = new Queue<EventObject>();
     //아침 이벤트들: NPCData.csv에서 불러옵니다.
-    private List<EventObject>[] morningEvents = new List<EventObject>[10];
+    private List<EventObject>[] morningNPCEvents = new List<EventObject>[10];
+
+    //각 시간에만 Active될 오브젝트들
+    [Header("낮이나 밤에만 켜지는 오브젝트를 지정해줍니다.")]
+    public GameObject[] morningObjects;
+    public GameObject[] nightObjects;
+
+    [Header("각 날짜별 아침 NPC 이벤트 전,후 그리고 저녁 시 일어날 이벤트를 지정해줍니다.")]
+    public List<EventObject[]> morningStartEvents;
+    public List<EventObject[]> morningEndEvents;
+    public List<EventObject[]> nightEvents;
 
     private void Awake()
     {
@@ -40,14 +50,45 @@ public class DayManager : MonoBehaviour
         {
             Debug.LogError("DayManager가 2개 이상입니다.");
         }
-        DataManager.LoadAndCreateNPCData(morningEvents, npcPrefab, transform.position);
-        //DataManager.SetNPCCondition("Check", true);
+        DataManager.LoadAndCreateNPCData(morningNPCEvents, npcPrefab, transform.position);
+
+        //모든 등록된 이벤트 오브젝트의 SetActive를 False로 변경합니다.
+        foreach(var i in morningStartEvents)
+        {
+            foreach(var j in i)
+            {
+                j.gameObject.SetActive(false);
+            }
+        }
+        foreach (var i in morningEndEvents)
+        {
+            foreach (var j in i)
+            {
+                j.gameObject.SetActive(false);
+            }
+        }
+        foreach (var i in nightEvents)
+        {
+            foreach (var j in i)
+            {
+                j.gameObject.SetActive(false);
+            }
+        }
     }
 
     private void Start()
     {
-        InitMorning();
+        if (currentState == DayState.MORNING)
+        {
+            InitMorning();
+        }
+        else if (currentState == DayState.NIGHT)
+        {
+            InitNight();
+        }
     }
+
+    
 
     private void Update()
     {
@@ -57,11 +98,13 @@ public class DayManager : MonoBehaviour
             //이벤트가 공석인 경우 처리
             if (eventQueue.Count > 0)
             {
+                //이벤트를 삭제한다
                 eventQueue.Peek().gameObject.SetActive(false);
                 eventQueue.Dequeue();
             }
             if (eventQueue.Count > 0)
             {
+                //다음 이벤트가 남아있다면 켠다
                 eventQueue.Peek().gameObject.SetActive(true);
             }
             else
@@ -102,17 +145,10 @@ public class DayManager : MonoBehaviour
     public void InitNight()
     {
         //밤 이벤트 큐에 값 넣어주기
-        isEventEnded = true;
-    }
-
-    public void InitMorning()
-    {
-        for (int i = 0; i < morningEvents[day].Count; i++)
+        for (int i = 0; i < nightEvents[day].Length; i++)
         {
-            if (DataManager.GetNPCCondition(morningEvents[day][i].condition))
-            {
-                eventQueue.Enqueue(morningEvents[day][i]);
-            }
+            //1. 각 일자별 아침 시작 시 이벤트 삽입
+            eventQueue.Enqueue(nightEvents[day][i]);
         }
         if (eventQueue.Count > 0)
         {
@@ -122,6 +158,42 @@ public class DayManager : MonoBehaviour
         {
             isEventEnded = true;
         }
+    }
+
+    public void InitMorning()
+    {
+        //1. 각 일자별 아침 시작 시 이벤트
+        //2. 각 일자별 아침 NPC 이벤트
+        //3. 각 일자별 아침 종료 시 이벤트
+        //4. 이벤트 시작
+        for(int i = 0; i < morningStartEvents[day].Length; i++)
+        {
+            //1. 각 일자별 아침 시작 시 이벤트 삽입
+            eventQueue.Enqueue(morningStartEvents[day][i]);
+        }
+        for (int i = 0; i < morningNPCEvents[day].Count; i++)
+        {
+            if (DataManager.GetNPCCondition(morningNPCEvents[day][i].condition))
+            {
+                eventQueue.Enqueue(morningNPCEvents[day][i]);
+            }
+        }
+        for (int i = 0; i < morningEndEvents[day].Length; i++)
+        {
+            //1. 각 일자별 아침 시작 시 이벤트 삽입
+            eventQueue.Enqueue(morningEndEvents[day][i]);
+        }
+
+        //이벤트가 있다면 바로 시작, 없다면 삭제
+        if (eventQueue.Count > 0)
+        {
+            eventQueue.Peek().gameObject.SetActive(true);
+        }
+        else
+        {
+            isEventEnded = true;
+        }
+
     }
 
 

@@ -1,9 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+
+[System.Serializable]
+public class DayEvents
+{
+    public EventObject[] morningStartEvents;
+    public EventObject[] morningEndEvents;
+    public EventObject[] nightEvents;
+}
 
 public class DayManager : MonoBehaviour
 {
+    public const int MAX_DAYS = 7;
     public static DayManager instance;
 
     public int day = 0;
@@ -36,9 +46,7 @@ public class DayManager : MonoBehaviour
     public GameObject[] nightObjects;
 
     [Header("각 날짜별 아침 NPC 이벤트 전,후 그리고 저녁 시 일어날 이벤트를 지정해줍니다.")]
-    public List<EventObject[]> morningStartEvents;
-    public List<EventObject[]> morningEndEvents;
-    public List<EventObject[]> nightEvents;
+    public DayEvents[] events = new DayEvents[MAX_DAYS+1];
 
     private void Awake()
     {
@@ -53,23 +61,17 @@ public class DayManager : MonoBehaviour
         DataManager.LoadAndCreateNPCData(morningNPCEvents, npcPrefab, transform.position);
 
         //모든 등록된 이벤트 오브젝트의 SetActive를 False로 변경합니다.
-        foreach(var i in morningStartEvents)
+        foreach (var i in events)
         {
-            foreach(var j in i)
+            foreach (var j in i.morningStartEvents)
             {
                 j.gameObject.SetActive(false);
             }
-        }
-        foreach (var i in morningEndEvents)
-        {
-            foreach (var j in i)
+            foreach (var j in i.morningEndEvents)
             {
                 j.gameObject.SetActive(false);
             }
-        }
-        foreach (var i in nightEvents)
-        {
-            foreach (var j in i)
+            foreach (var j in i.nightEvents)
             {
                 j.gameObject.SetActive(false);
             }
@@ -88,7 +90,7 @@ public class DayManager : MonoBehaviour
         }
     }
 
-    
+
 
     private void Update()
     {
@@ -145,10 +147,10 @@ public class DayManager : MonoBehaviour
     public void InitNight()
     {
         //밤 이벤트 큐에 값 넣어주기
-        for (int i = 0; i < nightEvents[day].Length; i++)
+        for (int i = 0; i < events[day].nightEvents.Length; i++)
         {
             //1. 각 일자별 아침 시작 시 이벤트 삽입
-            eventQueue.Enqueue(nightEvents[day][i]);
+            eventQueue.Enqueue(events[day].nightEvents[i]);
         }
         if (eventQueue.Count > 0)
         {
@@ -166,10 +168,10 @@ public class DayManager : MonoBehaviour
         //2. 각 일자별 아침 NPC 이벤트
         //3. 각 일자별 아침 종료 시 이벤트
         //4. 이벤트 시작
-        for(int i = 0; i < morningStartEvents[day].Length; i++)
+        for (int i = 0; i < events[day].morningStartEvents.Length; i++)
         {
             //1. 각 일자별 아침 시작 시 이벤트 삽입
-            eventQueue.Enqueue(morningStartEvents[day][i]);
+            eventQueue.Enqueue(events[day].morningStartEvents[i]);
         }
         for (int i = 0; i < morningNPCEvents[day].Count; i++)
         {
@@ -178,10 +180,10 @@ public class DayManager : MonoBehaviour
                 eventQueue.Enqueue(morningNPCEvents[day][i]);
             }
         }
-        for (int i = 0; i < morningEndEvents[day].Length; i++)
+        for (int i = 0; i < events[day].morningEndEvents.Length; i++)
         {
             //1. 각 일자별 아침 시작 시 이벤트 삽입
-            eventQueue.Enqueue(morningEndEvents[day][i]);
+            eventQueue.Enqueue(events[day].morningEndEvents[i]);
         }
 
         //이벤트가 있다면 바로 시작, 없다면 삭제

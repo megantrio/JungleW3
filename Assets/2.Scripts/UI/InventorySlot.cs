@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class InventorySlot : MonoBehaviour
 {
     public Inventory inventory;
     [Header("Management of Slot UI in Inventory")]
     [SerializeField] private Image image;
-    
 
     public Item item
     {
@@ -47,6 +47,7 @@ public class InventorySlot : MonoBehaviour
         {
             if (item != null)
             {
+                UIManager.Instance.itemInfoUpdate(item);
                 return;
             }
         }

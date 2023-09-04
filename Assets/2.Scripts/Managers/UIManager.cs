@@ -168,16 +168,26 @@ public class UIManager : EventObject
         }
     }
 
+    public void itemInfoUpdate(Item item)
+    {
+        itemInfo.item = item;
+        itemNameText.text = item.itemName;
+        itemInfoText.text = item.itemInfo;
+    }
+
     public void MixItemPlus(Item item)
     {
         if (item == null) return;
 
         isMixed = false;
-        itemInfo.item = item;
-        itemNameText.text = item.itemName;
-        itemInfoText.text = item.itemInfo;
 
-        if (item.isMixItem && item.isSpecialItem) return;
+        itemInfoUpdate(item);
+
+        if (item.isMixItem && item.isSpecialItem)
+        {
+            Debug.Log($"ItemName : {item.itemName}");
+            return; 
+        }
 
 
         if (itemMixSlot[0].item == null)

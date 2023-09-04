@@ -24,6 +24,8 @@ public class DescriptionEvent : EventObject
         {
             yield return TypingManager.instance.Typing(speaker, description[i]);
         }
+        Debug.Log("¥Î»≠ end");
+        
         PostEventEnded();
     }
 

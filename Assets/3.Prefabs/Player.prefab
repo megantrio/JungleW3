@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 4396738958238414591}
   - component: {fileID: 2026923673}
   - component: {fileID: 2026923668}
-  - component: {fileID: 2026923672}
   - component: {fileID: 20755184}
   - component: {fileID: 6841332450998540307}
   - component: {fileID: 9022484917098353834}
@@ -151,19 +150,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.75, y: 1.0625}
   m_Direction: 0
---- !u!114 &2026923672
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4396738958238414587}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1b7075846f2c6a45a166a32d6639a98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 3.5
 --- !u!114 &20755184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,7 +177,7 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2026923672}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PlayerMove, Assembly-CSharp
         m_MethodName: OnMove
         m_Mode: 0
@@ -312,6 +298,7 @@ MonoBehaviour:
   successEffect: {fileID: 0}
   failEffect: {fileID: 0}
   newsUI: {fileID: 0}
+  listUI: {fileID: 0}
 --- !u!1001 &3810486747349030719
 PrefabInstance:
   m_ObjectHideFlags: 0

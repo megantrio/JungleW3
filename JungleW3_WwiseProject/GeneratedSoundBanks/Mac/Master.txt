@@ -2,11 +2,11 @@ Event	ID	Name			Wwise Object Path	Notes
 	220247005	List			\Default Work Unit\List	
 	898907948	News			\Default Work Unit\News	
 	906627473	UI_Default			\Default Work Unit\UI_Default	
+	913787308	Put			\Default Work Unit\Put	
 	936499202	Result			\Default Work Unit\Result	
 	1182670517	Mix			\Default Work Unit\Mix	
 	1802970376	FS			\Default Work Unit\FS	
 	1843860813	PIPI			\Default Work Unit\PIPI	
-	2596272617	Fail			\Default Work Unit\Fail	
 	2774129122	UI_Select			\Default Work Unit\UI_Select	
 	3145131302	Mang			\Default Work Unit\Mang	
 	3930136735	Dialogue			\Default Work Unit\Dialogue	

@@ -37,12 +37,11 @@ public class UIManager : EventObject
 
     [Header("Clock")]
     [SerializeField] private TextMeshProUGUI nowDays;
-    [SerializeField] private GameObject clock;
     [SerializeField] private GameObject hand;
     private bool isTimeGo = true;
     private bool isUpdate;
     private float fdt = 80f;
-    [SerializeField] private float plusFdt = 30f;
+    [SerializeField] private float plusFdt;
     [SerializeField] private float maxFdt = -90f;
 
     [Header("News&OrderList")]
@@ -68,7 +67,7 @@ public class UIManager : EventObject
 
     private void OnEnable()
     {
-        nowDay = DayManager.instance.day;
+        //nowDay = DayManager.instance.day;
         AllUpdate();
         hand.transform.rotation = Quaternion.Euler(0, 0, fdt);
     }

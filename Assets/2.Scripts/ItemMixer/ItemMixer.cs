@@ -23,7 +23,9 @@ public class ItemMixer : MonoBehaviour
     public Item kkwangItemAsset;
 
     [Header("VFX")]
+    [SerializeField] private Transform parent;
     public GameObject success;
+    public GameObject specialSuccess;
     public GameObject failure;
     #endregion
 
@@ -38,7 +40,8 @@ public class ItemMixer : MonoBehaviour
             t = 0.7f;
         else
             t = 0.5f;
-        GameObject r = Instantiate(a, transform.position, Quaternion.identity);
+        GameObject r = Instantiate(a, parent);
+        
         r.transform.localScale *= 1.5f;
         r.transform.position = gameObject.transform.position;
         yield return new WaitForSeconds(t);
@@ -75,7 +78,7 @@ public class ItemMixer : MonoBehaviour
 
         if (result.Equals(""))
         {
-            //StartCoroutine(ParticleMaker(failure));
+            StartCoroutine(ParticleMaker(failure));
             AkSoundEngine.PostEvent("Mang", gameObject);
             itemReset(kkwangItemAsset);
             return kkwangItemAsset;
@@ -87,6 +90,7 @@ public class ItemMixer : MonoBehaviour
             {
                 if(result == specialMixItemList.items[i].itemName)
                 {
+                    StartCoroutine(ParticleMaker(specialSuccess));
                     AkSoundEngine.PostEvent("Result", gameObject);
                     itemReset(specialMixItemList.items[i]);
                     DataManager.SetNPCCondition(specialMixItemList.items[i].itemName, true);
@@ -102,7 +106,7 @@ public class ItemMixer : MonoBehaviour
             {
                 AkSoundEngine.PostEvent("Result", gameObject);
 
-                //StartCoroutine(ParticleMaker(success));
+                StartCoroutine(ParticleMaker(success));
                 itemReset(mixedItemAssetList.items[i]);
                 DataManager.SetNPCCondition(mixedItemAssetList.items[i].itemName, true);
                 return mixedItemAssetList.items[i];

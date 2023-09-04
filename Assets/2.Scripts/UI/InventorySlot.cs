@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
 
 public class InventorySlot : MonoBehaviour
 {
@@ -39,7 +41,7 @@ public class InventorySlot : MonoBehaviour
         {
             if (item != null)
             {
-                item.itemCount--;
+                //item.itemCount--;
             }
         }
 
@@ -64,5 +66,10 @@ public class InventorySlot : MonoBehaviour
         {
             inventory.RemoveItem(item);
         }
-    } 
+    }
+    
+    public void OnRightClick()
+    {
+        UIManager.Instance.itemInfoUpdate(item);
+    }
 }

@@ -81,6 +81,7 @@ public class TypingManager : MonoBehaviour
             {
                 characterTime = timeForCharacter_Fast;
                 isDialogClicked = false;
+                AkSoundEngine.PostEvent("Dialogue", gameObject);
             }
         }
         if (curruntChar >= charLength)
@@ -103,11 +104,13 @@ public class TypingManager : MonoBehaviour
             {
                 dialogTextUI.text = "";
                 //Typing(dialogsSave);
+                
 
             }
             else
             {
                 characterTime = timeForCharacter_Fast;
+                
             }
         }    
     }
@@ -127,8 +130,7 @@ public class TypingManager : MonoBehaviour
             if (dialogUI.activeSelf)
             {
                 isDialogClicked = true;
-            }
-            AkSoundEngine.PostEvent("Dialogue", gameObject);
+            }           
         }
     }
 

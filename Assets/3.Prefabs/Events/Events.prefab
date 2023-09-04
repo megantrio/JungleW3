@@ -301,7 +301,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5098673769369875681}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.83, y: 0.06, z: 0}
+  m_LocalPosition: {x: 2.75, y: 7.33, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -721,7 +721,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5098673770094040609}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.4, y: 0.5, z: 0}
+  m_LocalPosition: {x: -5.13, y: -5.07, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -976,11 +976,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   condition: 
   conditionValue: 1
-  speaker: "\uB098"
+  speaker: "\uC8FC\uC778\uACF5"
   description:
   - "\uC774 \uC790\uB9AC\uC5D0 \uC870\uD569 \uC774\uBCA4\uD2B8\uB97C \uB9CC\uB4E4\uBA74
     \uB429\uB2C8\uB2E4."
-  - "\uC5C6\uC73C\uB2C8\uAE50 \uC77C\uB2E8 \uC885\uB8CC\uD560\uAC8C\uC694"
 --- !u!1 &5098673770294844595
 GameObject:
   m_ObjectHideFlags: 0
@@ -1119,7 +1118,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5098673770363409659}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.04, y: -0.03, z: 0}
+  m_LocalPosition: {x: -0.12, y: -4.01, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1570,7 +1569,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5098673770999618257}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.42, y: 1.93, z: 0}
+  m_LocalPosition: {x: 3.62, y: 2.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2022,7 +2021,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   condition: 
   conditionValue: 1
-  speaker: 
+  speaker: "\uC8FC\uC778\uACF5"
   description:
   - "\uC624\uB298 \uD558\uB8E8\uB3C4 \uC54C\uCC3C\uB2E4."
   - "\uC790\uB7EC\uAC00\uC790."

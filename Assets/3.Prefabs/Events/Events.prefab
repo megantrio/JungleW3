@@ -1821,6 +1821,7 @@ Transform:
   - {fileID: 8310869159670552784}
   - {fileID: 5098673770876852820}
   - {fileID: 5098673770599474194}
+  - {fileID: 1502583391652408269}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1921,6 +1922,7 @@ MonoBehaviour:
     - {fileID: 0}
     morningEndEvents: []
     nightEvents: []
+  endingFailDescription: {fileID: 6196565317255104020}
 --- !u!1 &5098673770876852821
 GameObject:
   m_ObjectHideFlags: 0
@@ -3139,6 +3141,56 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &8745742596394456840
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1502583391652408269}
+  - component: {fileID: 6196565317255104020}
+  m_Layer: 0
+  m_Name: EndingFailDescription
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1502583391652408269
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8745742596394456840}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5098673770651166152}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6196565317255104020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8745742596394456840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb26f5b0223f1584dad1af3204d8702c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  condition: 
+  conditionValue: 1
+  speaker: "<\uB3C4\uC6C0\uB9D0>"
+  description:
+  - "\uD53C\uD53C\uC758 \uBD80\uD0C1\uC744 \uC131\uACF5\uD558\uC9C0 \uBABB\uD588\uC2B5\uB2C8\uB2E4..."
+  - "14\uC77C\uCC28 \uC624\uC804\uC73C\uB85C \uB2E4\uC2DC \uB3CC\uC544\uAC11\uB2C8\uB2E4."
 --- !u!1001 &1128400521
 PrefabInstance:
   m_ObjectHideFlags: 0

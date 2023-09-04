@@ -520,6 +520,14 @@ PrefabInstance:
       propertyPath: speakerNameUI
       value: 
       objectReference: {fileID: 1287359385}
+    - target: {fileID: 1021798278618415484, guid: 35048592a8cb5c249a3fbd62693ac00b, type: 3}
+      propertyPath: timeForCharacter
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 1021798278618415484, guid: 35048592a8cb5c249a3fbd62693ac00b, type: 3}
+      propertyPath: timeForCharacter_Fast
+      value: 0.001
+      objectReference: {fileID: 0}
     - target: {fileID: 1021798278746216326, guid: 35048592a8cb5c249a3fbd62693ac00b, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -632,7 +640,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25642dfebfa85c34cad572a4c230f4f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  day: 0
+  day: 1
   currentState: 0
   npcPrefab: {fileID: 1588166595718113984, guid: 9fd2fdb8c50e53c4eb82f38d23cb8a9e, type: 3}
   morningObjects:

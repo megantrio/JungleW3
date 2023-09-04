@@ -51,6 +51,7 @@ public class DataManager : MonoBehaviour
                 //Script
                 npcData.TryGetValue("ScriptFile", out temp);
                 string path = "Database/Descriptions/" + temp.ToString();
+                Debug.Log("path: " + path);
                 npcData.TryGetValue("ScriptNum", out temp);
                 string scriptType = temp.ToString();
                 List<Dictionary<string, object>> descriptionRawData = CSVReader.Read(path);

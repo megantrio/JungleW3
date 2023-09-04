@@ -1,7 +1,7 @@
-ID,Speaker,Description,SpawnItem,SpawnItem2
-Offer,ÇØÀû,´ç½ÅÀÌ »ý°¢ÇÑ°Í º¸´Ù ¹Ù´Ù À§´Â ´õ °ÅÄ¥´Ù°í! ÇÏÁö¸¸ ¿ì¸® ¹«±â ¸¸Å­Àº ºñ½Î º¸¿©¾ß ÇØ¡¦ ,,
-Offer,ÇØÀû,±×·¡¾ß ¹«½Ã ´çÇÏÁö ¾Ê´Â´Ù°í!,,
-Success,ÁÖÀÎ°ø,ÀÇ·ÚÇØÁÖ½Å ¹°°ÇÀ» Á¦·Ã ÇØº¸¾Ò¾î¿ä. ¸¾¿¡ µå½Ã³ª¿ä?,,
-Success,ÇØÀû,¹Ù´ÙÀ§¸¦ Ç×ÇØ ÇÏ¸ç ¸¸³ª´Â º¸¹°µéÀÌ ¾ó¸¶³ª ´Ù¾çÇÑÁö ³ªÁß¿¡ Æ¯º°È÷ ±¸°æ ½ÃÄÑÁÖµµ·Ï ÇÏÁö. Ç×»ó °í¸¶¿ö!,,
-Fail,ÁÖÀÎ°ø,ÀÇ·ÚÇØÁÖ½Å ¹°°ÇÀ» Á¦·Ã ÇÏÁö ¸øÇß¾î¿ä. ÁË¼ÛÇÕ´Ï´Ù.,,
-Fail,ÇØÀû,ÇÑ¹øÀº ±¦ÂúÀºµ¥ µÎ¹øÀº ¾ÈµÅ! ¿À´ÃÀº ±âºÐÀÌ ÁÁÀ¸´Ï ±×¸¸ °¡µµ·Ï ÇÏÁö¡¦,,
+ï»¿ID,Speaker,Description,SpawnItem,SpawnItem2
+Offer,í•´ì ,ë‹¹ì‹ ì´ ìƒê°í•œê²ƒ ë³´ë‹¤ ë°”ë‹¤ ìœ„ëŠ” ë” ê±°ì¹ ë‹¤ê³ ! í•˜ì§€ë§Œ ìš°ë¦¬ ë¬´ê¸° ë§Œí¼ì€ ë¹„ì‹¸ ë³´ì—¬ì•¼ í•´â€¦ ,,
+Offer,í•´ì ,ê·¸ëž˜ì•¼ ë¬´ì‹œ ë‹¹í•˜ì§€ ì•ŠëŠ”ë‹¤ê³ !,,
+Success,ì£¼ì¸ê³µ,ì˜ë¢°í•´ì£¼ì‹  ë¬¼ê±´ì„ ì œë ¨ í•´ë³´ì•˜ì–´ìš”. ë§˜ì— ë“œì‹œë‚˜ìš”?,,
+Success,í•´ì ,ë°”ë‹¤ìœ„ë¥¼ í•­í•´ í•˜ë©° ë§Œë‚˜ëŠ” ë³´ë¬¼ë“¤ì´ ì–¼ë§ˆë‚˜ ë‹¤ì–‘í•œì§€ ë‚˜ì¤‘ì— íŠ¹ë³„ížˆ êµ¬ê²½ ì‹œì¼œì£¼ë„ë¡ í•˜ì§€. í•­ìƒ ê³ ë§ˆì›Œ!,,
+Fail,ì£¼ì¸ê³µ,ì˜ë¢°í•´ì£¼ì‹  ë¬¼ê±´ì„ ì œë ¨ í•˜ì§€ ëª»í–ˆì–´ìš”. ì£„ì†¡í•©ë‹ˆë‹¤.,,
+Fail,í•´ì ,í•œë²ˆì€ ê´œì°®ì€ë° ë‘ë²ˆì€ ì•ˆë¼! ì˜¤ëŠ˜ì€ ê¸°ë¶„ì´ ì¢‹ìœ¼ë‹ˆ ê·¸ë§Œ ê°€ë„ë¡ í•˜ì§€â€¦,,

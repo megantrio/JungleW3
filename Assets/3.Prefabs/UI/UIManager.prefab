@@ -5732,7 +5732,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   condition: 
   conditionValue: 1
-  fadeInOut: {fileID: 0}
   itemMixSlot:
   - {fileID: 1890180328448992777}
   - {fileID: 1444118857151796901}
@@ -5748,7 +5747,6 @@ MonoBehaviour:
   SpecialItemList: {fileID: 11400000, guid: 320fac0f0f9ded34f8a92354eee39458, type: 2}
   mixedItemList: {fileID: 11400000, guid: 899b5a66642cfbc498d7017da859fd4c, type: 2}
   SpecialMixItemList: {fileID: 11400000, guid: 04d085e052c6ce240885b9b06caa1fbe, type: 2}
-  invenObj: {fileID: 1890180327272641824}
   basicInven: {fileID: 1890180327113562758}
   specialInven: {fileID: 1958483077301799078}
   mixInven: {fileID: 1696249043373527045}
@@ -6473,7 +6471,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1696249044846752445}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: EndEvent
+        m_MethodName: EndEventFast
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

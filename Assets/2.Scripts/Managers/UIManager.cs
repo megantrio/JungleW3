@@ -9,8 +9,6 @@ public class UIManager : EventObject
     // Instance
     public static UIManager Instance;
 
-    public FadeInOut fadeInOut;
-
     [Header("ItemMix")]
     public ItemMixerSlot[] itemMixSlot;
     public InventorySlot itemInfo;
@@ -28,7 +26,6 @@ public class UIManager : EventObject
     public ItemAssetList mixedItemList;
     public ItemAssetList SpecialMixItemList;
 
-    [SerializeField] private GameObject invenObj;
     public Inventory basicInven;
     public Inventory specialInven;
     public Inventory mixInven;
@@ -36,6 +33,8 @@ public class UIManager : EventObject
     [SerializeField] private int maxItemCount;
 
     [Header("Clock")]
+    private bool isEndTime = false;
+    [SerializeField] private Button endButton;
     [SerializeField] private TextMeshProUGUI nowDays;
     [SerializeField] private GameObject hand;
     private bool isTimeGo = true;
@@ -67,6 +66,8 @@ public class UIManager : EventObject
 
     private void OnEnable()
     {
+        endButton.interactable = true;
+        isEndTime = false;
         nowDay = DayManager.instance.day;
         AllUpdate();
         hand.transform.rotation = Quaternion.Euler(0, 0, fdt);
@@ -74,16 +75,27 @@ public class UIManager : EventObject
 
     
     public override void StartEvent()
-    {
-        
+    {       
     }
     
+    public void EndEventFast()
+    {
+        if(!isEndTime)PostEventEnded();
+    }
+
     public void EndEvent() 
     {
-        Debug.Log("EventEnd");
-        PostEventEnded();
+        isEndTime = true;
+        StartCoroutine(EndDelay());
     }
     
+    IEnumerator EndDelay()
+    {
+        endButton.interactable = false;
+        yield return new WaitForSeconds(3.0f);
+        PostEventEnded();
+    }
+
     public void AllUpdate()
     {
         nowDays.text = nowDay.ToString();
@@ -288,11 +300,6 @@ public class UIManager : EventObject
         }
     }
 
-    public void OpenInven()
-    {
-        invenObj.SetActive(true);
-    }
-
     public void UpdateInven()
     {
         basicInven.ResetInven();
@@ -323,12 +330,6 @@ public class UIManager : EventObject
     {
         isItemAdd = false;
         mixErrorUI.SetActive(false);
-    }
-
-
-    public void CloseInven()
-    {
-        invenObj.SetActive(false);
     }
 
     public void checkActiveSelf(GameObject gameObject)

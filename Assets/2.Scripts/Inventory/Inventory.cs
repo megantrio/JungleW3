@@ -29,21 +29,19 @@ public class Inventory : MonoBehaviour
 
     #region Test
     public void AddItem(Item _item)
-    {        
+    {
+        isHaveItem = false;
         for (int i = 0; i < slots.Length; i++)
         {
+            /*
             if (slots[i].item != null && slots[i].item.isMixItem && slots[i].item.Equals(_item))
-            {                
+            {             
                 items.Add(_item);
                 Debug.Log("ItemAdd");
-            }
-            else
-            {
                 isHaveItem = true;
-            }
+            } */                  
         }
-
-        isHaveItem = false;
+       
         if (!isHaveItem && items.Count < slots.Length)
         {
             Debug.Log("ItemAdd");

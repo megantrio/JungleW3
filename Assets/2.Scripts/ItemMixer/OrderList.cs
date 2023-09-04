@@ -22,7 +22,6 @@ public class OrderList : MonoBehaviour
 
     public void checkItem(string itemName)
     {
-        Debug.Log($"Check Item Name : {itemName} vs {orderItem}");
         if (orderItem == itemName)
         {
             ordererText.text = $"<s>{ordererText.text}</s>";

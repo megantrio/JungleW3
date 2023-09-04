@@ -68,7 +68,7 @@ public class UIManager : EventObject
     {
         endButton.interactable = true;
         isEndTime = false;
-        //nowDay = DayManager.instance.day;
+        nowDay = DayManager.instance.day;
         AllUpdate();
         hand.transform.rotation = Quaternion.Euler(0, 0, fdt);
     }

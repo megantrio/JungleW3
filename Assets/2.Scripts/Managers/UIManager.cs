@@ -70,6 +70,7 @@ public class UIManager : EventObject
     {
         nowDay = DayManager.instance.day;
         AllUpdate();
+        hand.transform.rotation = Quaternion.Euler(0, 0, fdt);
     }
 
     

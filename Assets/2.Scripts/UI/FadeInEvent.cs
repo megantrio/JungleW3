@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
-public class FadeInOut : EventObject
+public class FadeInEvent : EventObject
 {
     public float fadeOutTime = 1.0f;
     public void FadeIn(float fadeOutTime, System.Action nextEvent = null)
@@ -21,6 +21,7 @@ public class FadeInOut : EventObject
     {
         Image sr = this.gameObject.GetComponent<Image>();
         Color tempColor = sr.color;
+        tempColor.a = 0.0f;
         while (tempColor.a < 1f)
         {
             tempColor.a += Time.deltaTime / fadeOutTime;
@@ -33,5 +34,8 @@ public class FadeInOut : EventObject
 
         sr.color = tempColor;
         if (nextEvent != null) nextEvent();
+
+        gameObject.SetActive(false);
+        PostEventEnded();
     }
 }

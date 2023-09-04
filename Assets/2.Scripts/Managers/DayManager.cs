@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public class DayEvents
@@ -61,6 +62,7 @@ public class DayManager : MonoBehaviour
         if (isFirstStarted)
         {
             day = 1;
+            DataManager.Clear();
         }
         if (instance == null)
         {
@@ -137,6 +139,11 @@ public class DayManager : MonoBehaviour
 
     }
 
+    private bool CheckHappyEnding()
+    {
+        return DataManager.GetNPCCondition("얇고 가벼운 금붙이") && DataManager.GetNPCCondition("피피의 방울");
+    }
+
 
     public void UpdateTime()
     {
@@ -145,6 +152,16 @@ public class DayManager : MonoBehaviour
             //7일차 아침이 끝났으므로 게임 종료
             Debug.Log("게임 종료");
             gameObject.SetActive(false);
+
+            if (CheckHappyEnding())
+            {
+                SceneManager.LoadScene("HappyEnding");
+            }
+            else
+            {
+                SceneManager.LoadScene("Ending");
+            }
+
             return;
         }
         if (currentState == DayState.MORNING)

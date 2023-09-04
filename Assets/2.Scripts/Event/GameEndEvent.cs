@@ -7,7 +7,7 @@ public class GameEndEvent : EventObject
 {
     public override void StartEvent()
     {
-        SceneManager.LoadScene("Ending");
+        //SceneManager.LoadScene("Ending");
 
     }
 }

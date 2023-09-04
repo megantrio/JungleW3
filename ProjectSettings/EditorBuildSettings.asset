@@ -36,6 +36,9 @@ EditorBuildSettings:
     path: Assets/1.Scene/Day7.unity
     guid: 96f89cff7a8866649a108be79b2a6050
   - enabled: 1
+    path: Assets/1.Scene/HappyEnding.unity
+    guid: d2a4d175b6a9b534aa0d4181beeccb14
+  - enabled: 1
     path: Assets/1.Scene/Ending.unity
     guid: 096dfdf1f206404459ad99b431b23f02
   m_configObjects:

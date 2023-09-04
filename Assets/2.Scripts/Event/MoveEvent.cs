@@ -45,7 +45,7 @@ public class MoveEvent : EventObject
         while (true)
         {
             target.transform.position = Vector3.MoveTowards(target.transform.position, endPos.position, speed*Time.deltaTime);
-            Debug.Log("Moving");
+            //Debug.Log("Moving");
             if ((target.transform.position ==endPos.position))
             {
                 break;

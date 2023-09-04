@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ending_knight
+  m_Name: BlackMan_End
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,13 +20,11 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -634944455, guid: d7f2ae1dae24c6f42a15136431bb785a, type: 3}
-    - time: 0.6
-      value: {fileID: 496111637, guid: d7f2ae1dae24c6f42a15136431bb785a, type: 3}
-    - time: 0.96666664
-      value: {fileID: -372059096, guid: d7f2ae1dae24c6f42a15136431bb785a, type: 3}
-    - time: 1.5333333
-      value: {fileID: -634944455, guid: d7f2ae1dae24c6f42a15136431bb785a, type: 3}
+      value: {fileID: 2064831643, guid: 12b7dc1add543ce41a9b9937c0897b26, type: 3}
+    - time: 0.81666666
+      value: {fileID: 340285293, guid: 12b7dc1add543ce41a9b9937c0897b26, type: 3}
+    - time: 1.65
+      value: {fileID: -2076904783, guid: 12b7dc1add543ce41a9b9937c0897b26, type: 3}
     attribute: m_Sprite
     path: 
     classID: 114
@@ -46,16 +44,15 @@ AnimationClip:
       customType: 0
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -634944455, guid: d7f2ae1dae24c6f42a15136431bb785a, type: 3}
-    - {fileID: 496111637, guid: d7f2ae1dae24c6f42a15136431bb785a, type: 3}
-    - {fileID: -372059096, guid: d7f2ae1dae24c6f42a15136431bb785a, type: 3}
-    - {fileID: -634944455, guid: d7f2ae1dae24c6f42a15136431bb785a, type: 3}
+    - {fileID: 2064831643, guid: 12b7dc1add543ce41a9b9937c0897b26, type: 3}
+    - {fileID: 340285293, guid: 12b7dc1add543ce41a9b9937c0897b26, type: 3}
+    - {fileID: -2076904783, guid: 12b7dc1add543ce41a9b9937c0897b26, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.55
+    m_StopTime: 1.6666666
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

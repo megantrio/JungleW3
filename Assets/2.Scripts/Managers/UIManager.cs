@@ -63,11 +63,11 @@ public class UIManager : EventObject
     private void Awake()
     {
         Instance = this;
+        newsAndOrderList = CSVReader.Read("Database/newsAndOrder");
     }
 
     private void Start()
     {        
-        newsAndOrderList = CSVReader.Read("Database/newsAndOrder");      
     }
 
 
@@ -131,10 +131,10 @@ public class UIManager : EventObject
                 if (childList[i] != transform) { Destroy(childList[i].gameObject); }
             }
         }
-
+        Debug.Log(newsAndOrderList);
         foreach (var v in newsAndOrderList)
         {
-
+            
 
             if (v["Day"].Equals(day) && v["ID"].Equals(newsID))
             {

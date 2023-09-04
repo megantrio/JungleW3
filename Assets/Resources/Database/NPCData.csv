@@ -1,33 +1,37 @@
 ﻿Day,Index,Sprite,ScriptFile,ScriptNum,Condition,MoveType,의뢰서 내용
-1,1,CatFind,소년,Offer,,0,깃털 모자
-2,1,Knight,기사,Offer,,0,
-3,1,Elf,엘프,Offer,,0,
-3,1,Oak,오크,Offer,,0,
-3,1,Skeleton,스켈레톤,Offer,,0,스켈레톤
-3,1,PrettyWomen,여사님,Offer,,0,
-3,1,farmer_2,농부,Offer,,0,농장에 행운을 불러오는 행운목
-3,1,madam,마담,Offer,,0,행운이 찾아오는 목걸이
-3,1,wizard_1,마법사,Offer,,0,초록빛을 선물해주는 초록빛 구체
-3,1,pirate_1,해적,Offer,,0,골목 끝 부자가 버린 금으로 만든 바라는 꽃
-3,1,farmer_2,농부2,Offer,,0,농부의 방에서 키울 작은 화면
-3,1,Girl,마트,Offer,,0,실타래처럼 가벼운 사탕
-3,0,wizard_2,마법사2,Offer,,0,초록잎을 긴 시간동안 달이고 다진 물약
-3,1,blackMan,블랙맨,Offer,,0,인생 처음으로 받아보는 선물
-3,1,Girl,마트2,Offer,,0,"요리의 근본 재료, 예를 들면 양파나 대파 같은 것"
-3,1,chief,셰프,Offer,,0,
-3,1,blackMan,블랙맨2,Offer,,0,
-3,1,madam,마담2,Offer,,0,
-3,1,farmer_2,농부3,Offer,,0,
-3,1,biker,바이커,Offer,,0,
-3,1,chief,셰프2,Offer,,0,
-3,1,blackMan,블랙맨3,Offer,,0,
-3,1,biker,바이커2,Offer,,0,
-3,1,chief,셰프3,Offer,,0,
-3,1,madam,마담3,Offer,,0,
-3,1,chief,셰프4,Offer,,0,
-3,1,pirate_1,해적2,Offer,,0,
-3,1,wizard_1,마법사3,Offer,,0,뭐가 들어있는지 모르는 신비한 것
-3,1,Girl,마트3,Offer,,0,
-3,1,pirate_1,해적3,Offer,,0,
-3,1,Girl,마트4,Offer,,0,
-6,1,PIPI,피피,,,,
+1,1,farmer_2,농부,Offer,Test,0,
+2,1,madam,마담,Offer,Test,0,행운이 찾아오는 목걸이
+2,1,Oak,오크,Offer,Test,0,
+3,1,Girl,마트2,Offer,Test,0,실타래처럼 가벼운 사탕
+4,1,blackMan,블랙맨,Offer,Test,0,인생 처음으로 받아보는 선물
+4,1,chief,셰프4,Offer,Test,0,
+4,1,Skeleton,스켈레톤,Offer,Test,0,스켈레톤
+5,1,madam,마담2,Offer,Test,0,
+5,1,blackMan,블랙맨3,Offer,Test,0,
+5,1,pirate_1,해적2,Offer,Test,0,골목 끝 부자가 버린 금으로 만든 바라는 꽃
+6,1,wizard_1,마법사3,Offer,Test,0,
+6,1,Girl,마트3,Offer,Test,0,"요리의 근본 재료, 예를 들면 양파나 대파 같은 것"
+6,1,biker,바이커3,Offer,Test,0,
+6,1,PrettyWomen,여사님,Offer,Test,0,
+7,0,wizard_2,마법사2,Offer,Test,0,초록잎을 긴 시간동안 달이고 다진 물약
+7,1,wizard_3,마법사,Offer,Test,0,초록빛을 선물해주는 초록빛 구체
+7,1,Girl,마트4,Offer,Test,0,
+8,1,Knight,기사,Offer,Test,0,
+8,1,Girl,마트,Offer,Test,0,
+8,1,chief,셰프3,Offer,Test,0,
+8,1,pirate_1,해적,Offer,Test,0,
+9,1,farmer_2,농부3,Offer,Test,0,
+9,1,biker,바이커2,Offer,Test,0,
+10,1,biker,바이커,Offer,Test,0,
+10,1,blackMan,블랙맨2,Offer,Test,0,
+10,1,CatFind,소년,Offer,Test,0,깃털 모자
+11,1,madam,마담4,Offer,Test,0,
+11,1,blackMan,블랙맨4,Offer,Test,0,환경미화
+11,1,chief,셰프5,Offer,Test,0,
+12,1,farmer_2,농부2,Offer,Test,0,작은화분
+12,1,wizard_1,마법사4,Offer,Test,0,????
+12,1,chief,셰프2,Offer,Test,0,
+12,1,Elf,엘프,Offer,Test,0,
+13,1,madam,마담3,Offer,Test,0,?????
+13,1,pirate_1,해적3,Offer,Test,0,
+14,1,PIPI,피피,Offer,,0,

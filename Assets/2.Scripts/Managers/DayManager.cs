@@ -13,7 +13,7 @@ public class DayEvents
 
 public class DayManager : MonoBehaviour
 {
-    public const int MAX_DAYS = 7;
+    public const int MAX_DAYS = 15;
     public static DayManager instance;
 
     public int day = 0;
@@ -38,7 +38,7 @@ public class DayManager : MonoBehaviour
     //현재 진행중인 이벤트 큐
     private Queue<EventObject> eventQueue = new Queue<EventObject>();
     //아침 이벤트들: NPCData.csv에서 불러옵니다.
-    private List<EventObject>[] morningNPCEvents = new List<EventObject>[10];
+    private List<EventObject>[] morningNPCEvents = new List<EventObject>[MAX_DAYS+2];
 
     //각 시간에만 Active될 오브젝트들
     [Header("낮이나 밤에만 켜지는 오브젝트를 지정해줍니다.")]
@@ -46,6 +46,11 @@ public class DayManager : MonoBehaviour
     public GameObject[] nightObjects;
 
     [Header("각 날짜별 아침 NPC 이벤트 전,후 그리고 저녁 시 일어날 이벤트를 지정해줍니다.")]
+    [Header("날짜별로basic 이벤트를 사용할지 결정합니다.")]
+    public bool[] useBasicEvents = new bool[MAX_DAYS+1];
+    [Header("모든 날에 기본적으로 표출할 이벤트를 결정합니다.")]
+    public DayEvents basicDayEvents;
+    [Header("각 날짜별로 추가로 표출할 이벤트를 결정합니다.")]
     public DayEvents[] events = new DayEvents[MAX_DAYS+1];
 
     private void Awake()
@@ -122,7 +127,7 @@ public class DayManager : MonoBehaviour
 
     public void UpdateTime()
     {
-        if (currentState == DayState.MORNING && day == 7)
+        if (currentState == DayState.MORNING && day == MAX_DAYS)
         {
             //7일차 아침이 끝났으므로 게임 종료
             Debug.Log("게임 종료");
@@ -163,6 +168,15 @@ public class DayManager : MonoBehaviour
             //1. 각 일자별 아침 시작 시 이벤트 삽입
             eventQueue.Enqueue(events[day].nightEvents[i]);
         }
+        if (useBasicEvents[day])
+        {
+            for (int i = 0; i < basicDayEvents.nightEvents.Count; i++)
+            {
+                //기본적으로 일어날 이벤트
+                eventQueue.Enqueue(basicDayEvents.nightEvents[i]);
+            }
+        }
+        
         if (eventQueue.Count > 0)
         {
             eventQueue.Peek().gameObject.SetActive(true);
@@ -189,6 +203,15 @@ public class DayManager : MonoBehaviour
         //2. 각 일자별 아침 NPC 이벤트
         //3. 각 일자별 아침 종료 시 이벤트
         //4. 이벤트 시작
+        if (useBasicEvents[day])
+        {
+            for (int i = 0; i < basicDayEvents.morningStartEvents.Count; i++)
+            {
+                //매일 진행할 startEvent삽입
+                eventQueue.Enqueue(basicDayEvents.morningStartEvents[i]);
+            }
+        }
+        
         for (int i = 0; i < events[day].morningStartEvents.Count; i++)
         {
             //1. 각 일자별 아침 시작 시 이벤트 삽입
@@ -196,15 +219,33 @@ public class DayManager : MonoBehaviour
         }
         for (int i = 0; i < morningNPCEvents[day].Count; i++)
         {
-            if (DataManager.GetNPCCondition(morningNPCEvents[day][i].condition))
+            if (morningNPCEvents[day][i].conditionValue.Equals(""))
             {
+                //기본 Offer 이벤트일 경우, condtionValue는 "", 그러므로 그냥 실행한다.
                 eventQueue.Enqueue(morningNPCEvents[day][i]);
+            }
+            else
+            {
+                //Success나 Fail이벤트일 경우, conditionValue와 GetNPCCondition이 같을 경우에만 진행한다.
+                if (DataManager.GetNPCCondition(morningNPCEvents[day][i].condition) == (morningNPCEvents[day][i].conditionValue))
+                {
+                    eventQueue.Enqueue(morningNPCEvents[day][i]);
+                }
             }
         }
         for (int i = 0; i < events[day].morningEndEvents.Count; i++)
         {
             //1. 각 일자별 아침 시작 시 이벤트 삽입
             eventQueue.Enqueue(events[day].morningEndEvents[i]);
+        }
+
+        if (useBasicEvents[day])
+        {
+            for (int i = 0; i < basicDayEvents.morningEndEvents.Count; i++)
+            {
+                // 매일 진행할 endEvent 삽입
+                eventQueue.Enqueue(basicDayEvents.morningEndEvents[i]);
+            }
         }
 
         //이벤트가 있다면 바로 시작, 없다면 삭제

@@ -653,92 +653,79 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25642dfebfa85c34cad572a4c230f4f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  day: 1
+  day: 14
   currentState: 0
   npcPrefab: {fileID: 1588166595718113984, guid: 9fd2fdb8c50e53c4eb82f38d23cb8a9e, type: 3}
   morningObjects:
   - {fileID: 131555370}
   nightObjects:
   - {fileID: 1816021974}
+  useBasicEvents: 00010101010101010101010101010100
+  basicDayEvents:
+    morningStartEvents:
+    - {fileID: 1905229977}
+    - {fileID: 1895477223}
+    morningEndEvents:
+    - {fileID: 1926173525}
+    - {fileID: 2120897758}
+    nightEvents:
+    - {fileID: 2019624765}
+    - {fileID: 1731865180}
+    - {fileID: 978743065}
   events:
   - morningStartEvents:
     - {fileID: 3860714835833830760}
     morningEndEvents: []
     nightEvents:
     - {fileID: 375663960}
-    - {fileID: 1754414698}
+    - {fileID: 1731865180}
     - {fileID: 978743065}
     - {fileID: 649864551}
-  - morningStartEvents:
-    - {fileID: 1905229977}
-    - {fileID: 1895477223}
-    morningEndEvents:
-    - {fileID: 1926173525}
-    - {fileID: 2120897758}
-    nightEvents:
-    - {fileID: 2019624765}
-    - {fileID: 868424172}
-    - {fileID: 978743065}
-    - {fileID: 649864551}
-  - morningStartEvents:
-    - {fileID: 1905229977}
-    - {fileID: 1895477223}
-    morningEndEvents:
-    - {fileID: 1926173525}
-    - {fileID: 2120897758}
-    nightEvents:
-    - {fileID: 2019624765}
-    - {fileID: 868424172}
-    - {fileID: 978743065}
-    - {fileID: 649864551}
-  - morningStartEvents:
-    - {fileID: 1905229977}
-    - {fileID: 1895477223}
-    morningEndEvents:
-    - {fileID: 1926173525}
-    - {fileID: 2120897758}
-    nightEvents:
-    - {fileID: 2019624765}
-    - {fileID: 868424172}
-    - {fileID: 978743065}
-    - {fileID: 649864551}
-  - morningStartEvents:
-    - {fileID: 1905229977}
-    - {fileID: 1895477223}
-    morningEndEvents:
-    - {fileID: 1926173525}
-    - {fileID: 2120897758}
-    nightEvents:
-    - {fileID: 2019624765}
-    - {fileID: 868424172}
-    - {fileID: 978743065}
-    - {fileID: 649864551}
-  - morningStartEvents:
-    - {fileID: 1905229977}
-    - {fileID: 1895477223}
-    morningEndEvents:
-    - {fileID: 1926173525}
-    - {fileID: 2120897758}
-    nightEvents:
-    - {fileID: 2019624765}
-    - {fileID: 868424172}
-    - {fileID: 978743065}
-    - {fileID: 649864551}
-  - morningStartEvents:
-    - {fileID: 1905229977}
-    - {fileID: 1895477223}
-    morningEndEvents:
-    - {fileID: 1926173525}
-    - {fileID: 2120897758}
-    nightEvents:
-    - {fileID: 2019624765}
-    - {fileID: 868424172}
-    - {fileID: 978743065}
-    - {fileID: 649864551}
-  - morningStartEvents:
-    - {fileID: 1905229977}
-    - {fileID: 2073388189}
+  - morningStartEvents: []
     morningEndEvents: []
+    nightEvents: []
+  - morningStartEvents: []
+    morningEndEvents: []
+    nightEvents: []
+  - morningStartEvents: []
+    morningEndEvents: []
+    nightEvents: []
+  - morningStartEvents: []
+    morningEndEvents: []
+    nightEvents: []
+  - morningStartEvents: []
+    morningEndEvents: []
+    nightEvents: []
+  - morningStartEvents: []
+    morningEndEvents: []
+    nightEvents: []
+  - morningStartEvents: []
+    morningEndEvents: []
+    nightEvents: []
+  - morningStartEvents: []
+    morningEndEvents: []
+    nightEvents: []
+  - morningStartEvents: []
+    morningEndEvents: []
+    nightEvents: []
+  - morningStartEvents: []
+    morningEndEvents: []
+    nightEvents: []
+  - morningStartEvents: []
+    morningEndEvents: []
+    nightEvents: []
+  - morningStartEvents: []
+    morningEndEvents: []
+    nightEvents: []
+  - morningStartEvents: []
+    morningEndEvents: []
+    nightEvents: []
+  - morningStartEvents: []
+    morningEndEvents: []
+    nightEvents: []
+  - morningStartEvents: []
+    morningEndEvents:
+    - {fileID: 2073388189}
     nightEvents: []
 --- !u!1 &319534795
 GameObject:
@@ -882,7 +869,7 @@ GameObject:
   m_Component:
   - component: {fileID: 366075911}
   m_Layer: 0
-  m_Name: IdleEvents
+  m_Name: BasicEvents
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -901,13 +888,13 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1905229976}
+  - {fileID: 1895477222}
+  - {fileID: 1926173524}
   - {fileID: 2120897759}
   - {fileID: 2019624766}
   - {fileID: 1754414697}
   - {fileID: 978743066}
   - {fileID: 2073388188}
-  - {fileID: 1895477222}
-  - {fileID: 1926173524}
   - {fileID: 649864550}
   m_Father: {fileID: 314352093}
   m_RootOrder: 2
@@ -977,6 +964,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   condition: 
+  conditionValue: 1
   tutorial:
   - {fileID: 630223463}
   - {fileID: 608545745}
@@ -1376,6 +1364,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   condition: 
+  conditionValue: 1
   speaker: 
   description:
   - "\uC624\uB298 \uD558\uB8E8\uB3C4 \uC54C\uCC3C\uB2E4."
@@ -1563,25 +1552,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &868424169 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1696249044846752443, guid: c9038758838ab364ea7815ed0bc4f01b, type: 3}
-  m_PrefabInstance: {fileID: 1731865179}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &868424172
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 868424169}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a7bf2d119ee58f47b8ff1d3d05dca14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  condition: 
-  uiManager: {fileID: 868424169}
 --- !u!1001 &873648857
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2212,6 +2182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   condition: 
+  conditionValue: 1
   target: {fileID: 20755176}
   startPos: {fileID: 0}
   endPos: {fileID: 1595650293}
@@ -2231,7 +2202,7 @@ Transform:
   - {fileID: 1204567506}
   - {fileID: 1595650293}
   m_Father: {fileID: 366075911}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1000552666
 GameObject:
@@ -5046,6 +5017,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9038758838ab364ea7815ed0bc4f01b, type: 3}
+--- !u!114 &1731865180 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1696249044846752445, guid: c9038758838ab364ea7815ed0bc4f01b, type: 3}
+  m_PrefabInstance: {fileID: 1731865179}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c718bb35c8abe084fa3093e85a10d02a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1734910454
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5253,7 +5235,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 366075911}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1754414698
 MonoBehaviour:
@@ -5268,6 +5250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   condition: 
+  conditionValue: 1
   speaker: "\uB098"
   description:
   - "\uC774 \uC790\uB9AC\uC5D0 \uC870\uD569 \uC774\uBCA4\uD2B8\uB97C \uB9CC\uB4E4\uBA74
@@ -5543,7 +5526,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 366075911}
-  m_RootOrder: 6
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1895477223
 MonoBehaviour:
@@ -5558,6 +5541,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   condition: 
+  conditionValue: 1
   speaker: 
   description:
   - "\uB0AE\uC774 \uBC1D\uC558\uB2E4."
@@ -5609,6 +5593,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   condition: 
+  conditionValue: 1
   target: {fileID: 20755176}
   startPos: {fileID: 1039638213}
   endPos: {fileID: 2086155816}
@@ -5702,7 +5687,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 366075911}
-  m_RootOrder: 7
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1926173525
 MonoBehaviour:
@@ -5717,6 +5702,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   condition: 
+  conditionValue: 1
   speaker: 
   description:
   - "\uC774\uC81C \uD574\uB3C4 \uC84C\uC73C\uB2C8 \uC870\uD569\uD558\uB7EC \uAC00\uBCFC\uAE4C"
@@ -5891,6 +5877,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   condition: 
+  conditionValue: 1
   target: {fileID: 20755176}
   startPos: {fileID: 1675874543}
   endPos: {fileID: 1945211445}
@@ -5910,7 +5897,7 @@ Transform:
   - {fileID: 1675874543}
   - {fileID: 1945211445}
   m_Father: {fileID: 366075911}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2054412070 stripped
 MonoBehaviour:
@@ -6010,7 +5997,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 366075911}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2073388189
 MonoBehaviour:
@@ -6025,6 +6012,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   condition: 
+  conditionValue: 1
 --- !u!1 &2073763311
 GameObject:
   m_ObjectHideFlags: 0
@@ -6134,6 +6122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   condition: 
+  conditionValue: 1
   target: {fileID: 20755176}
   startPos: {fileID: 0}
   endPos: {fileID: 1697172684}
@@ -6153,7 +6142,7 @@ Transform:
   - {fileID: 1550569282}
   - {fileID: 1697172684}
   m_Father: {fileID: 366075911}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2141070678
 MonoBehaviour:
@@ -6967,6 +6956,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   condition: 
+  conditionValue: 1
   tutorial:
   - {fileID: 1274283483816473331}
   - {fileID: 1274283483451138628}

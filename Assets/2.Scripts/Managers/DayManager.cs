@@ -6,9 +6,9 @@ using UnityEngine;
 [System.Serializable]
 public class DayEvents
 {
-    public EventObject[] morningStartEvents;
-    public EventObject[] morningEndEvents;
-    public EventObject[] nightEvents;
+    public List<EventObject> morningStartEvents;
+    public List<EventObject> morningEndEvents;
+    public List<EventObject> nightEvents;
 }
 
 public class DayManager : MonoBehaviour
@@ -158,7 +158,7 @@ public class DayManager : MonoBehaviour
         }
 
         //밤 이벤트 큐에 값 넣어주기
-        for (int i = 0; i < events[day].nightEvents.Length; i++)
+        for (int i = 0; i < events[day].nightEvents.Count; i++)
         {
             //1. 각 일자별 아침 시작 시 이벤트 삽입
             eventQueue.Enqueue(events[day].nightEvents[i]);
@@ -189,7 +189,7 @@ public class DayManager : MonoBehaviour
         //2. 각 일자별 아침 NPC 이벤트
         //3. 각 일자별 아침 종료 시 이벤트
         //4. 이벤트 시작
-        for (int i = 0; i < events[day].morningStartEvents.Length; i++)
+        for (int i = 0; i < events[day].morningStartEvents.Count; i++)
         {
             //1. 각 일자별 아침 시작 시 이벤트 삽입
             eventQueue.Enqueue(events[day].morningStartEvents[i]);
@@ -201,7 +201,7 @@ public class DayManager : MonoBehaviour
                 eventQueue.Enqueue(morningNPCEvents[day][i]);
             }
         }
-        for (int i = 0; i < events[day].morningEndEvents.Length; i++)
+        for (int i = 0; i < events[day].morningEndEvents.Count; i++)
         {
             //1. 각 일자별 아침 시작 시 이벤트 삽입
             eventQueue.Enqueue(events[day].morningEndEvents[i]);

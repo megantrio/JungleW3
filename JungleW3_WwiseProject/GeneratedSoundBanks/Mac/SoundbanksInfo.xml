@@ -31,7 +31,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{522F2463-20B6-BE5C-01AF-6A53462B2AC7}">
+		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{3018B721-AE0E-5158-1290-EEF6189D62D9}">
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
 			<Media>
@@ -102,11 +102,6 @@
 						<MediaRef Id="563972961"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2596272617" Name="Fail" DurationType="OneShot" DurationMin="0.5475" DurationMax="0.5475">
-					<MediaRefs>
-						<MediaRef Id="682999586"/>
-					</MediaRefs>
-				</Event>
 				<Event Id="1802970376" Name="FS" DurationType="OneShot" DurationMin="0.36972916" DurationMax="0.47466666">
 					<MediaRefs>
 						<MediaRef Id="51354858"/>
@@ -149,6 +144,11 @@
 						<MediaRef Id="78432480"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="913787308" Name="Put" DurationType="OneShot" DurationMin="0.5475" DurationMax="0.5475">
+					<MediaRefs>
+						<MediaRef Id="682999586"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="936499202" Name="Result" DurationType="OneShot" DurationMin="0.81446713" DurationMax="0.81446713">
 					<MediaRefs>
 						<MediaRef Id="459675833"/>
@@ -167,5 +167,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{76152C7C-8D7A-BF55-E14C-D2B4870B4E11}</FileHash>
+	<FileHash>{F65C8BD4-05F1-073F-E2C1-E8AAD3F5F2D8}</FileHash>
 </SoundBanksInfo>

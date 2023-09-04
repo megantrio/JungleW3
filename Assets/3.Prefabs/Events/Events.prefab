@@ -1338,6 +1338,7 @@ Transform:
   - {fileID: 5098673769965838473}
   - {fileID: 5098673771389329779}
   - {fileID: 3494386366748709035}
+  - {fileID: 694039954531306191}
   m_Father: {fileID: 5098673770651166152}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1513,6 +1514,7 @@ MonoBehaviour:
     morningEndEvents:
     - {fileID: 5098673769965838472}
     nightEvents: []
+  endingFailDescription: {fileID: 4443434137594635481}
 --- !u!1 &5098673770876852821
 GameObject:
   m_ObjectHideFlags: 0
@@ -2123,6 +2125,56 @@ MonoBehaviour:
   startPos: {fileID: 0}
   endPos: {fileID: 5098673771430719431}
   speed: 8
+--- !u!1 &5596388956822730513
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 694039954531306191}
+  - component: {fileID: 4443434137594635481}
+  m_Layer: 0
+  m_Name: EndingFailDescriptionEvent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &694039954531306191
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5596388956822730513}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5098673770599474194}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4443434137594635481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5596388956822730513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb26f5b0223f1584dad1af3204d8702c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  condition: 
+  conditionValue: 1
+  speaker: "<\uB3C4\uC6C0\uB9D0>"
+  description:
+  - "\uD53C\uD53C\uC758 \uC694\uCCAD\uC744 \uB4E4\uC5B4\uC8FC\uC9C0 \uBABB\uD588\uC2B5\uB2C8\uB2E4."
+  - "14\uC77C \uC624\uC804\uC73C\uB85C \uB3CC\uC544\uAC11\uB2C8\uB2E4."
 --- !u!1 &5936153371724962982
 GameObject:
   m_ObjectHideFlags: 0

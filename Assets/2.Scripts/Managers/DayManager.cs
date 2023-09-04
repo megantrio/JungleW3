@@ -144,7 +144,7 @@ public class DayManager : MonoBehaviour
         return DataManager.GetNPCCondition("얇고 가벼운 금붙이") && DataManager.GetNPCCondition("피피의 방울");
     }
 
-
+    public EventObject endingFailDescription;
     public void UpdateTime()
     {
         if (currentState == DayState.MORNING && day == MAX_DAYS)
@@ -164,6 +164,7 @@ public class DayManager : MonoBehaviour
                 //실패하면 14일차 다시 진행
                 currentState = DayState.MORNING;
                 day = 14;
+                eventQueue.Enqueue(endingFailDescription);
                 InitMorning();
             }
             return;

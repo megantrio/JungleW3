@@ -42,8 +42,8 @@ public class UIManager : EventObject
     [SerializeField] private GameObject hand;
     private bool isTimeGo = true;
     private bool isUpdate;
-    private float fdt;
-    [SerializeField] private float plusFdt = 80f;
+    private float fdt = 80f;
+    [SerializeField] private float plusFdt = 30f;
     [SerializeField] private float maxFdt = -90f;
 
     [Header("News&OrderList")]
@@ -59,32 +59,35 @@ public class UIManager : EventObject
 
     private int newsID = 0;
     private int orderID = 1;
-    public int day;
+    public int nowDay;
     private void Awake()
     {
         Instance = this;
         newsAndOrderList = CSVReader.Read("Database/newsAndOrder");
+        Debug.Log("Readcsv");
     }
 
-    private void Start()
-    {        
+    private void OnEnable()
+    {
+        //nowDay = DayManager.instance.day;
+        AllUpdate();
     }
 
-
+    
     public override void StartEvent()
     {
-        this.day = DayManager.instance.day;
-        AllUpdate();
+        
     }
     
     public void EndEvent() 
     {
+        Debug.Log("EventEnd");
         PostEventEnded();
     }
-
+    
     public void AllUpdate()
     {
-        nowDays.text = day.ToString();
+        nowDays.text = nowDay.ToString();
         isUpdate = true;
         MixItemReset();
         UpdateInfo();
@@ -131,18 +134,16 @@ public class UIManager : EventObject
                 if (childList[i] != transform) { Destroy(childList[i].gameObject); }
             }
         }
-        Debug.Log(newsAndOrderList);
+
         foreach (var v in newsAndOrderList)
         {
-            
-
-            if (v["Day"].Equals(day) && v["ID"].Equals(newsID))
+            if (v["Day"].Equals(nowDay) && v["ID"].Equals(newsID))
             {
                 newsPaperHeadLine.text = v["HeadOrder"].ToString();
                 newsPaperText.text = v["Script"].ToString();
             }
 
-            if (v["Day"].Equals(day) && v["ID"].Equals(orderID))
+            if (v["Day"].Equals(nowDay) && v["ID"].Equals(orderID))
             {
                 temp = Instantiate(orderPref, orderListParent);
                 OrderList tempOrder = temp.GetComponent<OrderList>();
@@ -212,6 +213,7 @@ public class UIManager : EventObject
 
             else if (!isMixed && itemMixSlot[i].item.isMixItem)
             {
+                Debug.Log("isMixed = false");
                 mixInven.AddItem(itemMixSlot[i].item);
             }
 
@@ -239,9 +241,9 @@ public class UIManager : EventObject
         Item mixItem;
         if (itemMixSlot[0].item != null && itemMixSlot[1].item != null)
         {
-            mixItem = itemMix.MixItem(itemMixSlot[0].item, itemMixSlot[1].item);
             fdt -= plusFdt;
-            
+            hand.transform.rotation = Quaternion.Euler(0,0,fdt);
+            mixItem = itemMix.MixItem(itemMixSlot[0].item, itemMixSlot[1].item);                    
         }
         else
         {
@@ -256,11 +258,13 @@ public class UIManager : EventObject
         else
         {
             mixInven.AddItem(mixItem);
+            Debug.Log("MixItem++");
         }
 
         if (fdt < -maxFdt)
         {
-            PostEventEnded();
+            EndEvent();
+            fdt = 80f;
         }
     }
 
@@ -276,10 +280,10 @@ public class UIManager : EventObject
         mixInven.ResetInven();
         specialMixInven.ResetInven();
 
-        // day = DataManager_Fix.instance.nowDays;
+        // nowDay = DataManager_Fix.instance.nowDays;
         for (int i = 0; i < stuffItemList.items.Length; i++)
         {
-            if (stuffItemList.items[i].applyDay <= day && !stuffItemList.items[i].isMixItem)
+            if (stuffItemList.items[i].applyDay <= nowDay && !stuffItemList.items[i].isMixItem)
             {
                 basicInven.AddItem(stuffItemList.items[i]);
             }
@@ -288,7 +292,7 @@ public class UIManager : EventObject
         for (int i = 0; i < SpecialItemList.items.Length; i++)
         {
             SpecialItemList.items[i].itemCount = maxItemCount;
-            if (SpecialItemList.items[i].applyDay <= day && !stuffItemList.items[i].isMixItem)
+            if (SpecialItemList.items[i].applyDay <= nowDay && !stuffItemList.items[i].isMixItem)
             {
                 specialInven.AddItem(SpecialItemList.items[i]);
             }

@@ -34,13 +34,13 @@ public class CSVToSO
             item.itemInfo = splitData[5];
 
             // 실제 생성 시 폴더 위치 조정할 것
-            item.itemImage = Resources.Load<Sprite>($"TestImage/{splitData[6]}");
+            item.itemImage = Resources.Load<Sprite>($"Item/{splitData[6]}");
 
             if (item.itemImage == null) { Debug.Log("Sprite가 적용 안됨"); }
             Debug.Log("Item CheckOK");
 
             // 실제 생성 시 Test 변경할 것
-            AssetDatabase.CreateAsset(item, $"Assets/Items/Test/{item.itemName}.asset");
+            AssetDatabase.CreateAsset(item, $"Assets/Items/MainItem/{splitData[6]}.asset");
             Debug.Log("Item Create");
         }
 

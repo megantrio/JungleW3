@@ -4010,10 +4010,10 @@ MonoBehaviour:
   isItemMax: 0
   isMixed: 0
   isItemAdd: 0
-  stuffItemList: {fileID: 11400000, guid: 7b429a517f9ed7344a02cd5429e67531, type: 2}
-  SpecialItemList: {fileID: 11400000, guid: 9a7738b75da28054a81d831952e03689, type: 2}
-  mixedItemList: {fileID: 11400000, guid: 77b110046fc6b6e4e973a9c862c5eddb, type: 2}
-  SpecialMixItemList: {fileID: 11400000, guid: 7fdb86c42c3cf9c498e9d415d60e4076, type: 2}
+  stuffItemList: {fileID: 11400000, guid: 2280db8ee05977845aee317d60ed3581, type: 2}
+  SpecialItemList: {fileID: 11400000, guid: 320fac0f0f9ded34f8a92354eee39458, type: 2}
+  mixedItemList: {fileID: 11400000, guid: 899b5a66642cfbc498d7017da859fd4c, type: 2}
+  SpecialMixItemList: {fileID: 11400000, guid: 04d085e052c6ce240885b9b06caa1fbe, type: 2}
   invenObj: {fileID: 1890180327272641824}
   basicInven: {fileID: 1890180327113562758}
   specialInven: {fileID: 1958483077301799078}
@@ -4031,7 +4031,7 @@ MonoBehaviour:
   orderListParent: {fileID: 1696249044505525038}
   orderPref: {fileID: 853611786152827292, guid: e688ac2880055e64f97ba31dde1b9443, type: 3}
   temp: {fileID: 0}
-  day: 0
+  nowDay: 0
 --- !u!1 &1890180326512077247
 GameObject:
   m_ObjectHideFlags: 0
@@ -4259,8 +4259,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mixerUI: {fileID: 0}
   mixerTextUI: {fileID: 0}
-  mixedItemAssetList: {fileID: 11400000, guid: 77b110046fc6b6e4e973a9c862c5eddb, type: 2}
-  specialMixItemList: {fileID: 11400000, guid: 7fdb86c42c3cf9c498e9d415d60e4076, type: 2}
+  mixedItemAssetList: {fileID: 11400000, guid: 899b5a66642cfbc498d7017da859fd4c, type: 2}
+  specialMixItemList: {fileID: 11400000, guid: 04d085e052c6ce240885b9b06caa1fbe, type: 2}
   kkwangItemAsset: {fileID: 11400000, guid: 6a5ed734f2a649f4098a5a30775e5286, type: 2}
   success: {fileID: 0}
   failure: {fileID: 0}

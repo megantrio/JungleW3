@@ -11,8 +11,8 @@ public class NPCEvent : EventObject
     public List<string> description = new List<string>();
 
     //이동 관련
-    private Vector3 start = new Vector3(-1.4f, -4.5f);
-    private Vector3 end = new Vector3(0.2f, -1.15f);
+    private Vector3 start = new Vector3(0.05f, -5f);
+    private Vector3 end = new Vector3(1.71f, -1.67f);
     public float speed = 5f;
 
 

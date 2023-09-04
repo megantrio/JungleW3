@@ -20,7 +20,6 @@ public class Dialogue : MonoBehaviour
     {
         for (int i = 0; i < description.Length; i++)
         {
-            Debug.Log("d");
             yield return TypingManager.instance.Typing(speaker, description[i]);           
         }
         TypingManager.instance.CloseTypeUI();

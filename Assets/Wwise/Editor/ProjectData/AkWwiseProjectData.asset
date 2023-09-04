@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: b00b0d526393d34680aa75eff1d6431a
     GuidInternal: 
-    m_lastTime: -8585077717655697301
+    m_lastTime: -8585077631386221100
     List:
     - name: Master
       guid: 648b302b40aaf54f91d770eb1203d658
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: b1024c8421c0dc4982b044b7d8dcf579
     GuidInternal: 
-    m_lastTime: -8585077717659049746
+    m_lastTime: -8585077622028479260
     List:
     - name: Dialogue
       guid: e56ade15b75e0a40b81391ccb6eb00d6
@@ -110,6 +110,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: e56ade15b75e0a40b81391ccb6eb00d6
       Path: Events\Default Work Unit\Dialogue
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Ending
+      guid: ceb238f9350a824582d57ea6b1d9b7ce
+      id: 3966194980
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b1024c8421c0dc4982b044b7d8dcf579
+      - ElementName: Ending
+        ObjectType: 3
+        guid: ceb238f9350a824582d57ea6b1d9b7ce
+      Path: Events\Default Work Unit\Ending
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -457,7 +474,7 @@ MonoBehaviour:
     m_lastTime: -8585081933552218424
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0200000003000000
+  ExpandedWaapiItemIds: 02000000030000000500000006000000190000001a000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

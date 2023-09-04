@@ -6,7 +6,7 @@ using TMPro;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
-public class InventorySlot : MonoBehaviour
+public class InventorySlot : MonoBehaviour, IPointerClickHandler
 {
     public Inventory inventory;
     [Header("Management of Slot UI in Inventory")]
@@ -67,9 +67,13 @@ public class InventorySlot : MonoBehaviour
             inventory.RemoveItem(item);
         }
     }
-    
-    public void OnRightClick()
+   
+
+    public void OnPointerClick(PointerEventData eventData)
     {
-        UIManager.Instance.itemInfoUpdate(item);
+        if (eventData.button == PointerEventData.InputButton.Right)
+        {
+            if(_item != null) UIManager.Instance.itemInfoUpdate(item);
+        }
     }
 }

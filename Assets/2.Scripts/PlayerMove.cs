@@ -45,6 +45,8 @@ public class PlayerMove : MonoBehaviour
 
     public void OnMove(InputAction.CallbackContext context)
     {
+        //현재 사용하지 않음
+        return;
         if (MorningEventManager.instance.state != MorningEventManager.GameState.NIGHT)
         {
             return;

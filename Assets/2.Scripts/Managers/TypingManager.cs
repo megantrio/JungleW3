@@ -90,6 +90,7 @@ public class TypingManager : MonoBehaviour
             while (!isDialogClicked)
             { yield return null; }
             isDialogClicked = false;
+            dialogUI.SetActive(false);
             yield break;
         }
     }

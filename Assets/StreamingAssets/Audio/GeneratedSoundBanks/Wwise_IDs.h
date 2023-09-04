@@ -14,7 +14,6 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID DIALOGUE = 3930136735U;
-        static const AkUniqueID FAIL = 2596272617U;
         static const AkUniqueID FS = 1802970376U;
         static const AkUniqueID LIST = 220247005U;
         static const AkUniqueID MANG = 3145131302U;
@@ -23,6 +22,7 @@ namespace AK
         static const AkUniqueID NEWS = 898907948U;
         static const AkUniqueID PICKUP = 3978245845U;
         static const AkUniqueID PIPI = 1843860813U;
+        static const AkUniqueID PUT = 913787308U;
         static const AkUniqueID RESULT = 936499202U;
         static const AkUniqueID UI_DEFAULT = 906627473U;
         static const AkUniqueID UI_SELECT = 2774129122U;

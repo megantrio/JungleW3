@@ -13,11 +13,11 @@
 						<ObjectRef Name="Result" ID="{A8BFA33A-4649-42F9-AE2B-8E167B213F29}" WorkUnitID="{844C02B1-C021-49DC-82B0-44B7D8DCF579}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Music" ID="{C640771F-2C89-43B0-937B-4DC60B882EDF}" WorkUnitID="{844C02B1-C021-49DC-82B0-44B7D8DCF579}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Mix" ID="{F04702A8-CFF1-443A-B6F8-C8D86434AA54}" WorkUnitID="{844C02B1-C021-49DC-82B0-44B7D8DCF579}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Put" ID="{E19586DE-AEB7-4462-8664-2ADD7ADD75EE}" WorkUnitID="{844C02B1-C021-49DC-82B0-44B7D8DCF579}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="List" ID="{BFA72C5C-AF2D-489E-AE97-412F3D2BDE21}" WorkUnitID="{844C02B1-C021-49DC-82B0-44B7D8DCF579}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Pickup" ID="{B97E0797-144A-4CCA-BF9C-64744BF3B10C}" WorkUnitID="{844C02B1-C021-49DC-82B0-44B7D8DCF579}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="FS" ID="{EE91F973-C06E-4DCB-BC32-D9617D4BA999}" WorkUnitID="{844C02B1-C021-49DC-82B0-44B7D8DCF579}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="UI_Default" ID="{9E6754C3-69E7-4E2E-9518-0C4946258101}" WorkUnitID="{844C02B1-C021-49DC-82B0-44B7D8DCF579}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Fail" ID="{59E42563-D656-4F0F-8C0F-6322F88912BB}" WorkUnitID="{844C02B1-C021-49DC-82B0-44B7D8DCF579}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

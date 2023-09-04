@@ -85,8 +85,8 @@ public class ItemMixer : MonoBehaviour
             for (int i = 0; i < specialMixItemList.items.Length; i++)
             {
                 AkSoundEngine.PostEvent("Result", gameObject);
-                Debug.Log("SpecialMix");
                 itemReset(specialMixItemList.items[i]);
+                DataManager.SetNPCCondition(specialMixItemList.items[i].itemName,true);
                 return specialMixItemList.items[i];
             }
         }
@@ -101,6 +101,7 @@ public class ItemMixer : MonoBehaviour
 
                 //StartCoroutine(ParticleMaker(success));
                 itemReset(mixedItemAssetList.items[i]);
+                DataManager.SetNPCCondition(mixedItemAssetList.items[i].itemName, true);
                 return mixedItemAssetList.items[i];
             }
         }

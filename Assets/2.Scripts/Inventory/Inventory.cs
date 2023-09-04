@@ -86,11 +86,9 @@ public class Inventory : MonoBehaviour
 
     private void RefreshInventoryUI()
     {
-        Debug.Log("실행!");
         int i = 0;
         for (; i < items.Count && i < slots.Length; i++)
         {
-            Debug.Log("아이템 삽입");
             slots[i].item = items[i];
         }
         for (; i < slots.Length; i++)

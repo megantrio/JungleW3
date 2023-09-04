@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using static UnityEditor.Progress;
 
-public class UIManager : MonoBehaviour
+public class UIManager : EventObject
 {
     // Instance
     public static UIManager Instance;
@@ -21,7 +21,7 @@ public class UIManager : MonoBehaviour
     public ItemMixer itemMix;
     [HideInInspector] public bool isItemMax;
     [HideInInspector] public bool isMixed;
-    [HideInInspector] public bool isItemAdd;
+    [HideInInspector] public bool isItemAdd = false;
 
     [Header("Inventory")]
     public ItemAssetList stuffItemList;
@@ -40,11 +40,11 @@ public class UIManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI nowDays;
     [SerializeField] private GameObject clock;
     [SerializeField] private GameObject hand;
-    private bool isTimeGo;
+    private bool isTimeGo = true;
     private bool isUpdate;
     private float fdt;
-    [SerializeField] private float plusFdt;
-    [SerializeField] private float maxFdt;
+    [SerializeField] private float plusFdt = 80f;
+    [SerializeField] private float maxFdt = -90f;
 
     [Header("News&OrderList")]
     [SerializeField] private GameObject newsUI;
@@ -66,38 +66,31 @@ public class UIManager : MonoBehaviour
     }
 
     private void Start()
+    {        
+        newsAndOrderList = CSVReader.Read("Database/newsAndOrder");      
+    }
+
+
+    public override void StartEvent()
     {
-        isTimeGo = true;
-        fdt = 80f;
-        maxFdt = -90f;
-        fadeInOut.gameObject.SetActive(false);
-        newsAndOrderList = CSVReader.Read("Database/newsAndOrder");
-
-        isItemAdd = false;
-
+        this.day = DayManager.instance.day;
         AllUpdate();
     }
-
-    private void Update()
+    
+    public void EndEvent() 
     {
-        if (isTimeGo) fdt -= Time.deltaTime;
-        hand.transform.rotation = Quaternion.Euler(0, 0, fdt);
-        if (fdt <= maxFdt && !isUpdate)
-        {
-            FadeResetEffect();
-        }
+        PostEventEnded();
     }
-
 
     public void AllUpdate()
     {
         nowDays.text = day.ToString();
-        isUpdate = false;
+        isUpdate = true;
         MixItemReset();
         UpdateInfo();
         UpdateInven();
     }
-
+    /*
     public void FadeResetEffect()
     {
         isTimeGo = false;
@@ -120,7 +113,7 @@ public class UIManager : MonoBehaviour
         isTimeGo = true;
         fadeInOut.gameObject.SetActive(false);
     }
-
+    */
     public void NewsUION()
     {
         isTimeGo = !newsUI.activeSelf;
@@ -129,8 +122,20 @@ public class UIManager : MonoBehaviour
 
     public void UpdateInfo()
     {
+        RectTransform[] childList = orderListParent.GetComponentsInChildren<RectTransform>();
+
+        if (childList != null)
+        {
+            for (int i = 1; i < childList.Length; i++)
+            {
+                if (childList[i] != transform) { Destroy(childList[i].gameObject); }
+            }
+        }
+
         foreach (var v in newsAndOrderList)
         {
+
+
             if (v["Day"].Equals(day) && v["ID"].Equals(newsID))
             {
                 newsPaperHeadLine.text = v["HeadOrder"].ToString();
@@ -139,24 +144,15 @@ public class UIManager : MonoBehaviour
 
             if (v["Day"].Equals(day) && v["ID"].Equals(orderID))
             {
-                RectTransform[] childList = orderListParent.GetComponentsInChildren<RectTransform>();
+                temp = Instantiate(orderPref, orderListParent);
+                OrderList tempOrder = temp.GetComponent<OrderList>();
+                tempOrder.ResetList();
+                string orderer = v["Orderer"].ToString();
+                Debug.Log($"주문자 : {orderer}");
+                tempOrder.ordererText.text = orderer;
+                tempOrder.orderItem = v["HeadOrder"].ToString();
+                tempOrder.orderList.text = v["Script"].ToString();
 
-                if (childList != null)
-                {
-                    for (int i = 1; i < childList.Length; i++)
-                    {
-                        if (childList[i] != transform) { Destroy(childList[i].gameObject); }
-                    }
-
-                    temp = Instantiate(orderPref, orderListParent);
-                    OrderList tempOrder = temp.GetComponent<OrderList>();
-                    tempOrder.ResetList();
-                    string orderer = v["Orderer"].ToString();
-                    Debug.Log($"주문자 : {orderer}");
-                    tempOrder.ordererText.text = orderer;
-                    tempOrder.orderItem = v["HeadOrder"].ToString();
-                    tempOrder.orderList.text = v["Script"].ToString();
-                }
             }
         }
     }
@@ -245,8 +241,8 @@ public class UIManager : MonoBehaviour
         {
             mixItem = itemMix.MixItem(itemMixSlot[0].item, itemMixSlot[1].item);
             fdt -= plusFdt;
+            
         }
-
         else
         {
             return;
@@ -262,6 +258,10 @@ public class UIManager : MonoBehaviour
             mixInven.AddItem(mixItem);
         }
 
+        if (fdt < -maxFdt)
+        {
+            PostEventEnded();
+        }
     }
 
     public void OpenInven()
@@ -312,3 +312,4 @@ public class UIManager : MonoBehaviour
         gameObject.SetActive(!gameObject.activeSelf);
     }
 }
+

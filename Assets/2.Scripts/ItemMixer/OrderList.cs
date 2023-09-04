@@ -27,8 +27,8 @@ public class OrderList : MonoBehaviour
         {
             ordererText.text = $"<s>{ordererText.text}</s>";
             orderList.text = $"<s>{orderList.text}</s>";
-            orderList.color = new Color(0, 0, 0, 0.38f);
-            ordererText.color = new Color(0, 0, 0, 0.38f);
+            orderList.color = new Color(113, 57, 99, 0.5f);
+            ordererText.color = new Color(113, 57, 99, 0.5f);
         }
 
         else

@@ -19,8 +19,8 @@ public class DownStair : MonoBehaviour
 
     public void MapDown()
     {
-        map1f.SetActive(false);
-        mapBf.SetActive(true);
+        //map1f.SetActive(false);
+        //mapBf.SetActive(true);
     }
 
 }

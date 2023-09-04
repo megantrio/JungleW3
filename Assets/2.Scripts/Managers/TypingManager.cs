@@ -124,7 +124,9 @@ public class TypingManager : MonoBehaviour
         if (callback.started)
         {
             if (dialogUI.activeSelf)
+            {
                 isDialogClicked = true;
+            }
             AkSoundEngine.PostEvent("Dialogue", gameObject);
         }
     }

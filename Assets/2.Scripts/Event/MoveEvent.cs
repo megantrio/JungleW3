@@ -14,6 +14,11 @@ public class MoveEvent : EventObject
     [Header("이동 속도를 결정합니다.")]
     public float speed = 5f;
 
+    private void OnEnable()
+    {
+        StartEvent();
+    }
+
     public override void StartEvent()
     {
         if(target == null)
@@ -41,7 +46,7 @@ public class MoveEvent : EventObject
         while (true)
         {
             target.transform.position = Vector3.MoveTowards(target.transform.position, endPos.position, speed*Time.deltaTime);
-         
+            //Debug.Log("Moving");
             if ((target.transform.position ==endPos.position))
             {
                 break;

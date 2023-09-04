@@ -2,3 +2,5 @@
 1,1,Test1,Test,Default,,0
 1,2,Test2,Test,Offer,Check,0
 2,1,Test1,Test,Fail,,0
+3,1,Test1,Script,Offer,,0
+4,1,Test1,Script,Success,,0

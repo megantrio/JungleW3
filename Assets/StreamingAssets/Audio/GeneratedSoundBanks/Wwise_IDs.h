@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID DIALOGUE = 3930136735U;
+        static const AkUniqueID ENDING = 3966194980U;
         static const AkUniqueID FS = 1802970376U;
         static const AkUniqueID LIST = 220247005U;
         static const AkUniqueID MANG = 3145131302U;

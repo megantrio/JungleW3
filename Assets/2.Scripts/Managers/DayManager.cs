@@ -150,18 +150,22 @@ public class DayManager : MonoBehaviour
         if (currentState == DayState.MORNING && day == MAX_DAYS)
         {
             //7일차 아침이 끝났으므로 게임 종료
-            Debug.Log("게임 종료");
-            gameObject.SetActive(false);
 
             if (CheckHappyEnding())
             {
+                //성공하면 컷씬 이동
+                Debug.Log("게임 종료");
+                gameObject.SetActive(false);
                 SceneManager.LoadScene("HappyEnding");
             }
             else
             {
-                SceneManager.LoadScene("Ending");
+                Debug.Log("실패하여 재진행");
+                //실패하면 14일차 다시 진행
+                currentState = DayState.MORNING;
+                day = 14;
+                InitMorning();
             }
-
             return;
         }
         if (currentState == DayState.MORNING)

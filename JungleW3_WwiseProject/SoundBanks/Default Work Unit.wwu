@@ -14,6 +14,7 @@
 						<ObjectRef Name="Music" ID="{C640771F-2C89-43B0-937B-4DC60B882EDF}" WorkUnitID="{844C02B1-C021-49DC-82B0-44B7D8DCF579}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Mix" ID="{F04702A8-CFF1-443A-B6F8-C8D86434AA54}" WorkUnitID="{844C02B1-C021-49DC-82B0-44B7D8DCF579}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Put" ID="{E19586DE-AEB7-4462-8664-2ADD7ADD75EE}" WorkUnitID="{844C02B1-C021-49DC-82B0-44B7D8DCF579}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Ending" ID="{F938B2CE-0A35-4582-82D5-7EA6B1D9B7CE}" WorkUnitID="{844C02B1-C021-49DC-82B0-44B7D8DCF579}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="List" ID="{BFA72C5C-AF2D-489E-AE97-412F3D2BDE21}" WorkUnitID="{844C02B1-C021-49DC-82B0-44B7D8DCF579}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Night" ID="{F52F3A45-B8A6-4C77-A652-B749F36FCA6B}" WorkUnitID="{844C02B1-C021-49DC-82B0-44B7D8DCF579}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Pickup" ID="{B97E0797-144A-4CCA-BF9C-64744BF3B10C}" WorkUnitID="{844C02B1-C021-49DC-82B0-44B7D8DCF579}" Origin="Manual" Filter="7"/>

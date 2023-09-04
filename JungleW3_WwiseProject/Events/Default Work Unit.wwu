@@ -93,7 +93,21 @@
 				</Event>
 				<Event Name="Music" ID="{C640771F-2C89-43B0-937B-4DC60B882EDF}">
 					<ChildrenList>
+						<Action Name="" ID="{53C6BAA5-0CEB-43C5-95F9-5D81609533AA}" ShortID="1072914397">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ending" ID="{C90A53CC-F72F-402B-B900-77E40D92AA38}" WorkUnitID="{7DD625F7-73A1-4E69-9D1C-83D638E205E7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{0ED90D43-7BD1-4F86-A54B-F220BE08EEE1}" ShortID="640300276">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="1"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Music" ID="{46C7A54F-1168-4DE1-9087-D39EE92FAB32}" WorkUnitID="{7DD625F7-73A1-4E69-9D1C-83D638E205E7}"/>
@@ -152,6 +166,28 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Night" ID="{58F0DA2E-4997-4275-8E4D-694E8DE4C2BF}" WorkUnitID="{7DD625F7-73A1-4E69-9D1C-83D638E205E7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Ending" ID="{F938B2CE-0A35-4582-82D5-7EA6B1D9B7CE}">
+					<ChildrenList>
+						<Action Name="" ID="{4DE27F5D-C2D4-4099-9687-FCB8603CCE1F}" ShortID="859709647">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ending" ID="{C90A53CC-F72F-402B-B900-77E40D92AA38}" WorkUnitID="{7DD625F7-73A1-4E69-9D1C-83D638E205E7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{BAF168C8-D320-4BFD-8EFD-2B49B84D5B5F}" ShortID="317949710">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music" ID="{46C7A54F-1168-4DE1-9087-D39EE92FAB32}" WorkUnitID="{7DD625F7-73A1-4E69-9D1C-83D638E205E7}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

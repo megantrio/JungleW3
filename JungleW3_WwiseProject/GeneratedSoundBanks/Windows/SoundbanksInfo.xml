@@ -31,7 +31,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{C70FE1FB-BD6E-2281-359E-AE9EFC532E05}">
+		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{57277CEE-625F-5824-CCA3-E2ED38AB6316}">
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
 			<Media>
@@ -87,6 +87,10 @@
 					<ShortName>ESM_Sophisticated_Tech_Button_Click_2_Hybrid_Mobile_Collect_Special_Power_Up_Buff.wav</ShortName>
 					<CachePath>SFX/ESM_Sophisticated_Tech_Button_Click_2_Hybrid_Mobile_Collect_Special_Power_Up_Buff_10C4C929.wem</CachePath>
 				</File>
+				<File Id="868345466" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>CatDream.wav</ShortName>
+					<CachePath>SFX/CatDream_10C4C929.wem</CachePath>
+				</File>
 				<File Id="873422980" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Fs1.wav</ShortName>
 					<CachePath>SFX/Fs1_10C4C929.wem</CachePath>
@@ -104,6 +108,11 @@
 				<Event Id="3930136735" Name="Dialogue" DurationType="OneShot" DurationMin="0.23669414" DurationMax="0.23669414">
 					<MediaRefs>
 						<MediaRef Id="563972961"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3966194980" Name="Ending" DurationType="OneShot" DurationMin="60" DurationMax="60">
+					<MediaRefs>
+						<MediaRef Id="868345466"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1802970376" Name="FS" DurationType="OneShot" DurationMin="0.36972916" DurationMax="0.47466666">
@@ -176,5 +185,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{9B3AC341-9E50-8A6A-9CA8-B7059A6939AF}</FileHash>
+	<FileHash>{FD4D9B9A-8655-C270-3A40-F524433E2C92}</FileHash>
 </SoundBanksInfo>

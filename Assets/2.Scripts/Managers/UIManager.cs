@@ -69,7 +69,7 @@ public class UIManager : EventObject
 
     private void OnEnable()
     {
-        //nowDay = DayManager.instance.day;
+        nowDay = DayManager.instance.day;
         AllUpdate();
     }
 
@@ -243,7 +243,7 @@ public class UIManager : EventObject
         {
             fdt -= plusFdt;
             hand.transform.rotation = Quaternion.Euler(0,0,fdt);
-            mixItem = itemMix.MixItem(itemMixSlot[0].item, itemMixSlot[1].item);                    
+            mixItem = itemMix.MixItem(itemMixSlot[0].item, itemMixSlot[1].item);       
         }
         else
         {

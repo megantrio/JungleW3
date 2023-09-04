@@ -38,7 +38,7 @@ public class PlayerMove : MonoBehaviour
         cameraPosition.y = transform.position.y;
         mainCamera.transform.position = cameraPosition;
 
-        rb.MovePosition(rb.position + moveInput * moveSpeed * Time.fixedDeltaTime);
+        //rb.MovePosition(rb.position + moveInput * moveSpeed * Time.fixedDeltaTime);
 
     }
 

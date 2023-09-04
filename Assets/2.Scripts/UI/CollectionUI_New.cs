@@ -15,6 +15,7 @@ public class CollectionUI_New : MonoBehaviour
     public Button lbutton;
     public Button rbutton;
     public TMP_Text index;
+    public GameObject collectionOpenButton;
     //1. 데이터 합성 불러옴
     private void Awake()
     {
@@ -36,6 +37,12 @@ public class CollectionUI_New : MonoBehaviour
     private void OnEnable()
     {
         UpdatePage(page);
+        collectionOpenButton.SetActive(false);
+    }
+
+    private void OnDisable()
+    {
+        collectionOpenButton.SetActive(true);
     }
 
     public void AddPageNumber(int addition)

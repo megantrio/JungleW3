@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TutorialEvent : GameEvent
+public class TutorialEvent : EventObject
 {
     public List<GameObject> tutorial;
 
@@ -13,7 +13,7 @@ public class TutorialEvent : GameEvent
 
     public IEnumerator Tutorial()
     {
-        Debug.Log("생각");
+        Debug.Log("튜토리얼 시작");
         foreach(var t in tutorial)
         {
             t.SetActive(true);
@@ -22,7 +22,6 @@ public class TutorialEvent : GameEvent
                 yield return null;
             }
         }
-
-        EndEvent();
+       PostEventEnded();
     }
 }

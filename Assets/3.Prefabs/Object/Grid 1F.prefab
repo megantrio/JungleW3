@@ -3284,7 +3284,8 @@ GameObject:
   - component: {fileID: 5876992247219505601}
   - component: {fileID: 1116905245}
   - component: {fileID: 1116905244}
-  - component: {fileID: 1116905243}
+  - component: {fileID: 2160827060951987339}
+  - component: {fileID: 2160827060951987332}
   m_Layer: 0
   m_Name: Stairs
   m_TagString: Untagged
@@ -3467,7 +3468,7 @@ CompositeCollider2D:
   m_GenerationType: 0
   m_EdgeRadius: 0
   m_ColliderPaths:
-  - m_Collider: {fileID: 1116905243}
+  - m_Collider: {fileID: 0}
     m_ColliderPaths:
     - - X: 50000000
         Y: 30000000
@@ -3485,7 +3486,7 @@ CompositeCollider2D:
       - {x: 4.000029, y: 2}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
---- !u!19719996 &1116905243
+--- !u!19719996 &2160827060951987339
 TilemapCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3495,12 +3496,26 @@ TilemapCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_UsedByComposite: 1
+  m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
+--- !u!114 &2160827060951987332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5876992247219505599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 742dd8914c38050488349c570b078cfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  map1f: {fileID: 5876992247160638516}
+  mapBf: {fileID: 0}
 --- !u!1 &5876992247379625989
 GameObject:
   m_ObjectHideFlags: 0

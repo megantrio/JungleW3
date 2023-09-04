@@ -90,6 +90,7 @@ public class TypingManager : MonoBehaviour
             while (!isDialogClicked)
             { yield return null; }
             isDialogClicked = false;
+            dialogUI.SetActive(false);
             yield break;
         }
     }
@@ -124,7 +125,9 @@ public class TypingManager : MonoBehaviour
         if (callback.started)
         {
             if (dialogUI.activeSelf)
+            {
                 isDialogClicked = true;
+            }
             AkSoundEngine.PostEvent("Dialogue", gameObject);
         }
     }

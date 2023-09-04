@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Item_12
   m_EditorClassIdentifier: 
   isMixItem: 0
-  applyDay: 0
+  isSpecialItem: 0
+  itemCount: 0
+  applyDay: 2
   itemName: "\uBC14\uB2E5\uC5D0 \uB5A8\uC5B4\uC9C4\uC9C0 3\uCD08 \uC9C0\uB09C \uB2F9\uACE0"
   itemImage: {fileID: 21300000, guid: 12e6580c1cab1484197775611b7cf84b, type: 3}
+  itemInfo: 

@@ -38,13 +38,15 @@ public class PlayerMove : MonoBehaviour
         cameraPosition.y = transform.position.y;
         mainCamera.transform.position = cameraPosition;
 
-        rb.MovePosition(rb.position + moveInput * moveSpeed * Time.fixedDeltaTime);
+        //rb.MovePosition(rb.position + moveInput * moveSpeed * Time.fixedDeltaTime);
 
     }
 
 
     public void OnMove(InputAction.CallbackContext context)
     {
+        //현재 사용하지 않음
+        return;
         if (MorningEventManager.instance.state != MorningEventManager.GameState.NIGHT)
         {
             return;

@@ -1,0 +1,18 @@
+﻿ID,Speaker,Description
+Default,의뢰자,좋은아침
+Default,나,너도
+Default,의뢰자,하하
+Offer,의뢰자,딸기 파르페를 만들어주겠나?
+Offer,,난 딸기 파르페를 무지 좋아한다고
+Offer,나,해보겠습니다
+Offer,의뢰자,굿
+Success,의뢰자,딸기 파르페는 만들었나?
+Success,나,예
+Success,의뢰자,굿
+Fail,의뢰자,딸기 파르페는 만들었나?
+Fail,나,ㄴㄴ
+Fail,의뢰자,ㅠㅠ
+Special,의뢰자,이건 궁극의 딸기 파르페를 만들기 위한 레시피라네
+Special,,궁극의 딸기 파르페를 만들어주겠나
+Special,나,헉 넹
+Special,의뢰자,ㄳㄳ

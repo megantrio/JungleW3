@@ -47,6 +47,7 @@ public class DataManager : MonoBehaviour
                 morningEvents[day].Add(cur);
                 //Sprite
                 npcData.TryGetValue("Sprite", out temp);
+                temp = "npc/" + temp;
                 cur.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>(temp.ToString());
                 //Script
                 npcData.TryGetValue("ScriptFile", out temp);

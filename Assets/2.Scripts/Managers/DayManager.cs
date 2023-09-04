@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -15,6 +16,8 @@ public class DayManager : MonoBehaviour
 {
     public const int MAX_DAYS = 15;
     public static DayManager instance;
+
+    public static bool isFirstStarted = false;
 
     public int day = 0;
     public enum DayState
@@ -55,6 +58,10 @@ public class DayManager : MonoBehaviour
 
     private void Awake()
     {
+        if (isFirstStarted)
+        {
+            day = 1;
+        }
         if (instance == null)
         {
             instance = this;
@@ -93,6 +100,12 @@ public class DayManager : MonoBehaviour
         {
             InitNight();
         }
+    }
+
+    private void OnDestroy()
+    {
+        instance = null;
+        isFirstStarted = true;
     }
 
 

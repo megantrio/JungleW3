@@ -12,11 +12,10 @@ public class MoveEvent : EventObject
     [Header("이동할 위치를 선택합니다. endPos가 None일 경우 이 오브젝트의 위치로 설정됩니다.")]
     public Transform endPos;
     [Header("이동 속도를 결정합니다.")]
-    public float speed = 5f;
+    public float speed = -5f;
 
     private void OnEnable()
     {
-        StartEvent();
     }
 
     public override void StartEvent()
@@ -46,7 +45,7 @@ public class MoveEvent : EventObject
         while (true)
         {
             target.transform.position = Vector3.MoveTowards(target.transform.position, endPos.position, speed*Time.deltaTime);
-            //Debug.Log("Moving");
+            Debug.Log("Moving");
             if ((target.transform.position ==endPos.position))
             {
                 break;

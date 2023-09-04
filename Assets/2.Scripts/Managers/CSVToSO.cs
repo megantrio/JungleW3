@@ -6,45 +6,45 @@ using System.IO;
 
 public class CSVToSO
 {
-    private static string itemCSVPath = "/Resources/Database/ItemList.csv";
+    //private static string itemCSVPath = "/Resources/Database/ItemList.csv";
 
-    [MenuItem("Utilities/Generate Items")]
-    public static void GenerateItem()
-    {
-        string[] allLines = File.ReadAllLines(Application.dataPath + itemCSVPath);
+    ////[MenuItem("Utilities/Generate Items")]
+    //public static void GenerateItem()
+    //{
+    //    string[] allLines = File.ReadAllLines(Application.dataPath + itemCSVPath);
 
-        Debug.Log("CSVToSO");
+    //    Debug.Log("CSVToSO");
 
-        foreach (string s in allLines)
-        {
-            string[] splitData = s.Split(',');
-            if (splitData[0] == "isMixItem") continue;
+    //    foreach (string s in allLines)
+    //    {
+    //        string[] splitData = s.Split(',');
+    //        if (splitData[0] == "isMixItem") continue;
 
-            Item item = ScriptableObject.CreateInstance<Item>();
-            if (splitData[0] == "TRUE") item.isMixItem = true;
-            else item.isMixItem = false;
+    //        Item item = ScriptableObject.CreateInstance<Item>();
+    //        if (splitData[0] == "TRUE") item.isMixItem = true;
+    //        else item.isMixItem = false;
 
-            if (splitData[1] == "TRUE") item.isSpecialItem = true;
-            else item.isSpecialItem = false;
+    //        if (splitData[1] == "TRUE") item.isSpecialItem = true;
+    //        else item.isSpecialItem = false;
 
-            item.itemCount = int.Parse(splitData[2]);
-            item.applyDay = int.Parse(splitData[3]);
+    //        item.itemCount = int.Parse(splitData[2]);
+    //        item.applyDay = int.Parse(splitData[3]);
 
-            item.itemName = splitData[4];
-            item.itemInfo = splitData[5];
+    //        item.itemName = splitData[4];
+    //        item.itemInfo = splitData[5];
 
-            // 실제 생성 시 폴더 위치 조정할 것
-            item.itemImage = Resources.Load<Sprite>($"Item/{splitData[6]}");
+    //        // 실제 생성 시 폴더 위치 조정할 것
+    //        item.itemImage = Resources.Load<Sprite>($"Item/{splitData[6]}");
 
-            if (item.itemImage == null) { Debug.Log("Sprite가 적용 안됨"); }
-            Debug.Log("Item CheckOK");
+    //        if (item.itemImage == null) { Debug.Log("Sprite가 적용 안됨"); }
+    //        Debug.Log("Item CheckOK");
 
-            // 실제 생성 시 Test 변경할 것
-            AssetDatabase.CreateAsset(item, $"Assets/Items/MainItem/{splitData[6]}.asset");
-            Debug.Log("Item Create");
-        }
+    //        // 실제 생성 시 Test 변경할 것
+    //        AssetDatabase.CreateAsset(item, $"Assets/Items/MainItem/{splitData[6]}.asset");
+    //        Debug.Log("Item Create");
+    //    }
 
-        AssetDatabase.SaveAssets();
-    }
+    //    AssetDatabase.SaveAssets();
+    //}
 
 }

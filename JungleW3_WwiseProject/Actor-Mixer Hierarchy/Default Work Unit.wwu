@@ -446,6 +446,40 @@
 						<ActiveSource Name="OST_SomeStore" ID="{812A8063-B4F3-4A9A-B668-75F14EF80D02}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="Night" ID="{58F0DA2E-4997-4275-8E4D-694E8DE4C2BF}" ShortID="661093127">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-18</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{265BF38B-4E39-4F29-A4C1-F66F87B643A0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7C1C6A1A-F196-4648-947E-6C16ADEA12ED}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="ABJP_Animal_08_Cricket" ID="{25A8D10D-F69C-410A-98D9-D31940BEC6B1}">
+							<PropertyList>
+								<Property Name="FadeOutDuration" Type="Real64" Value="1.33011379782967"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimEnd" Type="Real64" Value="1.48126309303759"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>ABJP_Animal_08_Cricket.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="707644983"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="ABJP_Animal_08_Cricket" ID="{25A8D10D-F69C-410A-98D9-D31940BEC6B1}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

@@ -146,6 +146,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Night" ID="{F52F3A45-B8A6-4C77-A652-B749F36FCA6B}">
+					<ChildrenList>
+						<Action Name="" ID="{C537DBE9-7461-44BF-8E7E-C1DEA56337C2}" ShortID="520982280">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Night" ID="{58F0DA2E-4997-4275-8E4D-694E8DE4C2BF}" WorkUnitID="{7DD625F7-73A1-4E69-9D1C-83D638E205E7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

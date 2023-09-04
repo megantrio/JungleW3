@@ -4,6 +4,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	906627473	UI_Default			\Default Work Unit\UI_Default	
 	913787308	Put			\Default Work Unit\Put	
 	936499202	Result			\Default Work Unit\Result	
+	1011622525	Night			\Default Work Unit\Night	
 	1182670517	Mix			\Default Work Unit\Mix	
 	1802970376	FS			\Default Work Unit\FS	
 	1843860813	PIPI			\Default Work Unit\PIPI	
@@ -25,6 +26,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	563972961	Dialogue	C:\JungleW3\JungleW3_WwiseProject\.cache\Windows\SFX\ESM_Text_Box_Typing_short_App_Button_Sci_Fi_Glitch_Morph_Mechanism_Texture_Futuristic_DD7297DB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue		41912
 	630528704	Fs3	C:\JungleW3\JungleW3_WwiseProject\.cache\Windows\SFX\Fs3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\FS\Fs3		71084
 	682999586	Fail	C:\JungleW3\JungleW3_WwiseProject\.cache\Windows\SFX\ESM_Fantasy_Game_Footstep_Grass_Medium_D_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fail		105280
+	707644983	Night	C:\JungleW3\JungleW3_WwiseProject\.cache\Windows\SFX\ABJP_Animal_08_Cricket_24D5D9AD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Night		261392
 	782747681	Pickup	C:\JungleW3\JungleW3_WwiseProject\.cache\Windows\SFX\ESM_Sophisticated_Tech_Button_Click_2_Hybrid_Mobile_Collect_Special_Power_Up_Buff_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pickup		133296
 	873422980	Fs1	C:\JungleW3\JungleW3_WwiseProject\.cache\Windows\SFX\Fs1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\FS\Fs1		75136
 	959012926	List	C:\JungleW3\JungleW3_WwiseProject\.cache\Windows\SFX\ESM_Horror_Game_UI_Organic_Paper_Page_Turn_Single_Flip_7_User_Interface_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\List		73996

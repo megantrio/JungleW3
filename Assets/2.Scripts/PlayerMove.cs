@@ -33,10 +33,10 @@ public class PlayerMove : MonoBehaviour
 
     private void Update()
     {
-        Vector3 cameraPosition = mainCamera.transform.position;
+       /* Vector3 cameraPosition = mainCamera.transform.position;
         cameraPosition.x = transform.position.x;
         cameraPosition.y = transform.position.y;
-        mainCamera.transform.position = cameraPosition;
+        mainCamera.transform.position = cameraPosition;*/
 
         //rb.MovePosition(rb.position + moveInput * moveSpeed * Time.fixedDeltaTime);
 

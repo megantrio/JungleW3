@@ -31,7 +31,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{3018B721-AE0E-5158-1290-EEF6189D62D9}">
+		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{C70FE1FB-BD6E-2281-359E-AE9EFC532E05}">
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
 			<Media>
@@ -78,6 +78,10 @@
 				<File Id="682999586" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ESM_Fantasy_Game_Footstep_Grass_Medium_D.wav</ShortName>
 					<CachePath>SFX/ESM_Fantasy_Game_Footstep_Grass_Medium_D_10C4C929.wem</CachePath>
+				</File>
+				<File Id="707644983" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ABJP_Animal_08_Cricket.wav</ShortName>
+					<CachePath>SFX/ABJP_Animal_08_Cricket_768F4668.wem</CachePath>
 				</File>
 				<File Id="782747681" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ESM_Sophisticated_Tech_Button_Click_2_Hybrid_Mobile_Collect_Special_Power_Up_Buff.wav</ShortName>
@@ -134,6 +138,11 @@
 						<MediaRef Id="320412028"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1011622525" Name="Night" DurationType="OneShot" DurationMin="1.481263" DurationMax="1.481263">
+					<MediaRefs>
+						<MediaRef Id="707644983"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3978245845" Name="Pickup" DurationType="OneShot" DurationMin="0.75510204" DurationMax="0.75510204">
 					<MediaRefs>
 						<MediaRef Id="782747681"/>
@@ -167,5 +176,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{E72B2F80-D76D-4953-935E-E0A9AE381AB2}</FileHash>
+	<FileHash>{9B3AC341-9E50-8A6A-9CA8-B7059A6939AF}</FileHash>
 </SoundBanksInfo>

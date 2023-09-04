@@ -20,6 +20,7 @@ namespace AK
         static const AkUniqueID MIX = 1182670517U;
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID NEWS = 898907948U;
+        static const AkUniqueID NIGHT = 1011622525U;
         static const AkUniqueID PICKUP = 3978245845U;
         static const AkUniqueID PIPI = 1843860813U;
         static const AkUniqueID PUT = 913787308U;

@@ -45,7 +45,14 @@ public class InventorySlot : MonoBehaviour
 
         else if (item.isSpecialItem && item.isMixItem)
         {
-            if (item != null)
+            if(item.itemName == "æ„∞Ì ∞°∫≠øÓ ±›∫Ÿ¿Ã")
+            {
+                UIManager.Instance.MixItemPlus(item);
+                inventory.RemoveItem(item);
+                return;
+            }
+
+            else if (item != null)
             {
                 UIManager.Instance.itemInfoUpdate(item);
                 return;

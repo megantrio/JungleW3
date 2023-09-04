@@ -32,6 +32,7 @@ public class ItemMixer : MonoBehaviour
 
     public IEnumerator ParticleMaker(GameObject a)
     {
+        Debug.Log("Particle");
         float t;
         if (a == success)
             t = 0.7f;
@@ -99,7 +100,6 @@ public class ItemMixer : MonoBehaviour
         {
             if (mixedItemAssetList.items[i].itemName.Equals(result))
             {
-
                 AkSoundEngine.PostEvent("Result", gameObject);
 
                 //StartCoroutine(ParticleMaker(success));

@@ -185,8 +185,10 @@ public class UIManager : EventObject
 
         if (item.isMixItem && item.isSpecialItem)
         {
-            Debug.Log($"ItemName : {item.itemName}");
-            return; 
+            if(item.itemName != "æ„∞Ì ∞°∫≠øÓ ±›∫Ÿ¿Ã")
+            {
+                return;
+            }
         }
 
 
@@ -218,7 +220,12 @@ public class UIManager : EventObject
 
             if (itemMixSlot[i].item.isSpecialItem && itemMixSlot[i].item.isMixItem)
             {
-                specialMixInven.AddItem(itemMixSlot[i].item);
+                if(itemMixSlot[i].item.itemName == "æ„∞Ì ∞°∫≠øÓ ±›∫Ÿ¿Ã")
+                {
+                    specialInven.AddItem(itemMixSlot[i].item);
+                }
+
+                else specialMixInven.AddItem(itemMixSlot[i].item);
             }
 
             else if (!isMixed && itemMixSlot[i].item.isMixItem)
@@ -262,7 +269,11 @@ public class UIManager : EventObject
 
         if (mixItem.isMixItem && mixItem.isSpecialItem)
         {
-            specialMixInven.AddItem(mixItem);
+            if(mixItem.itemName == "æ„∞Ì ∞°∫≠øÓ ±›∫Ÿ¿Ã")
+            {
+                specialInven.AddItem(mixItem);
+            }
+            else specialMixInven.AddItem(mixItem);
         }
 
         else

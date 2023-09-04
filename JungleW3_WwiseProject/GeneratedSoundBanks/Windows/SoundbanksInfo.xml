@@ -31,7 +31,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{04CD39BC-4261-19D7-74EC-8DAE112347B2}">
+		<SoundBank Id="4056684167" Type="User" Language="SFX" Hash="{C70FE1FB-BD6E-2281-359E-AE9EFC532E05}">
 			<ShortName>Master</ShortName>
 			<Path>Master.bnk</Path>
 			<Media>
@@ -81,7 +81,7 @@
 				</File>
 				<File Id="707644983" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ABJP_Animal_08_Cricket.wav</ShortName>
-					<CachePath>SFX/ABJP_Animal_08_Cricket_24D5D9AD.wem</CachePath>
+					<CachePath>SFX/ABJP_Animal_08_Cricket_768F4668.wem</CachePath>
 				</File>
 				<File Id="782747681" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ESM_Sophisticated_Tech_Button_Click_2_Hybrid_Mobile_Collect_Special_Power_Up_Buff.wav</ShortName>
@@ -176,5 +176,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{7169C372-ACE0-E225-C4A8-F2FEAC679E82}</FileHash>
+	<FileHash>{9B3AC341-9E50-8A6A-9CA8-B7059A6939AF}</FileHash>
 </SoundBanksInfo>

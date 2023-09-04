@@ -119,8 +119,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a5baf8fde8a525418aad87d0c422e97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  condition: 
+  conditionValue: 1
+  speaker: []
+  description: []
   speed: 5
-  speakerName: 
-  branch: 0
-  useSpeakers: 0
-  scriptList: []

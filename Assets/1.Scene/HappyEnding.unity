@@ -472,6 +472,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: c36d4cd6f5901f64e9b3259e8fd27458, type: 3}
   - {fileID: 21300000, guid: f2ca491134980eb41864f93aadc73240, type: 3}
   - {fileID: 21300000, guid: 37649db3f4c1aba428bdcf8fceb8980c, type: 3}
+  - {fileID: 21300000, guid: 565de2c5ad276ef49a71aaa2aafd794c, type: 3}
   - {fileID: 21300000, guid: 68277fe9701d9284ca08d97bdb56eac4, type: 3}
 --- !u!1 &889063598
 GameObject:
@@ -549,7 +550,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0

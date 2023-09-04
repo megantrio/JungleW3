@@ -22,7 +22,7 @@ public class HappyEndCutScene : MonoBehaviour
         {
             float timer = 0.0f;
             image.sprite = sprite;
-            transform.localScale = new Vector3(0.9f, 0.9f, 0.9f);
+            transform.localScale = new Vector3(1f, 1f, 1f);
             if (sprite == sprites[sprites.Count - 1])
             {
                 sceneTime = 3.0f;
@@ -37,7 +37,7 @@ public class HappyEndCutScene : MonoBehaviour
                 }
                 yield return null;
             }
-        }
+        }        
         SceneManager.LoadScene("Ending");
     }
 }

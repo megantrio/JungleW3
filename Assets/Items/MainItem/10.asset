@@ -15,7 +15,7 @@ MonoBehaviour:
   isMixItem: 0
   isSpecialItem: 1
   itemCount: 5
-  applyDay: 0
+  applyDay: 8
   itemName: "\uB9DD\uAC00\uC9C4 \uCD1D"
   itemImage: {fileID: 21300000, guid: 37cd78430224c0e44bcc8c18b18f95f3, type: 3}
   itemInfo: "\uCD1D\uC54C \uB300\uC2E0 \uB2E4\uB978 \uAC83\uC744 \uBC1C\uC0AC \uD55C\uB2E4\uBA74

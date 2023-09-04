@@ -8,9 +8,12 @@ public class Item : ScriptableObject
     #region PublicVariables
     [Header("Item spec")]
     public bool isMixItem;
+    public bool isSpecialItem;
+    public int itemCount;
     public int applyDay;
     public string itemName;
     public Sprite itemImage;
+    public string itemInfo;
     #endregion
 
     #region PrivateVariables

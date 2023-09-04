@@ -84,10 +84,13 @@ public class ItemMixer : MonoBehaviour
         {
             for (int i = 0; i < specialMixItemList.items.Length; i++)
             {
-                AkSoundEngine.PostEvent("Result", gameObject);
-                itemReset(specialMixItemList.items[i]);
-                DataManager.SetNPCCondition(specialMixItemList.items[i].itemName,true);
-                return specialMixItemList.items[i];
+                if(result == specialMixItemList.items[i].itemName)
+                {
+                    AkSoundEngine.PostEvent("Result", gameObject);
+                    itemReset(specialMixItemList.items[i]);
+                    DataManager.SetNPCCondition(specialMixItemList.items[i].itemName, true);
+                    return specialMixItemList.items[i];
+                }            
             }
         }
 
@@ -123,7 +126,7 @@ public class ItemMixer : MonoBehaviour
     private void Awake()
     {
         //조합데이터 로드
-        mixData = CSVReader.Read("Database/MixData");
+        mixData = CSVReader.Read("Database/Mixdata");
     }
 
 

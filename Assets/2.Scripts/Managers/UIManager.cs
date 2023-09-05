@@ -66,6 +66,7 @@ public class UIManager : EventObject
 
     private void OnEnable()
     {
+        fdt = 80f;
         endButton.interactable = true;
         isEndTime = false;
         nowDay = DayManager.instance.day;
@@ -80,7 +81,11 @@ public class UIManager : EventObject
     
     public void EndEventFast()
     {
-        if(!isEndTime)PostEventEnded();
+        if (!isEndTime)
+        {
+            itemMix.OnParticleSystemStopped();
+            PostEventEnded(); 
+        }
     }
 
     public void EndEvent() 
@@ -93,6 +98,7 @@ public class UIManager : EventObject
     {
         endButton.interactable = false;
         yield return new WaitForSeconds(2.0f);
+        itemMix.OnParticleSystemStopped();
         PostEventEnded();
     }
 
@@ -296,7 +302,6 @@ public class UIManager : EventObject
         if (fdt <= -maxFdt)
         {
             EndEvent();
-            fdt = 80f;
         }
     }
 

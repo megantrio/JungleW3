@@ -18,4 +18,6 @@ MonoBehaviour:
   applyDay: 0
   itemName: "\uBE44\uBC00 \uC8FC\uBA38\uB2C8"
   itemImage: {fileID: 21300000, guid: 576f9708eebb311488504643d10aac47, type: 3}
-  itemInfo: .
+  itemInfo: "\uC2E0\uBE44\uB85C\uC6B4 \uC8FC\uBA38\uB2C8\uC774\uB2E4. \uBB50\uAC00
+    \uB4E4\uC5B4\uC788\uB294\uC9C0 \uBAA8\uB974\uACA0\uC9C0\uB9CC, \uC660\uC9C0 \uB2ED\uC758
+    \uC6B8\uC74C\uC18C\uB9AC\uAC00 \uB4E4\uB9AC\uB294 \uAC83 \uAC19\uB2E4."

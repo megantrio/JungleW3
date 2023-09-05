@@ -12,6 +12,7 @@ public class ItemMixer : MonoBehaviour
 
     #region PrivateVariables
     [Header("πÕΩ∫ »ƒ æ∆¿Ã≈€ »πµÊ UI")]
+    public int a;
     public GameObject mixerUI;
     public TMP_Text mixerTextUI;
     public List<Dictionary<string, object>> mixData;
@@ -30,6 +31,19 @@ public class ItemMixer : MonoBehaviour
     #endregion
 
     #region PublicMethod
+
+    public void OnParticleSystemStopped()
+    {
+        Transform[] childList = parent.GetComponentsInChildren<Transform>();
+
+        if (childList != null)
+        {
+            for (int i = 1; i < childList.Length; i++)
+            {
+                if (childList[i] != transform) { Destroy(childList[i].gameObject); }
+            }
+        }
+    }
 
 
     public IEnumerator ParticleMaker(GameObject a)
@@ -80,7 +94,7 @@ public class ItemMixer : MonoBehaviour
         {
             StartCoroutine(ParticleMaker(failure));
             AkSoundEngine.PostEvent("Mang", gameObject);
-            itemReset(kkwangItemAsset);
+            itemReset(kkwangItemAsset);          
             return kkwangItemAsset;
         }
 
@@ -93,7 +107,7 @@ public class ItemMixer : MonoBehaviour
                     StartCoroutine(ParticleMaker(specialSuccess));
                     AkSoundEngine.PostEvent("Result", gameObject);
                     itemReset(specialMixItemList.items[i]);
-                    DataManager.SetNPCCondition(specialMixItemList.items[i].itemName, true);
+                    DataManager.SetNPCCondition(specialMixItemList.items[i].itemName, true);                    
                     return specialMixItemList.items[i];
                 }            
             }
@@ -104,8 +118,8 @@ public class ItemMixer : MonoBehaviour
         {
             if (mixedItemAssetList.items[i].itemName.Equals(result))
             {
+                success.SetActive(true);
                 AkSoundEngine.PostEvent("Result", gameObject);
-
                 StartCoroutine(ParticleMaker(success));
                 itemReset(mixedItemAssetList.items[i]);
                 DataManager.SetNPCCondition(mixedItemAssetList.items[i].itemName, true);

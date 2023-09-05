@@ -886,6 +886,7 @@ MonoBehaviour:
     morningEndEvents:
     - {fileID: 2073388189}
     nightEvents: []
+  endingFailDescription: {fileID: 0}
 --- !u!1 &319534795
 GameObject:
   m_ObjectHideFlags: 0

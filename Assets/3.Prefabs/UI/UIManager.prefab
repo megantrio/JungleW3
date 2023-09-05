@@ -5753,6 +5753,7 @@ MonoBehaviour:
   mixInven: {fileID: 1696249043373527045}
   specialMixInven: {fileID: 1696249044094034409}
   maxItemCount: 5
+  isEndTime: 0
   endButton: {fileID: 1958483075633157745}
   nowDays: {fileID: 1696249044011672970}
   hand: {fileID: 1696249044823201148}

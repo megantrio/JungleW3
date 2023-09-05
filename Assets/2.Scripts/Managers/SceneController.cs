@@ -5,6 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
 {
+    private void Start()
+    {
+        if(SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            StartCoroutine(Delay());
+        }
+    }
+
+    IEnumerator Delay()
+    {
+        yield return new WaitForSeconds(2.0f);
+        NextScene(1);
+    }
 
     public void NextScene(int SceneIndex)
     {

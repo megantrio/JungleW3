@@ -104,6 +104,7 @@ public class UIManager : EventObject
 
     public void AllUpdate()
     {
+        itemInfoUpdate(null);
         nowDays.text = nowDay.ToString();
         isUpdate = true;
         MixItemReset();
@@ -188,8 +189,11 @@ public class UIManager : EventObject
     public void itemInfoUpdate(Item item)
     {
         itemInfo.item = item;
-        itemNameText.text = item.itemName;
-        itemInfoText.text = item.itemInfo;
+        if (item != null) itemNameText.text = item.itemName;
+        else itemNameText.text = "";
+
+        if (item != null) itemInfoText.text = item.itemInfo;
+        else itemInfoText.text = "";
     }
 
     public void MixItemPlus(Item item)
